@@ -3,3 +3,13 @@ body {
   padding: 0;
   font-family: "Montserrat", sans-serif;
 }
+
+input::placeholder {
+  color: #9e9fa7;
+  font-family: "Montserrat", sans-serif;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}

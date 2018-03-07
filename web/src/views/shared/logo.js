@@ -4,7 +4,6 @@ import IMAGES from "assets/images";
 const Logo = styled.img.attrs({
   src: IMAGES.LOGO
 })`
-  background-color: blue;
   height: 79px;
   width: 238px;
 `;

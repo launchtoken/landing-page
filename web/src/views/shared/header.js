@@ -1,7 +1,9 @@
 import styled from "styled-components";
 
 const Header = styled.div`
-  background-color: blue;
+  position: absolute;
+  left: 0;
+  right: 0;
   height: 83px;
   display: flex;
   margin: 15px 141px 0 141px;

@@ -5,6 +5,13 @@ import Logo from "views/shared/logo";
 import Navigation from "views/shared/navigation";
 import NavigationLink from "views/shared/navigation-link";
 import NavigationButton from "views/shared/navigation-button";
+import Banner from "views/homepage/banner";
+import BannerSection from "views/homepage/banner-section";
+import Tagline from "views/homepage/tagline";
+import Caption from "views/homepage/caption";
+import TextInput from "views/shared/text-input";
+
+import IMAGES from "assets/images";
 
 class Homepage extends Component {
   render() {
@@ -30,6 +37,19 @@ class Homepage extends Component {
             </NavigationButton>
           </Navigation>
         </Header>
+        <Banner>
+          <BannerSection>
+            <Tagline>Create Your Stunning Website</Tagline>
+            <Caption>
+              Launch Token allows you to create beautiful ICO landing pages in
+              minutes. It's drag and drop.
+            </Caption>
+            <TextInput placeholder="Email address" />
+          </BannerSection>
+          <BannerSection>
+            <img src={IMAGES.BANNER_GRAPHIC} width="654" height="565" />
+          </BannerSection>
+        </Banner>
       </div>
     );
   }
