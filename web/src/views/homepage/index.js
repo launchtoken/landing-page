@@ -10,6 +10,8 @@ import BannerSection from "views/homepage/banner-section";
 import Tagline from "views/homepage/tagline";
 import Caption from "views/homepage/caption";
 import TextInput from "views/shared/text-input";
+import Text from "views/shared/text";
+import Floater from "views/homepage/floater";
 
 import IMAGES from "assets/images";
 
@@ -21,34 +23,46 @@ class Homepage extends Component {
           Invests in Unsplash -- To create the new currency for photography.
           Learn More
         </Notification>
-        <Header>
-          <Logo />
-          <Navigation>
-            <NavigationLink href="www.google.com">HOME</NavigationLink>
-            <NavigationLink href="www.google.com">ABOUT</NavigationLink>
-            <NavigationLink href="www.google.com">TEAM</NavigationLink>
-            <NavigationLink href="www.google.com">ROADMAP</NavigationLink>
-            <NavigationLink href="www.google.com">CONTACT</NavigationLink>
-            <NavigationButton href="www.google.com">
-              WHITEPAPER
-            </NavigationButton>
-            <NavigationButton highlighted href="www.google.com">
-              REGISTER
-            </NavigationButton>
-          </Navigation>
-        </Header>
         <Banner>
+          <Header>
+            <Logo />
+            <Navigation>
+              <NavigationLink href="www.google.com">HOME</NavigationLink>
+              <NavigationLink href="www.google.com">ABOUT</NavigationLink>
+              <NavigationLink href="www.google.com">TEAM</NavigationLink>
+              <NavigationLink href="www.google.com">ROADMAP</NavigationLink>
+              <NavigationLink href="www.google.com">CONTACT</NavigationLink>
+              <NavigationButton href="www.google.com">
+                WHITEPAPER
+              </NavigationButton>
+              <NavigationButton highlighted href="www.google.com">
+                REGISTER
+              </NavigationButton>
+            </Navigation>
+          </Header>
           <BannerSection>
             <Tagline>Create Your Stunning Website</Tagline>
             <Caption>
               Launch Token allows you to create beautiful ICO landing pages in
               minutes. It's drag and drop.
             </Caption>
-            <TextInput placeholder="Email address" />
+            <div className="separated">
+              <TextInput placeholder="Email address" />
+              <NavigationButton highlighted href="www.google.com">
+                PRE-REGISTER >>>
+              </NavigationButton>
+            </div>
+            <NavigationButton href="www.google.com">
+              WATCH VIDEO >
+            </NavigationButton>
           </BannerSection>
           <BannerSection>
-            <img src={IMAGES.BANNER_GRAPHIC} width="654" height="565" />
+            <img src={IMAGES.BANNER_GRAPHIC} width="500" height="432" />
           </BannerSection>
+          <Floater>
+            <Text>LEARN MORE</Text>
+            <img src={IMAGES.BANNER_SCROLL} />
+          </Floater>
         </Banner>
       </div>
     );

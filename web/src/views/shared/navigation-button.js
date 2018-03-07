@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const NavigationButton = styled.button`
   margin: 10px 5px 0 5px;
-  font-size: 14px;
+  font-size: 12px;
   height: 44px;
   width: 164px;
   border-width: 2px;
