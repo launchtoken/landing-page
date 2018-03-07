@@ -8,6 +8,7 @@ const Banner = styled.div`
   background-repeat: no-repeat;
   padding: 140px;
   display: flex;
+  clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
 `;
 
 export default Banner;
