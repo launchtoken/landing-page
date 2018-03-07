@@ -1,21 +1,18 @@
 import React, { Component } from "react";
 import IMAGES from "assets/images";
-import "./homepage.css";
+import Notification from "views/shared/notification";
 
-class App extends Component {
+class Homepage extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={IMAGES.LOGO} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <Notification>
+          Invests in Unsplash -- To create the new currency for photography.
+          Learn More
+        </Notification>
       </div>
     );
   }
 }
 
-export default App;
+export default Homepage;
