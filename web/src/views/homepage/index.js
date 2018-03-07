@@ -12,6 +12,7 @@ import Caption from "views/homepage/caption";
 import TextInput from "views/shared/text-input";
 import Text from "views/shared/text";
 import Floater from "views/homepage/floater";
+import Countdown from "views/homepage/countdown";
 
 import IMAGES from "assets/images";
 
@@ -64,6 +65,7 @@ class Homepage extends Component {
             <img src={IMAGES.BANNER_SCROLL} />
           </Floater>
         </Banner>
+        <div />
       </div>
     );
   }

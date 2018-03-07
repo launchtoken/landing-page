@@ -4,8 +4,8 @@ import IMAGES from "assets/images";
 const Logo = styled.img.attrs({
   src: IMAGES.LOGO
 })`
-  height: 79px;
-  width: 238px;
+  height: 63px;
+  width: 200px;
 `;
 
 export default Logo;
