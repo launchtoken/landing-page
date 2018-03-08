@@ -105,6 +105,19 @@ class Homepage extends Component {
             />
           </PaddedContainer>
         </Slanted>
+        <Slanted colored>
+          <PaddedContainer>
+            <Feature
+              imageOnLeft
+              graphic={IMAGES.FEATURE_GRAPHIC_3}
+              icon={IMAGES.FEATURE_ICON_3}
+              title={"Decentralized & Secure"}
+              description={
+                "Drag and drop photos, put beautiful timers and so much moretha"
+              }
+            />
+          </PaddedContainer>
+        </Slanted>
       </div>
     );
   }
