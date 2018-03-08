@@ -18,11 +18,13 @@ import Slanted from "views/homepage/slanted";
 import SectionTitle from "views/homepage/section-title";
 import Instructions from "views/homepage/instructions";
 import Feature from "views/homepage/feature";
+import Summary from "views/homepage/summary";
 
 import IMAGES from "assets/images";
 
 const PaddedContainer = styled.div`
   padding: 0 20%;
+  width: 100%;
 `;
 
 class Homepage extends Component {
@@ -116,6 +118,11 @@ class Homepage extends Component {
                 "Drag and drop photos, put beautiful timers and so much moretha"
               }
             />
+          </PaddedContainer>
+        </Slanted>
+        <Slanted long background={IMAGES.FEATURE_SUMMARY_BACKGROUND}>
+          <PaddedContainer>
+            <Summary />
           </PaddedContainer>
         </Slanted>
       </div>

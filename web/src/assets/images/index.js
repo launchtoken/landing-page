@@ -13,6 +13,13 @@ import FEATURE_GRAPHIC_3 from "./feature-graphic-3.png";
 import FEATURE_ICON_1 from "./feature-icon-1.png";
 import FEATURE_ICON_2 from "./feature-icon-2.png";
 import FEATURE_ICON_3 from "./feature-icon-3.png";
+import FEATURE_SUMMARY_BACKGROUND from "./feature-summary-background.png";
+import SUMMARY_TEMPLATE from "./summary-template.png";
+import SUMMARY_API from "./summary-api.png";
+import SUMMARY_DOMAIN from "./summary-domain.png";
+import SUMMARY_EASY_TO_USE from "./summary-easy-to-use.png";
+import SUMMARY_RESPONSIVE from "./summary-responsive.png";
+import SUMMARY_SUPPORT from "./summary-support.png";
 
 export default {
   LOGO,
@@ -29,5 +36,12 @@ export default {
   FEATURE_GRAPHIC_3,
   FEATURE_ICON_1,
   FEATURE_ICON_2,
-  FEATURE_ICON_3
+  FEATURE_ICON_3,
+  FEATURE_SUMMARY_BACKGROUND,
+  SUMMARY_TEMPLATE,
+  SUMMARY_SUPPORT,
+  SUMMARY_RESPONSIVE,
+  SUMMARY_EASY_TO_USE,
+  SUMMARY_DOMAIN,
+  SUMMARY_API
 };
