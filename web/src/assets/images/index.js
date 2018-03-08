@@ -22,6 +22,7 @@ import SUMMARY_RESPONSIVE from "./summary-responsive.png";
 import SUMMARY_SUPPORT from "./summary-support.png";
 import ROADMAP_BACKGROUND from "./roadmap-background.png";
 import ROADMAP_SCHEDULE from "./roadmap-schedule.png";
+import TOKEN_ALLOCATION_BACKGROUND from "./token-allocation-background.png";
 
 export default {
   LOGO,
@@ -47,5 +48,6 @@ export default {
   SUMMARY_DOMAIN,
   SUMMARY_API,
   ROADMAP_BACKGROUND,
-  ROADMAP_SCHEDULE
+  ROADMAP_SCHEDULE,
+  TOKEN_ALLOCATION_BACKGROUND
 };

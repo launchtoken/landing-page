@@ -131,6 +131,9 @@ class Homepage extends Component {
             <Roadmap />
           </PaddedContainer>
         </Slanted>
+        <Slanted medium background={IMAGES.TOKEN_ALLOCATION_BACKGROUND}>
+          <PaddedContainer />
+        </Slanted>
       </div>
     );
   }
