@@ -20,6 +20,7 @@ import SUMMARY_DOMAIN from "./summary-domain.png";
 import SUMMARY_EASY_TO_USE from "./summary-easy-to-use.png";
 import SUMMARY_RESPONSIVE from "./summary-responsive.png";
 import SUMMARY_SUPPORT from "./summary-support.png";
+import ROADMAP_BACKGROUND from "./roadmap-background.png";
 
 export default {
   LOGO,
@@ -43,5 +44,6 @@ export default {
   SUMMARY_RESPONSIVE,
   SUMMARY_EASY_TO_USE,
   SUMMARY_DOMAIN,
-  SUMMARY_API
+  SUMMARY_API,
+  ROADMAP_BACKGROUND
 };

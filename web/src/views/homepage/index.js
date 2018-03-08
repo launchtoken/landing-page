@@ -72,7 +72,7 @@ class Homepage extends Component {
             <img src={IMAGES.BANNER_GRAPHIC} width="500" height="432" />
           </BannerSection>
           <Floater>
-            <Text>LEARN MORE</Text>
+            <Text white>LEARN MORE</Text>
             <img src={IMAGES.BANNER_SCROLL} />
           </Floater>
         </Banner>
@@ -124,6 +124,9 @@ class Homepage extends Component {
           <PaddedContainer>
             <Summary />
           </PaddedContainer>
+        </Slanted>
+        <Slanted long background={IMAGES.ROADMAP_BACKGROUND}>
+          <PaddedContainer />
         </Slanted>
       </div>
     );
