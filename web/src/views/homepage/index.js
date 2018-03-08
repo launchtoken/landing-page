@@ -126,7 +126,7 @@ class Homepage extends Component {
             <Summary />
           </PaddedContainer>
         </Slanted>
-        <Slanted long background={IMAGES.ROADMAP_BACKGROUND}>
+        <Slanted medium background={IMAGES.ROADMAP_BACKGROUND}>
           <PaddedContainer>
             <Roadmap />
           </PaddedContainer>
