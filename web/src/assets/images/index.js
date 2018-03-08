@@ -7,6 +7,12 @@ import HOW_IT_WORKS_2 from "./how-it-works-2.png";
 import HOW_IT_WORKS_3 from "./how-it-works-3.png";
 import HOW_IT_WORKS_ARROW_1 from "./how-it-works-arrow-1.png";
 import HOW_IT_WORKS_ARROW_2 from "./how-it-works-arrow-2.png";
+import FEATURE_GRAPHIC_1 from "./feature-graphic-1.png";
+import FEATURE_GRAPHIC_2 from "./feature-graphic-2.png";
+import FEATURE_GRAPHIC_3 from "./feature-graphic-3.png";
+import FEATURE_ICON_1 from "./feature-icon-1.png";
+import FEATURE_ICON_2 from "./feature-icon-2.png";
+import FEATURE_ICON_3 from "./feature-icon-3.png";
 
 export default {
   LOGO,
@@ -17,5 +23,11 @@ export default {
   HOW_IT_WORKS_2,
   HOW_IT_WORKS_3,
   HOW_IT_WORKS_ARROW_1,
-  HOW_IT_WORKS_ARROW_2
+  HOW_IT_WORKS_ARROW_2,
+  FEATURE_GRAPHIC_1,
+  FEATURE_GRAPHIC_2,
+  FEATURE_GRAPHIC_3,
+  FEATURE_ICON_1,
+  FEATURE_ICON_2,
+  FEATURE_ICON_3
 };

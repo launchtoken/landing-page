@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import styled from "styled-components";
 import Notification from "views/shared/notification";
 import Header from "views/shared/header";
 import Logo from "views/shared/logo";
@@ -16,8 +17,13 @@ import Countdown from "views/homepage/countdown";
 import Slanted from "views/homepage/slanted";
 import SectionTitle from "views/homepage/section-title";
 import Instructions from "views/homepage/instructions";
+import Feature from "views/homepage/feature";
 
 import IMAGES from "assets/images";
+
+const PaddedContainer = styled.div`
+  padding: 0 20%;
+`;
 
 class Homepage extends Component {
   render() {
@@ -69,8 +75,23 @@ class Homepage extends Component {
           </Floater>
         </Banner>
         <Slanted>
-          <SectionTitle centered>How It Works</SectionTitle>
-          <Instructions />
+          <PaddedContainer>
+            <SectionTitle centered>How It Works</SectionTitle>
+            <Instructions />
+          </PaddedContainer>
+        </Slanted>
+        <Slanted colored>
+          <PaddedContainer>
+            <Feature
+              imageOnLeft
+              graphic={IMAGES.FEATURE_GRAPHIC_1}
+              icon={IMAGES.FEATURE_ICON_1}
+              title={"No Coding Skills Required"}
+              description={
+                "Drag and drop photos, put beautiful timers and so much moretha"
+              }
+            />
+          </PaddedContainer>
         </Slanted>
       </div>
     );
