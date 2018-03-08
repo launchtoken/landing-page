@@ -93,6 +93,18 @@ class Homepage extends Component {
             />
           </PaddedContainer>
         </Slanted>
+        <Slanted>
+          <PaddedContainer>
+            <Feature
+              graphic={IMAGES.FEATURE_GRAPHIC_2}
+              icon={IMAGES.FEATURE_ICON_2}
+              title={"Easy, Powerful, Drag & Drop Website Builder"}
+              description={
+                "It is a long established fact that a reader will be distracted "
+              }
+            />
+          </PaddedContainer>
+        </Slanted>
       </div>
     );
   }
