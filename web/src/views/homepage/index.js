@@ -19,6 +19,7 @@ import SectionTitle from "views/homepage/section-title";
 import Instructions from "views/homepage/instructions";
 import Feature from "views/homepage/feature";
 import Summary from "views/homepage/summary";
+import Roadmap from "views/homepage/roadmap";
 
 import IMAGES from "assets/images";
 
@@ -126,7 +127,9 @@ class Homepage extends Component {
           </PaddedContainer>
         </Slanted>
         <Slanted long background={IMAGES.ROADMAP_BACKGROUND}>
-          <PaddedContainer />
+          <PaddedContainer>
+            <Roadmap />
+          </PaddedContainer>
         </Slanted>
       </div>
     );
