@@ -37,8 +37,8 @@ class Homepage extends Component {
     return (
       <div>
         <Notification>
-          Invests in Unsplash -- To create the new currency for photography.
-          Learn More
+          For investors interested in applying for the private pre-sale please
+          contact our BD team at business@launchtoken.me
         </Notification>
         <Banner>
           <Header>
@@ -58,10 +58,10 @@ class Homepage extends Component {
             </Navigation>
           </Header>
           <BannerSection>
-            <Tagline>Create Your Stunning Website</Tagline>
+            <Tagline>Create Your First ICO Landing Page</Tagline>
             <Caption>
               Launch Token allows you to create beautiful ICO landing pages in
-              minutes. It's drag and drop.
+              minutes - without a single line of code.
             </Caption>
             <div className="separated">
               <TextInput placeholder="Email address" />
@@ -96,9 +96,9 @@ class Homepage extends Component {
               imageOnLeft
               graphic={IMAGES.FEATURE_GRAPHIC_1}
               icon={IMAGES.FEATURE_ICON_1}
-              title={"No Coding Skills Required"}
+              title={"Powered by Ethereum"}
               description={
-                "Drag and drop photos, put beautiful timers and so much moretha"
+                "Seamlessly run KYC, whitelisting, and fundraising all on top of ethereum's decentralized protocol."
               }
             />
           </PaddedContainer>
@@ -110,7 +110,7 @@ class Homepage extends Component {
               icon={IMAGES.FEATURE_ICON_2}
               title={"Easy, Powerful, Drag & Drop Website Builder"}
               description={
-                "It is a long established fact that a reader will be distracted "
+                "Choose from an array of professionally designed templates and customize the look and feel to match your business"
               }
             />
           </PaddedContainer>
@@ -123,7 +123,7 @@ class Homepage extends Component {
               icon={IMAGES.FEATURE_ICON_3}
               title={"Decentralized & Secure"}
               description={
-                "Drag and drop photos, put beautiful timers and so much moretha"
+                "Build on top of the secure Launch Token protocol and decentralize all parts of your ICO to ensure trust in your investors"
               }
             />
           </PaddedContainer>

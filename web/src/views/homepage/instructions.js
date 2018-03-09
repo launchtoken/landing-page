@@ -40,9 +40,10 @@ const Instructions = () => (
   <Wrapper>
     <Step>
       <Icon src={IMAGES.HOW_IT_WORKS_1} />
-      <Title>STEP 1: CREATE ACCOUNT</Title>
+      <Title>STEP 1: CREATE TOKEN</Title>
       <Description>
-        Plusieurs variations de Lorem Ipsum peuvent être trouvées ici
+        Create a new token by filling out a simple form, or input an existing
+        token.
       </Description>
     </Step>
     <Arrow src={IMAGES.HOW_IT_WORKS_ARROW_1} />
@@ -50,15 +51,17 @@ const Instructions = () => (
       <Icon src={IMAGES.HOW_IT_WORKS_2} />
       <Title>STEP 2: DESIGN PAGE</Title>
       <Description>
-        Plusieurs variations de Lorem Ipsum peuvent être trouvées ici
+        Select from several ICO models, and professionally designed website
+        templates.
       </Description>
     </Step>
     <Arrow src={IMAGES.HOW_IT_WORKS_ARROW_2} />
     <Step>
       <Icon src={IMAGES.HOW_IT_WORKS_3} />
-      <Title>STEP 3: PUBLISH PAGE</Title>
+      <Title>STEP 3: LAUNCH</Title>
       <Description>
-        Plusieurs variations de Lorem Ipsum peuvent être trouvées ici
+        Start fundraising using decentralized smart contracts to manage your
+        crowdsale!
       </Description>
     </Step>
   </Wrapper>
