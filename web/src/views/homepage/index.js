@@ -81,6 +81,7 @@ class Homepage extends Component {
             <img src={IMAGES.BANNER_SCROLL} />
           </Floater>
         </Banner>
+        <Countdown />
         <Slanted>
           <PaddedContainer>
             <SectionTitle centered>How It Works</SectionTitle>

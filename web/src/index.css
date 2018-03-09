@@ -19,3 +19,8 @@ input:focus {
 .separated {
   margin-bottom: 10px;
 }
+
+@font-face {
+  font-family: "Digital";
+  src: local("Digital"), url(./assets/fonts/digital-7.ttf) format("truetype");
+}
