@@ -20,6 +20,7 @@ import Instructions from "views/homepage/instructions";
 import Feature from "views/homepage/feature";
 import Summary from "views/homepage/summary";
 import Roadmap from "views/homepage/roadmap";
+import TokenAllocation from "views/homepage/token-allocation";
 
 import IMAGES from "assets/images";
 
@@ -132,7 +133,9 @@ class Homepage extends Component {
           </PaddedContainer>
         </Slanted>
         <Slanted medium background={IMAGES.TOKEN_ALLOCATION_BACKGROUND}>
-          <PaddedContainer />
+          <PaddedContainer>
+            <TokenAllocation />
+          </PaddedContainer>
         </Slanted>
       </div>
     );
