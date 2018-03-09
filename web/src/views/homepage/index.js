@@ -21,6 +21,7 @@ import Feature from "views/homepage/feature";
 import Summary from "views/homepage/summary";
 import Roadmap from "views/homepage/roadmap";
 import TokenAllocation from "views/homepage/token-allocation";
+import Team from "views/homepage/team";
 
 import IMAGES from "assets/images";
 
@@ -135,6 +136,11 @@ class Homepage extends Component {
         <Slanted medium background={IMAGES.TOKEN_ALLOCATION_BACKGROUND}>
           <PaddedContainer>
             <TokenAllocation />
+          </PaddedContainer>
+        </Slanted>
+        <Slanted medium colored>
+          <PaddedContainer>
+            <Team />
           </PaddedContainer>
         </Slanted>
       </div>

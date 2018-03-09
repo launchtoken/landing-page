@@ -24,6 +24,8 @@ import ROADMAP_BACKGROUND from "./roadmap-background.png";
 import ROADMAP_SCHEDULE from "./roadmap-schedule.png";
 import TOKEN_ALLOCATION_BACKGROUND from "./token-allocation-background.png";
 import TOKEN_ALLOCATION_GRAPH from "./token-allocation-graph.png";
+import TEAM_LINKEDIN from "./team-linkedin.png";
+import TEAM_EDMUND from "./team-edmund.png";
 
 export default {
   LOGO,
@@ -51,5 +53,7 @@ export default {
   ROADMAP_BACKGROUND,
   ROADMAP_SCHEDULE,
   TOKEN_ALLOCATION_BACKGROUND,
-  TOKEN_ALLOCATION_GRAPH
+  TOKEN_ALLOCATION_GRAPH,
+  TEAM_LINKEDIN,
+  TEAM_EDMUND
 };
