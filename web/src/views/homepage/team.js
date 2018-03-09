@@ -41,13 +41,13 @@ const Title = styled.h3`
 `;
 
 const Name = styled.span`
-  font-size: 13px;
+  font-size: 11px;
   font-weight: bold;
   color: black;
 `;
 
 const Position = styled.span`
-  font-size: 11px;
+  font-size: 10px;
   font-weight: bold;
   color: grey;
 `;
@@ -62,8 +62,8 @@ const Graphic = styled.img.attrs({
 const LinkedInBadge = styled.img.attrs({
   src: IMAGES.TEAM_LINKEDIN
 })`
-  width: 26px;
-  height: 26px;
+  width: 23px;
+  height: 23px;
 `;
 
 const ProfilePicture = styled.img.attrs({
@@ -71,10 +71,11 @@ const ProfilePicture = styled.img.attrs({
 })`
   width: 180px;
   height: 220px;
+  object-fit: cover;
 `;
 
 const LinkedIn = ({ href }) => (
-  <a href={href}>
+  <a href={href} target="_blank">
     <LinkedInBadge />
   </a>
 );
@@ -100,51 +101,19 @@ const Team = () => (
         picture={IMAGES.TEAM_EDMUND}
         name={"EDMUND MAI"}
         position={"CO-FOUNDER"}
-        linkedIn={"https://www.google.com"}
+        linkedIn={"https://www.linkedin.com/in/edmundmai"}
       />
       <MemberCard
-        picture={IMAGES.TEAM_EDMUND}
+        picture={IMAGES.TEAM_AARON}
         name={"AARON VASQUEZ"}
         position={"CO-FOUNDER"}
-        linkedIn={"https://www.google.com"}
+        linkedIn={"https://www.linkedin.com/in/aaronvasquezadilla"}
       />
       <MemberCard
-        picture={IMAGES.TEAM_EDMUND}
-        name={"KRIS SOMETHING"}
-        position={"VP OF ENGINEERING"}
-        linkedIn={"https://www.google.com"}
-      />
-      <MemberCard
-        picture={IMAGES.TEAM_EDMUND}
-        name={"Kris"}
-        position={"VP OF ENGINEERING"}
-        linkedIn={"https://www.google.com"}
-      />
-    </Row>
-    <Row>
-      <MemberCard
-        picture={IMAGES.TEAM_EDMUND}
-        name={"EDMUND MAI"}
-        position={"CO-FOUNDER"}
-        linkedIn={"https://www.google.com"}
-      />
-      <MemberCard
-        picture={IMAGES.TEAM_EDMUND}
-        name={"AARON VASQUEZ"}
-        position={"CO-FOUNDER"}
-        linkedIn={"https://www.google.com"}
-      />
-      <MemberCard
-        picture={IMAGES.TEAM_EDMUND}
-        name={"KRIS SOMETHING"}
-        position={"VP OF ENGINEERING"}
-        linkedIn={"https://www.google.com"}
-      />
-      <MemberCard
-        picture={IMAGES.TEAM_EDMUND}
-        name={"Kris"}
-        position={"VP OF ENGINEERING"}
-        linkedIn={"https://www.google.com"}
+        picture={IMAGES.TEAM_JONATHAN}
+        name={"JONATHAN TOW"}
+        position={"SENIOR DEVELOPER"}
+        linkedIn={"https://www.linkedin.com/in/jonathan-tow-6399691a/"}
       />
     </Row>
   </Wrapper>

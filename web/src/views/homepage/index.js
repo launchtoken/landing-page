@@ -77,8 +77,10 @@ class Homepage extends Component {
             <img src={IMAGES.BANNER_GRAPHIC} width="500" height="432" />
           </BannerSection>
           <Floater>
-            <Text white>LEARN MORE</Text>
-            <img src={IMAGES.BANNER_SCROLL} />
+            <Text white size="10px">
+              LEARN MORE
+            </Text>
+            <img src={IMAGES.BANNER_SCROLL} width="13" height="26" />
           </Floater>
         </Banner>
         <Countdown />

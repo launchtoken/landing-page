@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 const NavigationButton = styled.button`
-  margin: 10px 5px 0 5px;
+  margin: 0px 5px;
   font-size: 12px;
-  height: 44px;
-  width: 164px;
+  height: 38px;
+  width: 144px;
   border-width: 2px;
   border-style: solid;
   border-color: #6a48fd;

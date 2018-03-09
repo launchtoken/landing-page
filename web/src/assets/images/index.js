@@ -26,6 +26,8 @@ import TOKEN_ALLOCATION_BACKGROUND from "./token-allocation-background.png";
 import TOKEN_ALLOCATION_GRAPH from "./token-allocation-graph.png";
 import TEAM_LINKEDIN from "./team-linkedin.png";
 import TEAM_EDMUND from "./team-edmund.png";
+import TEAM_AARON from "./team-aaron.jpeg";
+import TEAM_JONATHAN from "./team-jonathan.jpeg";
 import MEDIA_NBC from "./media-nbc.png";
 import MEDIA_SINGULARITY from "./media-singularity.png";
 import MEDIA_TECHVIBES from "./media-techvibes.png";
@@ -69,6 +71,8 @@ export default {
   TOKEN_ALLOCATION_GRAPH,
   TEAM_LINKEDIN,
   TEAM_EDMUND,
+  TEAM_AARON,
+  TEAM_JONATHAN,
   MEDIA_NBC,
   MEDIA_SINGULARITY,
   MEDIA_TECHVIBES,
