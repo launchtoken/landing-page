@@ -23,6 +23,7 @@ import Roadmap from "views/homepage/roadmap";
 import TokenAllocation from "views/homepage/token-allocation";
 import Team from "views/homepage/team";
 import Media from "views/homepage/media";
+import Footer from "views/shared/footer";
 
 import IMAGES from "assets/images";
 
@@ -149,6 +150,7 @@ class Homepage extends Component {
             <Media />
           </PaddedContainer>
         </Slanted>
+        <Footer />
       </div>
     );
   }

@@ -32,6 +32,13 @@ import MEDIA_TECHVIBES from "./media-techvibes.png";
 import MEDIA_FASTCOMPANY from "./media-fastcompany.png";
 import MEDIA_COINDESK from "./media-coindesk.png";
 import MEDIA_TECH_IN_ASIA from "./media-tech-in-asia.png";
+import FOOTER_BACKGROUND from "./footer-background.png";
+import FOOTER_FACEBOOK from "./footer-facebook.png";
+import FOOTER_TWITTER from "./footer-twitter.png";
+import FOOTER_LINKEDIN from "./footer-linkedin.png";
+import FOOTER_TELEGRAM from "./footer-telegram.png";
+import FOOTER_GITHUB from "./footer-github.png";
+import FOOTER_MEDIUM from "./footer-medium.png";
 
 export default {
   LOGO,
@@ -67,5 +74,12 @@ export default {
   MEDIA_TECHVIBES,
   MEDIA_FASTCOMPANY,
   MEDIA_COINDESK,
-  MEDIA_TECH_IN_ASIA
+  MEDIA_TECH_IN_ASIA,
+  FOOTER_BACKGROUND,
+  FOOTER_FACEBOOK,
+  FOOTER_TWITTER,
+  FOOTER_LINKEDIN,
+  FOOTER_TELEGRAM,
+  FOOTER_GITHUB,
+  FOOTER_MEDIUM
 };
