@@ -22,6 +22,7 @@ import Summary from "views/homepage/summary";
 import Roadmap from "views/homepage/roadmap";
 import TokenAllocation from "views/homepage/token-allocation";
 import Team from "views/homepage/team";
+import Media from "views/homepage/media";
 
 import IMAGES from "assets/images";
 
@@ -141,6 +142,11 @@ class Homepage extends Component {
         <Slanted medium colored>
           <PaddedContainer>
             <Team />
+          </PaddedContainer>
+        </Slanted>
+        <Slanted>
+          <PaddedContainer>
+            <Media />
           </PaddedContainer>
         </Slanted>
       </div>

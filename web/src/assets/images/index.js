@@ -26,6 +26,12 @@ import TOKEN_ALLOCATION_BACKGROUND from "./token-allocation-background.png";
 import TOKEN_ALLOCATION_GRAPH from "./token-allocation-graph.png";
 import TEAM_LINKEDIN from "./team-linkedin.png";
 import TEAM_EDMUND from "./team-edmund.png";
+import MEDIA_NBC from "./media-nbc.png";
+import MEDIA_SINGULARITY from "./media-singularity.png";
+import MEDIA_TECHVIBES from "./media-techvibes.png";
+import MEDIA_FASTCOMPANY from "./media-fastcompany.png";
+import MEDIA_COINDESK from "./media-coindesk.png";
+import MEDIA_TECH_IN_ASIA from "./media-tech-in-asia.png";
 
 export default {
   LOGO,
@@ -55,5 +61,11 @@ export default {
   TOKEN_ALLOCATION_BACKGROUND,
   TOKEN_ALLOCATION_GRAPH,
   TEAM_LINKEDIN,
-  TEAM_EDMUND
+  TEAM_EDMUND,
+  MEDIA_NBC,
+  MEDIA_SINGULARITY,
+  MEDIA_TECHVIBES,
+  MEDIA_FASTCOMPANY,
+  MEDIA_COINDESK,
+  MEDIA_TECH_IN_ASIA
 };
