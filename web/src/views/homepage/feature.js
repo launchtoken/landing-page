@@ -24,7 +24,7 @@ const Icon = styled.img.attrs({
 const Description = styled.div`
   display: flex;
   flex-direction: column;
-  padding-left: 25px;
+  padding: 0 25px;
 `;
 
 const Feature = ({ imageOnLeft, graphic, icon, title, description }) => (

@@ -8,9 +8,9 @@ import NavigationLink from "views/shared/navigation-link";
 import NavigationButton from "views/shared/navigation-button";
 import Banner from "views/homepage/banner";
 import BannerSection from "views/homepage/banner-section";
+import EmailSignup from "views/homepage/email-signup";
 import Tagline from "views/homepage/tagline";
 import Caption from "views/homepage/caption";
-import TextInput from "views/shared/text-input";
 import Text from "views/shared/text";
 import Floater from "views/homepage/floater";
 import Countdown from "views/homepage/countdown";
@@ -64,10 +64,7 @@ class Homepage extends Component {
               minutes - without a single line of code.
             </Caption>
             <div className="separated">
-              <TextInput placeholder="Email address" />
-              <NavigationButton highlighted href="www.google.com">
-                PRE-REGISTER >>>
-              </NavigationButton>
+              <EmailSignup />
             </div>
             <NavigationButton href="www.google.com">
               WATCH VIDEO >
