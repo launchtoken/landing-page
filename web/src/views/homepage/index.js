@@ -140,7 +140,7 @@ class Homepage extends Component {
             <TokenAllocation />
           </PaddedContainer>
         </Slanted>
-        <Slanted medium colored>
+        <Slanted medium colored background={IMAGES.TEAM_BACKGROUND}>
           <PaddedContainer>
             <Team />
           </PaddedContainer>
