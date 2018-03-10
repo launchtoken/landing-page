@@ -10,7 +10,7 @@ const Title = styled.h3`
   font-size: 25px;
   font-weight: bold;
   color: white;
-  margin-bottom: 100px;
+  margin: 0 0 100px;
   text-align: center;
 `;
 

@@ -9,7 +9,6 @@ const Banner = styled.div`
   padding: 140px;
   display: flex;
   justify-content: space-between;
-  clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
 `;
 
 export default Banner;
