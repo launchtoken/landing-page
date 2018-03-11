@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import IMAGES from "assets/images";
+import Slanted from "views/homepage/slanted";
+import PaddedContainer from "views/homepage/padded-container";
 
 const Wrapper = styled.div`
   height: 100%;
@@ -21,10 +23,14 @@ const Icon = styled.img.attrs({
 `;
 
 const Roadmap = () => (
-  <Wrapper>
-    <Title>Roadmap</Title>
-    <Icon src={IMAGES.ROADMAP_SCHEDULE} />
-  </Wrapper>
+  <Slanted medium background={IMAGES.ROADMAP_BACKGROUND}>
+    <PaddedContainer>
+      <Wrapper>
+        <Title>Roadmap</Title>
+        <Icon src={IMAGES.ROADMAP_SCHEDULE} />
+      </Wrapper>
+    </PaddedContainer>
+  </Slanted>
 );
 
 export default Roadmap;

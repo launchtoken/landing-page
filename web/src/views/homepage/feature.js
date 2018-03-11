@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import SectionTitle from "views/homepage/section-title";
 import Text from "views/shared/text";
+import Slanted from "views/homepage/slanted";
+import PaddedContainer from "views/homepage/padded-container";
 
 const Wrapper = styled.div`
   display: flex;
@@ -27,16 +29,27 @@ const Description = styled.div`
   padding: 0 25px;
 `;
 
-const Feature = ({ imageOnLeft, graphic, icon, title, description }) => (
-  <Wrapper>
-    {imageOnLeft ? <Graphic src={graphic} /> : null}
-    <Description>
-      <Icon src={icon} />
-      <SectionTitle>{title}</SectionTitle>
-      <Text>{description}</Text>
-    </Description>
-    {imageOnLeft ? null : <Graphic src={graphic} />}
-  </Wrapper>
+const Feature = ({
+  coloredBg,
+  imageOnLeft,
+  graphic,
+  icon,
+  title,
+  description
+}) => (
+  <Slanted colored={!!coloredBg}>
+    <PaddedContainer>
+      <Wrapper>
+        {imageOnLeft ? <Graphic src={graphic} /> : null}
+        <Description>
+          <Icon src={icon} />
+          <SectionTitle>{title}</SectionTitle>
+          <Text>{description}</Text>
+        </Description>
+        {imageOnLeft ? null : <Graphic src={graphic} />}
+      </Wrapper>
+    </PaddedContainer>
+  </Slanted>
 );
 
 export default Feature;

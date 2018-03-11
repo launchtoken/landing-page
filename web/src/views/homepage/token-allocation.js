@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import IMAGES from "assets/images";
 import Text from "views/shared/text";
+import Slanted from "views/homepage/slanted";
+import PaddedContainer from "views/homepage/padded-container";
 
 const Wrapper = styled.div`
   height: 100%;
@@ -27,16 +29,20 @@ const Graphic = styled.img.attrs({
 `;
 
 const Roadmap = () => (
-  <Wrapper>
-    <Title>Launch Token In Numbers</Title>
-    <Text centered size="13px">
-      Below is a breakdown of the sources of investment as well as the planned
-      usage of the funds.
-    </Text>
-    <ImageContainer>
-      <Graphic src={IMAGES.TOKEN_ALLOCATION_GRAPH} />
-    </ImageContainer>
-  </Wrapper>
+  <Slanted medium background={IMAGES.TOKEN_ALLOCATION_BACKGROUND}>
+    <PaddedContainer>
+      <Wrapper>
+        <Title>Launch Token In Numbers</Title>
+        <Text centered size="13px">
+          Below is a breakdown of the sources of investment as well as the
+          planned usage of the funds.
+        </Text>
+        <ImageContainer>
+          <Graphic src={IMAGES.TOKEN_ALLOCATION_GRAPH} />
+        </ImageContainer>
+      </Wrapper>
+    </PaddedContainer>
+  </Slanted>
 );
 
 export default Roadmap;

@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import NavigationButton from "views/shared/navigation-button";
 
 const TextInput = styled.input.attrs({
   type: "text",

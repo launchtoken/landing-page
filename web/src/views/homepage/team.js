@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import IMAGES from "assets/images";
-import Text from "views/shared/text";
+import Slanted from "views/homepage/slanted";
+import PaddedContainer from "views/homepage/padded-container";
 
 const Wrapper = styled.div`
   height: 100%;
@@ -52,13 +53,6 @@ const Position = styled.span`
   color: grey;
 `;
 
-const Graphic = styled.img.attrs({
-  src: props => props.src
-})`
-  width: 600px;
-  height: 380px;
-`;
-
 const LinkedInBadge = styled.img.attrs({
   src: IMAGES.TEAM_LINKEDIN
 })`
@@ -94,29 +88,33 @@ const MemberCard = ({ picture, name, position, linkedIn }) => (
 );
 
 const Team = () => (
-  <Wrapper>
-    <Title>Meet Our Team</Title>
-    <Row>
-      <MemberCard
-        picture={IMAGES.TEAM_EDMUND}
-        name={"EDMUND MAI"}
-        position={"CO-FOUNDER"}
-        linkedIn={"https://www.linkedin.com/in/edmundmai"}
-      />
-      <MemberCard
-        picture={IMAGES.TEAM_AARON}
-        name={"AARON VASQUEZ"}
-        position={"CO-FOUNDER"}
-        linkedIn={"https://www.linkedin.com/in/aaronvasquezadilla"}
-      />
-      <MemberCard
-        picture={IMAGES.TEAM_JONATHAN}
-        name={"JONATHAN TOW"}
-        position={"SENIOR DEVELOPER"}
-        linkedIn={"https://www.linkedin.com/in/jonathan-tow-6399691a/"}
-      />
-    </Row>
-  </Wrapper>
+  <Slanted medium colored background={IMAGES.TEAM_BACKGROUND}>
+    <PaddedContainer>
+      <Wrapper>
+        <Title>Meet Our Team</Title>
+        <Row>
+          <MemberCard
+            picture={IMAGES.TEAM_EDMUND}
+            name={"EDMUND MAI"}
+            position={"CO-FOUNDER"}
+            linkedIn={"https://www.linkedin.com/in/edmundmai"}
+          />
+          <MemberCard
+            picture={IMAGES.TEAM_AARON}
+            name={"AARON VASQUEZ"}
+            position={"CO-FOUNDER"}
+            linkedIn={"https://www.linkedin.com/in/aaronvasquezadilla"}
+          />
+          <MemberCard
+            picture={IMAGES.TEAM_JONATHAN}
+            name={"JONATHAN TOW"}
+            position={"SENIOR DEVELOPER"}
+            linkedIn={"https://www.linkedin.com/in/jonathan-tow-6399691a/"}
+          />
+        </Row>
+      </Wrapper>
+    </PaddedContainer>
+  </Slanted>
 );
 
 export default Team;

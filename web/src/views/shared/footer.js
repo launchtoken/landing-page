@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import IMAGES from "assets/images";
-import Text from "views/shared/text";
 
 const Wrapper = styled.div`
   height: 335px;

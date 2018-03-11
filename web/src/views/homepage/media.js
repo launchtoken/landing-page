@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import IMAGES from "assets/images";
-import Text from "views/shared/text";
+import Slanted from "views/homepage/slanted";
+import PaddedContainer from "views/homepage/padded-container";
 
 const Wrapper = styled.div`
   height: 100%;
@@ -38,19 +39,23 @@ const Company = ({ src }) => (
 );
 
 const Media = () => (
-  <Wrapper>
-    <Title>FEATURED BY</Title>
-    <Row>
-      <Company src={IMAGES.MEDIA_NBC} />
-      <Company src={IMAGES.MEDIA_SINGULARITY} />
-      <Company src={IMAGES.MEDIA_TECH_IN_ASIA} />
-      <Company src={IMAGES.MEDIA_FASTCOMPANY} />
-    </Row>
-    <Row>
-      <Company src={IMAGES.MEDIA_TECH_IN_ASIA} />
-      <Company src={IMAGES.MEDIA_FASTCOMPANY} />
-    </Row>
-  </Wrapper>
+  <Slanted>
+    <PaddedContainer>
+      <Wrapper>
+        <Title>FEATURED BY</Title>
+        <Row>
+          <Company src={IMAGES.MEDIA_NBC} />
+          <Company src={IMAGES.MEDIA_SINGULARITY} />
+          <Company src={IMAGES.MEDIA_TECH_IN_ASIA} />
+          <Company src={IMAGES.MEDIA_FASTCOMPANY} />
+        </Row>
+        <Row>
+          <Company src={IMAGES.MEDIA_TECH_IN_ASIA} />
+          <Company src={IMAGES.MEDIA_FASTCOMPANY} />
+        </Row>
+      </Wrapper>
+    </PaddedContainer>
+  </Slanted>
 );
 
 export default Media;
