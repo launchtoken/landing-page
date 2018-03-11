@@ -30,9 +30,8 @@ const Roadmap = () => (
   <Wrapper>
     <Title>Launch Token In Numbers</Title>
     <Text centered size="13px">
-      It is a long established fact that a reader will be distracted It is a
-      long established fact that a reader will be distracted It is a long
-      established fact that a reader will be distracted
+      Below is a breakdown of the sources of investment as well as the planned
+      usage of the funds.
     </Text>
     <ImageContainer>
       <Graphic src={IMAGES.TOKEN_ALLOCATION_GRAPH} />

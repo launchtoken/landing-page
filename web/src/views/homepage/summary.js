@@ -71,52 +71,52 @@ const Summary = () => (
           <Icon src={IMAGES.SUMMARY_EASY_TO_USE} />
           <Caption>EASY TO USE</Caption>
           <Description>
-            Plusieurs variations de Lorem Ipsum peuvent être trouvées ici o
-            Plusieurs variations
+            Focus on marketing and building your product and allow us to manage
+            your token crowdsale in a trustless manner.
           </Description>
         </Card>
         <Card>
           <Icon src={IMAGES.SUMMARY_RESPONSIVE} />
           <Caption>MOBILE RESPONSIVE</Caption>
           <Description>
-            Plusieurs variations de Lorem Ipsum peuvent être trouvées ici o
-            Plusieurs variations
+            Browse cross browser and cross platform responsive templates and add
+            / remove sections as you please.
           </Description>
         </Card>
       </Column>
       <Column>
         <Card>
           <Icon src={IMAGES.SUMMARY_DOMAIN} />
-          <Caption>GET YOUR OWN DOMAIN NAME</Caption>
+          <Caption>CUSTOM DOMAINS</Caption>
           <Description>
-            Plusieurs variations de Lorem Ipsum peuvent être trouvées ici o
-            Plusieurs variations
+            Point your DNS to our IP and that's it! We host your websites on
+            battled-tested infrastructure to ensure reliability.
           </Description>
         </Card>
         <Card highlighted>
           <Icon src={IMAGES.SUMMARY_API} />
-          <Caption white>YOU CAN ADD YOUR OWN API</Caption>
+          <Caption white>HOOK INTO YOUR OWN API</Caption>
           <Description white>
-            Plusieurs variations de Lorem Ipsum peuvent être trouvées ici o
-            Plusieurs variations de Lorem Ipsum peuvent être trouvées ici o
+            Add webhooks that fire on important events for analytics or connect
+            to services like Mailchimp.
           </Description>
         </Card>
       </Column>
       <Column higher>
         <Card>
           <Icon src={IMAGES.SUMMARY_TEMPLATE} />
-          <Caption>AWESOME TEMPLATE DESIGNS</Caption>
+          <Caption>ALL ON BLOCKCHAIN</Caption>
           <Description>
-            Plusieurs variations de Lorem Ipsum peuvent être trouvées ici o
-            Plusieurs variations de Lorem Ipsum peuvent être trouvées ici o
+            Allow your investors to trust in the crowdsale process by using
+            Launch Token's secure protocol.
           </Description>
         </Card>
         <Card>
           <Icon src={IMAGES.SUMMARY_SUPPORT} />
           <Caption>GREAT CUSTOMER SUPPORT</Caption>
           <Description>
-            Plusieurs variations de Lorem Ipsum peuvent être trouvées ici o
-            Plusieurs variations de Lorem Ipsum peuvent être trouvées ici o
+            We are committed to creating the most complete ICO platform, and
+            love feedback from users in how we can improve our protocol!
           </Description>
         </Card>
       </Column>

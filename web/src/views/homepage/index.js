@@ -60,8 +60,8 @@ class Homepage extends Component {
           <BannerSection>
             <Tagline>Create Your First ICO Landing Page</Tagline>
             <Caption>
-              Launch Token allows you to create beautiful ICO landing pages in
-              minutes - without a single line of code.
+              Launch Token allows you to create your own token and ICO crowdsale
+              in minutes - without a single line of code.
             </Caption>
             <div className="separated">
               <EmailSignup />
@@ -93,9 +93,9 @@ class Homepage extends Component {
               imageOnLeft
               graphic={IMAGES.FEATURE_GRAPHIC_1}
               icon={IMAGES.FEATURE_ICON_1}
-              title={"Powered by Ethereum"}
+              title={"Crowdsales Built on Smart Contracts"}
               description={
-                "Seamlessly run KYC, whitelisting, and fundraising all on top of ethereum's decentralized protocol."
+                "Seamlessly whitelist, KYC, and fundraise all on top of Ethereum's decentralized protocol."
               }
             />
           </PaddedContainer>
@@ -107,7 +107,7 @@ class Homepage extends Component {
               icon={IMAGES.FEATURE_ICON_2}
               title={"Easy, Powerful, Drag & Drop Website Builder"}
               description={
-                "Choose from an array of professionally designed templates and customize the look and feel to match your business"
+                "Choose from an array of professionally designed templates and customize the look and feel to match your business."
               }
             />
           </PaddedContainer>
@@ -120,7 +120,7 @@ class Homepage extends Component {
               icon={IMAGES.FEATURE_ICON_3}
               title={"Decentralized & Secure"}
               description={
-                "Build on top of the secure Launch Token protocol and decentralize all parts of your ICO to ensure trust in your investors"
+                "Build on top of the secure Launch Token protocol and decentralize all parts of your ICO to ensure trust in your investors."
               }
             />
           </PaddedContainer>
