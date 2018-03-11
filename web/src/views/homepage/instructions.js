@@ -19,10 +19,12 @@ const Section = styled.div`
   margin-top: 35px;
 `;
 
-const Icon = styled.img.attrs({
-  src: props => props.src
-})`
+const Icon = styled.div`
+  background-image: url(${props => props.src});
+  background-size: contain;
+  background-repeat: no-repeat;
   width: 130px;
+  height: 110px;
 `;
 
 const Arrow = styled.img.attrs({

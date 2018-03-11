@@ -20,9 +20,11 @@ const Title = styled.h3`
   text-align: center;
 `;
 
-const Logo = styled.img.attrs({
-  src: props => props.src
-})`
+const Logo = styled.div`
+  background-image: url(${props => props.src});
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   width: 145px;
   height: 40px;
   margin: 0 10px;

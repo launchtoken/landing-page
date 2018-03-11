@@ -40,7 +40,8 @@ const Logo = styled.img.attrs({
 `;
 
 const Link = styled.a.attrs({
-  href: props => props.href
+  href: props => props.href,
+  target: "_blank"
 })`
   margin: 0 5px;
 `;

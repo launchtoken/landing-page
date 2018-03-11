@@ -15,10 +15,12 @@ const Title = styled.h3`
   text-align: center;
 `;
 
-const Icon = styled.img.attrs({
-  src: props => props.src
-})`
+const Icon = styled.div`
+  background-image: url(${props => props.src});
+  background-size: contain;
+  background-repeat: no-repeat;
   width: 50px;
+  height: 50px;
 `;
 
 const Caption = styled.p`

@@ -10,10 +10,11 @@ const Wrapper = styled.div`
   justify-content: center;
 `;
 
-const Graphic = styled.img.attrs({
-  src: props => props.src
-})`
-  width: 530px;
+const Graphic = styled.div`
+  background-image: url(${props => props.src});
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-width: 413px;
   height: 300px;
 `;
 

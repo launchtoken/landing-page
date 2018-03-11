@@ -27,6 +27,7 @@ const SubmitButton = styled.input.attrs({
   id: "mc-embedded-subscribe"
 })`
   margin: 0px 5px;
+  cursor: pointer;
   font-size: 12px;
   height: 38px;
   width: 144px;

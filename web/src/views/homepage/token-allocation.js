@@ -21,9 +21,10 @@ const Title = styled.h3`
   text-align: center;
 `;
 
-const Graphic = styled.img.attrs({
-  src: props => props.src
-})`
+const Graphic = styled.div`
+  background-image: url(${props => props.src});
+  background-size: contain;
+  background-repeat: no-repeat;
   width: 600px;
   height: 380px;
 `;
