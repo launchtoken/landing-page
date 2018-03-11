@@ -4,6 +4,8 @@ import IMAGES from "assets/images";
 import Step from "views/homepage/step";
 import Slanted from "views/homepage/slanted";
 import PaddedContainer from "views/homepage/padded-container";
+import * as Scroll from "react-scroll";
+import { SECTIONS } from "config";
 
 const Wrapper = styled.div`
   display: flex;
@@ -55,41 +57,43 @@ const Heading = styled.h3`
 `;
 
 const Instructions = () => (
-  <Slanted>
-    <PaddedContainer>
-      <Wrapper>
-        <Heading centered>How It Works</Heading>
-        <Section>
-          <Step>
-            <Icon src={IMAGES.HOW_IT_WORKS_1} />
-            <Title>STEP 1: CREATE TOKEN</Title>
-            <Description>
-              Create a new token by filling out a simple form, or input an
-              existing ERC-20 token.
-            </Description>
-          </Step>
-          <Arrow src={IMAGES.HOW_IT_WORKS_ARROW_1} />
-          <Step>
-            <Icon src={IMAGES.HOW_IT_WORKS_2} />
-            <Title>STEP 2: DESIGN PAGE</Title>
-            <Description>
-              Select from several ICO models, and customize professionally
-              designed website templates.
-            </Description>
-          </Step>
-          <Arrow src={IMAGES.HOW_IT_WORKS_ARROW_2} />
-          <Step>
-            <Icon src={IMAGES.HOW_IT_WORKS_3} />
-            <Title>STEP 3: LAUNCH</Title>
-            <Description>
-              Start fundraising using decentralized smart contracts to manage
-              your entire crowdsale!
-            </Description>
-          </Step>
-        </Section>
-      </Wrapper>
-    </PaddedContainer>
-  </Slanted>
+  <Scroll.Element name={SECTIONS.ABOUT}>
+    <Slanted>
+      <PaddedContainer>
+        <Wrapper>
+          <Heading centered>How It Works</Heading>
+          <Section>
+            <Step>
+              <Icon src={IMAGES.HOW_IT_WORKS_1} />
+              <Title>STEP 1: CREATE TOKEN</Title>
+              <Description>
+                Create a new token by filling out a simple form, or input an
+                existing ERC-20 token.
+              </Description>
+            </Step>
+            <Arrow src={IMAGES.HOW_IT_WORKS_ARROW_1} />
+            <Step>
+              <Icon src={IMAGES.HOW_IT_WORKS_2} />
+              <Title>STEP 2: DESIGN PAGE</Title>
+              <Description>
+                Select from several ICO models, and customize professionally
+                designed website templates.
+              </Description>
+            </Step>
+            <Arrow src={IMAGES.HOW_IT_WORKS_ARROW_2} />
+            <Step>
+              <Icon src={IMAGES.HOW_IT_WORKS_3} />
+              <Title>STEP 3: LAUNCH</Title>
+              <Description>
+                Start fundraising using decentralized smart contracts to manage
+                your entire crowdsale!
+              </Description>
+            </Step>
+          </Section>
+        </Wrapper>
+      </PaddedContainer>
+    </Slanted>
+  </Scroll.Element>
 );
 
 export default Instructions;

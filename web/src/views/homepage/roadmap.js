@@ -3,6 +3,8 @@ import styled from "styled-components";
 import IMAGES from "assets/images";
 import Slanted from "views/homepage/slanted";
 import PaddedContainer from "views/homepage/padded-container";
+import * as Scroll from "react-scroll";
+import { SECTIONS } from "config";
 
 const Wrapper = styled.div`
   height: 100%;
@@ -23,14 +25,16 @@ const Icon = styled.img.attrs({
 `;
 
 const Roadmap = () => (
-  <Slanted medium background={IMAGES.ROADMAP_BACKGROUND}>
-    <PaddedContainer>
-      <Wrapper>
-        <Title>Roadmap</Title>
-        <Icon src={IMAGES.ROADMAP_SCHEDULE} />
-      </Wrapper>
-    </PaddedContainer>
-  </Slanted>
+  <Scroll.Element name={SECTIONS.ROADMAP}>
+    <Slanted medium background={IMAGES.ROADMAP_BACKGROUND}>
+      <PaddedContainer>
+        <Wrapper>
+          <Title>Roadmap</Title>
+          <Icon src={IMAGES.ROADMAP_SCHEDULE} />
+        </Wrapper>
+      </PaddedContainer>
+    </Slanted>
+  </Scroll.Element>
 );
 
 export default Roadmap;

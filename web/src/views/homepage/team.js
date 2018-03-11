@@ -3,6 +3,8 @@ import styled from "styled-components";
 import IMAGES from "assets/images";
 import Slanted from "views/homepage/slanted";
 import PaddedContainer from "views/homepage/padded-container";
+import * as Scroll from "react-scroll";
+import { SECTIONS } from "config";
 
 const Wrapper = styled.div`
   height: 100%;
@@ -88,33 +90,35 @@ const MemberCard = ({ picture, name, position, linkedIn }) => (
 );
 
 const Team = () => (
-  <Slanted medium colored background={IMAGES.TEAM_BACKGROUND}>
-    <PaddedContainer>
-      <Wrapper>
-        <Title>Meet Our Team</Title>
-        <Row>
-          <MemberCard
-            picture={IMAGES.TEAM_EDMUND}
-            name={"EDMUND MAI"}
-            position={"CO-FOUNDER"}
-            linkedIn={"https://www.linkedin.com/in/edmundmai"}
-          />
-          <MemberCard
-            picture={IMAGES.TEAM_AARON}
-            name={"AARON VASQUEZ"}
-            position={"CO-FOUNDER"}
-            linkedIn={"https://www.linkedin.com/in/aaronvasquezadilla"}
-          />
-          <MemberCard
-            picture={IMAGES.TEAM_JONATHAN}
-            name={"JONATHAN TOW"}
-            position={"SENIOR DEVELOPER"}
-            linkedIn={"https://www.linkedin.com/in/jonathan-tow-6399691a/"}
-          />
-        </Row>
-      </Wrapper>
-    </PaddedContainer>
-  </Slanted>
+  <Scroll.Element name={SECTIONS.TEAM}>
+    <Slanted medium colored background={IMAGES.TEAM_BACKGROUND}>
+      <PaddedContainer>
+        <Wrapper>
+          <Title>Meet Our Team</Title>
+          <Row>
+            <MemberCard
+              picture={IMAGES.TEAM_EDMUND}
+              name={"EDMUND MAI"}
+              position={"CO-FOUNDER"}
+              linkedIn={"https://www.linkedin.com/in/edmundmai"}
+            />
+            <MemberCard
+              picture={IMAGES.TEAM_AARON}
+              name={"AARON VASQUEZ"}
+              position={"CO-FOUNDER"}
+              linkedIn={"https://www.linkedin.com/in/aaronvasquezadilla"}
+            />
+            <MemberCard
+              picture={IMAGES.TEAM_JONATHAN}
+              name={"JONATHAN TOW"}
+              position={"SENIOR DEVELOPER"}
+              linkedIn={"https://www.linkedin.com/in/jonathan-tow-6399691a/"}
+            />
+          </Row>
+        </Wrapper>
+      </PaddedContainer>
+    </Slanted>
+  </Scroll.Element>
 );
 
 export default Team;

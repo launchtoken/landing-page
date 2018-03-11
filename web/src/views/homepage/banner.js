@@ -12,6 +12,7 @@ import Caption from "views/homepage/caption";
 import Text from "views/shared/text";
 import Floater from "views/homepage/floater";
 import IMAGES from "assets/images";
+import { SECTIONS } from "config";
 
 const Wrapper = styled.div`
   position: relative;
@@ -28,11 +29,9 @@ const Banner = () => (
     <Header>
       <Logo />
       <Navigation>
-        <NavigationLink href="www.google.com">HOME</NavigationLink>
-        <NavigationLink href="www.google.com">ABOUT</NavigationLink>
-        <NavigationLink href="www.google.com">TEAM</NavigationLink>
-        <NavigationLink href="www.google.com">ROADMAP</NavigationLink>
-        <NavigationLink href="www.google.com">CONTACT</NavigationLink>
+        <NavigationLink to={SECTIONS.ABOUT}>ABOUT</NavigationLink>
+        <NavigationLink to={SECTIONS.TEAM}>TEAM</NavigationLink>
+        <NavigationLink to={SECTIONS.ROADMAP}>ROADMAP</NavigationLink>
         <NavigationButton href="www.google.com">WHITEPAPER</NavigationButton>
         <NavigationButton highlighted href="www.google.com">
           REGISTER
