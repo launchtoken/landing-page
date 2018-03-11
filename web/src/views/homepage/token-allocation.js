@@ -33,7 +33,7 @@ const Roadmap = () => (
   <Slanted medium background={IMAGES.TOKEN_ALLOCATION_BACKGROUND}>
     <PaddedContainer>
       <Wrapper>
-        <Title>Launch Token In Numbers</Title>
+        <Title>Token Allocation</Title>
         <Text centered size="13px">
           Below is a breakdown of the sources of investment as well as the
           planned usage of the funds.
