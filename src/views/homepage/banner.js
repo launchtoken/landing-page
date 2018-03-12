@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import NavigationButton from "views/shared/navigation-button";
-import BannerSection from "views/homepage/banner-section";
 import EmailSignup from "views/homepage/email-signup";
 import Text from "views/shared/text";
 import Floater from "views/homepage/floater";
@@ -18,6 +17,18 @@ const Wrapper = styled.div`
 
   @media only screen and (max-width: 768px) {
     padding: 75px 30px 0 30px;
+    flex-direction: column;
+    height: 600px;
+  }
+`;
+
+const BannerSection = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 565px;
+
+  @media only screen and (max-width: 768px) {
+    width: auto;
   }
 `;
 
@@ -50,6 +61,30 @@ const Caption = styled.p`
   }
 `;
 
+const FormWrapper = styled.div`
+  margin-bottom: 10px;
+`;
+
+const Graphic = styled.div`
+  background-image: url(${IMAGES.BANNER_GRAPHIC});
+  height: 500px;
+  width: 432px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media only screen and (max-width: 768px) {
+    height: 300px;
+    width: 400px;
+  }
+`;
+
+const VideoButtonWrapper = styled.div`
+  @media only screen and (max-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
+`;
 const Banner = () => (
   <Wrapper>
     <BannerSection>
@@ -58,13 +93,15 @@ const Banner = () => (
         Launch Token allows you to create your own token and ICO crowdsale in
         minutes - without a single line of code.
       </Caption>
-      <div className="separated">
+      <FormWrapper>
         <EmailSignup />
-      </div>
-      <NavigationButton href="www.google.com">WATCH VIDEO ></NavigationButton>
+      </FormWrapper>
+      <VideoButtonWrapper>
+        <NavigationButton href="www.google.com">WATCH VIDEO ></NavigationButton>
+      </VideoButtonWrapper>
     </BannerSection>
     <BannerSection>
-      <img src={IMAGES.BANNER_GRAPHIC} width="500" height="432" />
+      <Graphic />
     </BannerSection>
     <Floater>
       <Text white size="10px">

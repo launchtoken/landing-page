@@ -13,6 +13,11 @@ const TextInput = styled.input.attrs({
   width: 232px;
   padding: 18px 32px;
   background-color: #ffffff;
+
+  @media only screen and (max-width: 768px) {
+    width: 154px;
+    height: 5;
+  }
 `;
 
 const HiddenWrapper = styled.div`
