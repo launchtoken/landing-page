@@ -9,14 +9,12 @@
     "styled-components": "^3.2.1"
   },
   "devDependencies": {
-    "husky": "^0.14.3",
     "react-scripts": "1.1.1"
   },
   "scripts": {
     "start": "NODE_PATH=src react-scripts start",
     "build": "NODE_PATH=src PUBLIC_URL='./' react-scripts build && cp docs/CNAME build/CNAME && rm -rf docs && mv build docs && rm -rf build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "prepush": "yarn build && git add . && git commit -am 'Builds production.'"
+    "eject": "react-scripts eject"
   }
 }
