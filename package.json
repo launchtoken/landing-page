@@ -16,6 +16,7 @@
     "start": "NODE_PATH=src react-scripts start",
     "build": "NODE_PATH=src PUBLIC_URL='./' react-scripts build && rm -rf docs && mv build docs && rm -rf build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prepush": "yarn build && git commit -am 'Builds production.'"
   }
 }
