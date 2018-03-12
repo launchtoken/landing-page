@@ -1,10 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import Logo from "views/shared/logo";
-import Navigation from "views/shared/navigation";
 import NavigationLink from "views/shared/navigation-link";
 import NavigationButton from "views/shared/navigation-button";
 import { SECTIONS } from "config";
+import IMAGES from "assets/images";
 
 const Wrapper = styled.div`
   position: absolute;
@@ -17,6 +16,32 @@ const Wrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   z-index: 1;
+
+  @media only screen and (max-width: 768px) {
+    margin: 0;
+    padding: 0px 20px;
+  }
+`;
+
+const Logo = styled.img.attrs({
+  src: IMAGES.LOGO
+})`
+  height: 63px;
+  width: 200px;
+
+  @media only screen and (max-width: 768px) {
+    height: 46px;
+    width: 153px;
+  }
+`;
+
+const Navigation = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  @media only screen and (max-width: 768px) {
+    visibility: hidden;
+  }
 `;
 
 const Header = () => (

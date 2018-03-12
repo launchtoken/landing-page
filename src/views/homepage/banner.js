@@ -3,8 +3,6 @@ import styled from "styled-components";
 import NavigationButton from "views/shared/navigation-button";
 import BannerSection from "views/homepage/banner-section";
 import EmailSignup from "views/homepage/email-signup";
-import Tagline from "views/homepage/tagline";
-import Caption from "views/homepage/caption";
 import Text from "views/shared/text";
 import Floater from "views/homepage/floater";
 import IMAGES from "assets/images";
@@ -17,6 +15,39 @@ const Wrapper = styled.div`
   padding: 140px;
   display: flex;
   justify-content: space-between;
+
+  @media only screen and (max-width: 768px) {
+    padding: 75px 30px 0 30px;
+  }
+`;
+
+const Tagline = styled.h1`
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 0px;
+  padding-right: 20px;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 31px;
+    padding-right: 0;
+    text-align: center;
+  }
+`;
+
+const Caption = styled.p`
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 25px;
+  padding-right: 92px;
+  margin-bottom: 35px;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 11px;
+    padding-right: 0;
+    text-align: center;
+  }
 `;
 
 const Banner = () => (
