@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Notification from "views/shared/notification";
+import Header from "views/shared/header";
 import Banner from "views/homepage/banner";
 import Countdown from "views/homepage/countdown";
 import Instructions from "views/homepage/instructions";
@@ -21,6 +22,7 @@ class Homepage extends Component {
           For investors interested in applying for the private pre-sale please
           contact our BD team at business@launchtoken.me
         </Notification>
+        <Header />
         <Banner />
         <Countdown />
         <Instructions />

@@ -1,9 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import Header from "views/shared/header";
-import Logo from "views/shared/logo";
-import Navigation from "views/shared/navigation";
-import NavigationLink from "views/shared/navigation-link";
 import NavigationButton from "views/shared/navigation-button";
 import BannerSection from "views/homepage/banner-section";
 import EmailSignup from "views/homepage/email-signup";
@@ -12,7 +8,6 @@ import Caption from "views/homepage/caption";
 import Text from "views/shared/text";
 import Floater from "views/homepage/floater";
 import IMAGES from "assets/images";
-import { SECTIONS } from "config";
 
 const Wrapper = styled.div`
   position: relative;
@@ -26,18 +21,6 @@ const Wrapper = styled.div`
 
 const Banner = () => (
   <Wrapper>
-    <Header>
-      <Logo />
-      <Navigation>
-        <NavigationLink to={SECTIONS.ABOUT}>ABOUT</NavigationLink>
-        <NavigationLink to={SECTIONS.TEAM}>TEAM</NavigationLink>
-        <NavigationLink to={SECTIONS.ROADMAP}>ROADMAP</NavigationLink>
-        <NavigationButton href="www.google.com">WHITEPAPER</NavigationButton>
-        <NavigationButton highlighted href="www.google.com">
-          REGISTER
-        </NavigationButton>
-      </Navigation>
-    </Header>
     <BannerSection>
       <Tagline>Create Your First ICO Landing Page</Tagline>
       <Caption>
