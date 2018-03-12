@@ -14,6 +14,7 @@
   "scripts": {
     "start": "NODE_PATH=src react-scripts start",
     "build": "NODE_PATH=src PUBLIC_URL='./' react-scripts build && cp docs/CNAME build/CNAME && rm -rf docs && mv build docs && rm -rf build",
+    "build-commit": "yarn build && git add . && git commit -am 'Builds Production'",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }
