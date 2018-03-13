@@ -61,19 +61,25 @@ const Media = () => (
         src={IMAGES.FOOTER_FACEBOOK}
       />
       <SocialMedia
-        href={"https://www.google.com"}
+        href={"https://twitter.com/launchtoken_ico"}
         src={IMAGES.FOOTER_TWITTER}
       />
       <SocialMedia
-        href={"https://www.google.com"}
+        href={"https://www.linkedin.com/company/launch-token/"}
         src={IMAGES.FOOTER_LINKEDIN}
       />
       <SocialMedia
-        href={"https://www.google.com"}
+        href={"https://t.me/joinchat/GyRIcxLhxjsQxw5e-wYVzw"}
         src={IMAGES.FOOTER_TELEGRAM}
       />
-      <SocialMedia href={"https://www.google.com"} src={IMAGES.FOOTER_GITHUB} />
-      <SocialMedia href={"https://www.google.com"} src={IMAGES.FOOTER_MEDIUM} />
+      <SocialMedia
+        href={"https://github.com/launchtoken"}
+        src={IMAGES.FOOTER_GITHUB}
+      />
+      <SocialMedia
+        href={"https://medium.com/launch-token"}
+        src={IMAGES.FOOTER_MEDIUM}
+      />
     </Row>
     <Disclaimer>© 2018 Launch Token All rights reserved.</Disclaimer>
   </Wrapper>
