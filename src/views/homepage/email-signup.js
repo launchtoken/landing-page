@@ -16,7 +16,7 @@ const TextInput = styled.input.attrs({
 
   @media only screen and (max-width: 768px) {
     width: 154px;
-    height: 5;
+    height: 5px;
   }
 `;
 

@@ -18,10 +18,7 @@ class Homepage extends Component {
   render() {
     return (
       <div>
-        <Notification>
-          For investors interested in applying for the private pre-sale please
-          contact our BD team at business@launchtoken.me
-        </Notification>
+        <Notification text="For investors interested in applying for the private pre-sale please contact our BD team at business@launchtoken.me" />
         <Header />
         <Banner />
         <Countdown />

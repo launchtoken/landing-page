@@ -3,7 +3,6 @@ import styled from "styled-components";
 import NavigationButton from "views/shared/navigation-button";
 import EmailSignup from "views/homepage/email-signup";
 import Text from "views/shared/text";
-import Floater from "views/homepage/floater";
 import IMAGES from "assets/images";
 
 const Wrapper = styled.div`
@@ -16,7 +15,7 @@ const Wrapper = styled.div`
   justify-content: space-between;
 
   @media only screen and (max-width: 768px) {
-    padding: 75px 30px 0 30px;
+    padding: 75px 30px 84px 30px;
     flex-direction: column;
     height: 600px;
   }
@@ -63,6 +62,9 @@ const Caption = styled.p`
 
 const FormWrapper = styled.div`
   margin-bottom: 10px;
+  @media only screen and (max-width: 768px) {
+    margin-bottom: 32px;
+  }
 `;
 
 const Graphic = styled.div`
@@ -85,6 +87,12 @@ const VideoButtonWrapper = styled.div`
     justify-content: center;
   }
 `;
+
+const Floater = styled.div`
+  position: absolute;
+  bottom: 20px;
+`;
+
 const Banner = () => (
   <Wrapper>
     <BannerSection>

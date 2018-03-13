@@ -13,6 +13,11 @@ const Container = styled.div`
   margin: auto;
   z-index: 1;
   background: #140f30;
+
+  @media only screen and (max-width: 768px) {
+    top: -76px;
+    width: 405px;
+  }
 `;
 
 const Wrapper = styled.div`

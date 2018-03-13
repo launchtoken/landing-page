@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import IMAGES from "assets/images";
-import Step from "views/homepage/step";
 import Slanted from "views/homepage/slanted";
 import PaddedContainer from "views/homepage/padded-container";
 import * as Scroll from "react-scroll";
@@ -10,23 +9,37 @@ import { SECTIONS } from "config";
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  height: 350px;
+  min-height: 350px;
+  @media only screen and (max-width: 768px) {
+    padding-top: 140px;
+  }
 `;
 
 const Section = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 350px;
   margin-top: 35px;
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+    min-height: 350px;
+  }
+`;
+
+const Step = styled.div`
+  display: flex;
+  width: 288px;
+  min-height: 300px;
+  flex-direction: column;
+  align-items: center;
 `;
 
 const Icon = styled.div`
   background-image: url(${props => props.src});
   background-size: contain;
   background-repeat: no-repeat;
-  width: 130px;
-  height: 110px;
+  min-width: 130px;
+  min-height: 110px;
 `;
 
 const Arrow = styled.img.attrs({
@@ -34,6 +47,9 @@ const Arrow = styled.img.attrs({
 })`
   width: 20%;
   margin-bottom: 100px;
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const Title = styled.p`
