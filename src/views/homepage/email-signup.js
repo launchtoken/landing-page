@@ -53,7 +53,7 @@ const SubmitButton = styled.input.attrs({
 
 const EmailSignup = () => (
   <form
-    action="https://meetbanana.us14.list-manage.com/subscribe/post?u=921546087f13c068ba3c967f3&amp;id=973877c8ea"
+    action="https://launchtoken.us12.list-manage.com/subscribe/post?u=35e87b924e3b5394fbcf4c3cb&amp;id=9189356410"
     method="post"
     id="mc-embedded-subscribe-form"
     name="mc-embedded-subscribe-form"
@@ -65,7 +65,7 @@ const EmailSignup = () => (
     <HiddenWrapper aria-hidden="true">
       <input
         type="text"
-        name="b_921546087f13c068ba3c967f3_973877c8ea"
+        name="b_35e87b924e3b5394fbcf4c3cb_9189356410"
         tabIndex="-1"
         value=""
       />
