@@ -23,9 +23,10 @@ const Wrapper = styled.div`
   }
 `;
 
-const Logo = styled.img.attrs({
-  src: IMAGES.LOGO
-})`
+const Logo = styled.div`
+  background-image: url(${IMAGES.LOGO});
+  background-size: contain;
+  background-repeat: no-repeat;
   height: 63px;
   width: 200px;
 
