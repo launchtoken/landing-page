@@ -6,6 +6,10 @@ import PaddedContainer from "views/homepage/padded-container";
 
 const Wrapper = styled.div`
   height: 100%;
+
+  @media only screen and (max-width: 768px) {
+    padding: 100px 0;
+  }
 `;
 
 const Title = styled.h3`
@@ -13,6 +17,10 @@ const Title = styled.h3`
   font-weight: bold;
   color: white;
   text-align: center;
+
+  @media only screen and (max-width: 768px) {
+    padding: 0 75px;
+  }
 `;
 
 const Icon = styled.div`
@@ -41,6 +49,9 @@ const Column = styled.div`
   flex-direction: column;
   margin: 0 10px;
   margin-top: ${props => (props.higher ? "-50px" : 0)};
+  @media only screen and (max-width: 768px) {
+    margin-top: 0;
+  }
 `;
 
 const CardContainer = styled.div`
@@ -48,6 +59,10 @@ const CardContainer = styled.div`
   align-items: center;
   justify-content: center;
   padding-top: 50px;
+
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 const Card = styled.div`
