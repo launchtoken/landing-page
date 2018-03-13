@@ -57,7 +57,7 @@ const Media = () => (
     <Title>STALK US!</Title>
     <Row>
       <SocialMedia
-        href={"https://www.google.com"}
+        href={"https://www.facebook.com/Launch-Token-1813518075621715/"}
         src={IMAGES.FOOTER_FACEBOOK}
       />
       <SocialMedia
