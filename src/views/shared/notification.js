@@ -20,9 +20,17 @@ const Text = styled.span`
   color: white;
 `;
 
-const Notification = ({ text }) => (
+const Link = styled.a`
+  color: white;
+`;
+
+const Notification = ({ children }) => (
   <Wrapper>
-    <Text>{text}</Text>
+    <Text>
+      For investors interested in applying for the private pre-sale please
+      contact our BD team at{" "}
+      <Link href="mailto:business@launchtoken.me">business@launchtoken.me</Link>
+    </Text>
   </Wrapper>
 );
 
