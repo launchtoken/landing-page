@@ -17,7 +17,7 @@ const Container = styled.div`
   z-index: 1;
   background: #140f30;
 
-  @media (max-width: 768px) {
+  @media only screen and (max-width: 768px) {
     top: -76px;
     width: 380px;
   }

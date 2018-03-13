@@ -11,7 +11,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
   height: 100%;
-  @media (max-width: 768px) {
+  @media only screen and (max-width: 768px) {
     padding: 125px 0;
   }
 `;
@@ -28,7 +28,7 @@ const DesktopGraphic = styled.img.attrs({
   src: props => props.src
 })`
   width: 100%;
-  @media (max-width: 768px) {
+  @media only screen and (max-width: 768px) {
     display: none;
   }
 `;
@@ -37,7 +37,7 @@ const MobileGraphic = styled.img.attrs({
   src: props => props.src
 })`
   width: 265px;
-  @media (min-width: 768px) {
+  @media only screen and (min-width: 768px) {
     display: none;
   }
 `;

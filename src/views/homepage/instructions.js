@@ -10,7 +10,7 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   min-height: 350px;
-  @media (max-width: 768px) {
+  @media only screen and (max-width: 768px) {
     padding-top: 140px;
   }
 `;
@@ -20,7 +20,7 @@ const Section = styled.div`
   justify-content: space-around;
   align-items: center;
   margin-top: 35px;
-  @media (max-width: 768px) {
+  @media only screen and (max-width: 768px) {
     flex-direction: column;
     min-height: 350px;
   }
@@ -47,7 +47,7 @@ const Arrow = styled.img.attrs({
 })`
   width: 20%;
   margin-bottom: 100px;
-  @media (max-width: 768px) {
+  @media only screen and (max-width: 768px) {
     display: none;
   }
 `;

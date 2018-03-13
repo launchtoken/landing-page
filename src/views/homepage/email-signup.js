@@ -14,7 +14,7 @@ const TextInput = styled.input.attrs({
   padding: 18px 32px;
   background-color: #ffffff;
 
-  @media (max-width: 768px) {
+  @media only screen and (max-width: 768px) {
     width: 154px;
     height: 5px;
   }
@@ -46,7 +46,7 @@ const SubmitButton = styled.input.attrs({
   color: white;
   box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.2);
   padding: 0 20px;
-  @media (max-width: 768px) {
+  @media only screen and (max-width: 768px) {
     padding: 0 8px;
   }
 `;
