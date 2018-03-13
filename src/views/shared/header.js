@@ -17,7 +17,7 @@ const Wrapper = styled.div`
   align-items: center;
   z-index: 1;
 
-  @media only screen and (max-width: 768px) {
+  @media (max-width: 768px) {
     margin: 0;
     padding: 0px 20px;
   }
@@ -29,7 +29,7 @@ const Logo = styled.img.attrs({
   height: 63px;
   width: 200px;
 
-  @media only screen and (max-width: 768px) {
+  @media (max-width: 768px) {
     height: 46px;
     width: 153px;
   }
@@ -39,7 +39,7 @@ const Navigation = styled.div`
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  @media only screen and (max-width: 768px) {
+  @media (max-width: 768px) {
     visibility: hidden;
   }
 `;

@@ -9,7 +9,7 @@ const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
 
-  @media only screen and (max-width: 768px) {
+  @media (max-width: 768px) {
     padding: 0 10px;
   }
 `;

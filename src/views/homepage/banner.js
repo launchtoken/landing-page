@@ -14,7 +14,7 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
 
-  @media only screen and (max-width: 768px) {
+  @media (max-width: 768px) {
     padding: 75px 30px 84px 30px;
     flex-direction: column;
     height: 600px;
@@ -26,7 +26,7 @@ const BannerSection = styled.div`
   flex-direction: column;
   width: 565px;
 
-  @media only screen and (max-width: 768px) {
+  @media (max-width: 768px) {
     width: auto;
   }
 `;
@@ -38,7 +38,7 @@ const Tagline = styled.h1`
   margin-bottom: 0px;
   padding-right: 20px;
 
-  @media only screen and (max-width: 768px) {
+  @media (max-width: 768px) {
     font-size: 31px;
     padding-right: 0;
     text-align: center;
@@ -53,7 +53,7 @@ const Caption = styled.p`
   padding-right: 92px;
   margin-bottom: 35px;
 
-  @media only screen and (max-width: 768px) {
+  @media (max-width: 768px) {
     font-size: 11px;
     padding-right: 0;
     text-align: center;
@@ -62,7 +62,7 @@ const Caption = styled.p`
 
 const FormWrapper = styled.div`
   margin-bottom: 10px;
-  @media only screen and (max-width: 768px) {
+  @media (max-width: 768px) {
     display: flex;
     justify-content: center;
     margin-bottom: 32px;
@@ -77,14 +77,14 @@ const Graphic = styled.div`
   background-position: center;
   background-repeat: no-repeat;
 
-  @media only screen and (max-width: 768px) {
+  @media (max-width: 768px) {
     height: 300px;
     width: 400px;
   }
 `;
 
 const VideoButtonWrapper = styled.div`
-  @media only screen and (max-width: 768px) {
+  @media (max-width: 768px) {
     display: flex;
     justify-content: center;
   }
@@ -93,7 +93,7 @@ const VideoButtonWrapper = styled.div`
 const Floater = styled.div`
   position: absolute;
   bottom: 20px;
-  @media only screen and (max-width: 768px) {
+  @media (max-width: 768px) {
     display: none;
   }
 `;

@@ -6,7 +6,7 @@ import PaddedContainer from "views/homepage/padded-container";
 
 const Wrapper = styled.div`
   height: 100%;
-  @media only screen and (max-width: 768px) {
+  @media (max-width: 768px) {
     padding: 125px 0;
   }
 `;
@@ -14,7 +14,7 @@ const Wrapper = styled.div`
 const Row = styled.div`
   display: flex;
   margin-bottom: 50px;
-  @media only screen and (max-width: 768px) {
+  @media (max-width: 768px) {
     flex-direction: column;
     margin-bottom: 0;
     align-items: center;
@@ -37,7 +37,7 @@ const Logo = styled.div`
   height: 40px;
   margin: 0 10px;
 
-  @media only screen and (max-width: 768px) {
+  @media (max-width: 768px) {
     margin-bottom: 20px;
   }
 `;
@@ -47,7 +47,7 @@ const LogoWrapper = styled.div`
 `;
 
 const TableContainer = styled.div`
-  @media only screen and (max-width: 768px) {
+  @media (max-width: 768px) {
     display: flex;
     justify-content: center;
   }

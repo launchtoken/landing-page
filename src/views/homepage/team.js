@@ -8,7 +8,7 @@ import { SECTIONS } from "config";
 
 const Wrapper = styled.div`
   height: 100%;
-  @media only screen and (max-width: 768px) {
+  @media (max-width: 768px) {
     padding: 125px 0;
   }
 `;
@@ -16,7 +16,7 @@ const Wrapper = styled.div`
 const Row = styled.div`
   display: flex;
   justify-content: center;
-  @media only screen and (max-width: 768px) {
+  @media (max-width: 768px) {
     flex-direction: column;
   }
 `;
@@ -25,7 +25,7 @@ const Info = styled.div`
   display: flex;
   padding-top: 5px;
   justify-content: space-between;
-  @media only screen and (max-width: 768px) {
+  @media (max-width: 768px) {
     width: 180px;
   }
 `;
@@ -36,7 +36,7 @@ const Member = styled.div`
   justify-content: center;
   border-radius: 2px;
   margin: 0 10px 10px;
-  @media only screen and (max-width: 768px) {
+  @media (max-width: 768px) {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 50px;

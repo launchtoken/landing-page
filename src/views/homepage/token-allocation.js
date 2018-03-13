@@ -7,7 +7,7 @@ import PaddedContainer from "views/homepage/padded-container";
 
 const Wrapper = styled.div`
   height: 100%;
-  @media only screen and (max-width: 768px) {
+  @media (max-width: 768px) {
     padding: 125px 0;
   }
 `;
@@ -31,7 +31,7 @@ const DesktopGraphic = styled.div`
   width: 600px;
   height: 380px;
 
-  @media only screen and (max-width: 768px) {
+  @media (max-width: 768px) {
     display: none;
   }
 `;
@@ -43,7 +43,7 @@ const MobileGraphic = styled.div`
   width: 335px;
   height: 800px;
 
-  @media only screen and (min-width: 768px) {
+  @media (min-width: 768px) {
     display: none;
   }
 `;
