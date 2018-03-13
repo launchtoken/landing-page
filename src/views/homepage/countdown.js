@@ -1,5 +1,8 @@
 import React from "react";
 import styled from "styled-components";
+import Countdown from "react-countdown-now";
+
+import { PRESALE } from "config";
 
 const Container = styled.div`
   display: flex;
@@ -66,23 +69,32 @@ const Colon = styled.p`
   align-self: flex-start;
 `;
 
-const Countdown = () => (
+const Timer = () => (
   <Wrapper>
     <Container>
       <Title>LAUNCHING IN:</Title>
       <TimeWrapper>
         <TimeSection>
-          <TimeValue>12</TimeValue>
+          <Countdown
+            date={PRESALE.DATE}
+            renderer={({ days }) => <TimeValue>{days}</TimeValue>}
+          />
           <TimeUnit>DAYS</TimeUnit>
         </TimeSection>
         <Colon>:</Colon>
         <TimeSection>
-          <TimeValue>36</TimeValue>
+          <Countdown
+            date={PRESALE.DATE}
+            renderer={({ hours }) => <TimeValue>{hours}</TimeValue>}
+          />
           <TimeUnit>HOURS</TimeUnit>
         </TimeSection>
         <Colon>:</Colon>
         <TimeSection>
-          <TimeValue>59</TimeValue>
+          <Countdown
+            date={PRESALE.DATE}
+            renderer={({ minutes }) => <TimeValue>{minutes}</TimeValue>}
+          />
           <TimeUnit>MINS</TimeUnit>
         </TimeSection>
       </TimeWrapper>
@@ -90,4 +102,4 @@ const Countdown = () => (
   </Wrapper>
 );
 
-export default Countdown;
+export default Timer;
