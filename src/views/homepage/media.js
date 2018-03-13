@@ -6,11 +6,19 @@ import PaddedContainer from "views/homepage/padded-container";
 
 const Wrapper = styled.div`
   height: 100%;
+  @media only screen and (max-width: 768px) {
+    padding: 125px 0;
+  }
 `;
 
 const Row = styled.div`
   display: flex;
   margin-bottom: 50px;
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+    margin-bottom: 0;
+    align-items: center;
+  }
 `;
 
 const Title = styled.h3`
@@ -28,10 +36,21 @@ const Logo = styled.div`
   width: 145px;
   height: 40px;
   margin: 0 10px;
+
+  @media only screen and (max-width: 768px) {
+    margin-bottom: 20px;
+  }
 `;
 
 const LogoWrapper = styled.div`
   width: 200px;
+`;
+
+const TableContainer = styled.div`
+  @media only screen and (max-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
 `;
 
 const Company = ({ src }) => (
@@ -45,16 +64,18 @@ const Media = () => (
     <PaddedContainer>
       <Wrapper>
         <Title>FEATURED BY</Title>
-        <Row>
-          <Company src={IMAGES.MEDIA_NBC} />
-          <Company src={IMAGES.MEDIA_SINGULARITY} />
-          <Company src={IMAGES.MEDIA_TECH_IN_ASIA} />
-          <Company src={IMAGES.MEDIA_FASTCOMPANY} />
-        </Row>
-        <Row>
-          <Company src={IMAGES.MEDIA_TECH_IN_ASIA} />
-          <Company src={IMAGES.MEDIA_FASTCOMPANY} />
-        </Row>
+        <TableContainer>
+          <Row>
+            <Company src={IMAGES.MEDIA_NBC} />
+            <Company src={IMAGES.MEDIA_SINGULARITY} />
+            <Company src={IMAGES.MEDIA_TECH_IN_ASIA} />
+            <Company src={IMAGES.MEDIA_FASTCOMPANY} />
+          </Row>
+          <Row>
+            <Company src={IMAGES.MEDIA_TECH_IN_ASIA} />
+            <Company src={IMAGES.MEDIA_FASTCOMPANY} />
+          </Row>
+        </TableContainer>
       </Wrapper>
     </PaddedContainer>
   </Slanted>

@@ -7,6 +7,9 @@ import PaddedContainer from "views/homepage/padded-container";
 
 const Wrapper = styled.div`
   height: 100%;
+  @media only screen and (max-width: 768px) {
+    padding: 125px 0;
+  }
 `;
 
 const ImageContainer = styled.div`
@@ -21,12 +24,28 @@ const Title = styled.h3`
   text-align: center;
 `;
 
-const Graphic = styled.div`
+const DesktopGraphic = styled.div`
   background-image: url(${props => props.src});
   background-size: contain;
   background-repeat: no-repeat;
   width: 600px;
   height: 380px;
+
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
+`;
+
+const MobileGraphic = styled.div`
+  background-image: url(${props => props.src});
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 335px;
+  height: 800px;
+
+  @media only screen and (min-width: 768px) {
+    display: none;
+  }
 `;
 
 const Roadmap = () => (
@@ -39,7 +58,8 @@ const Roadmap = () => (
           planned usage of the funds.
         </Text>
         <ImageContainer>
-          <Graphic src={IMAGES.TOKEN_ALLOCATION_GRAPH} />
+          <DesktopGraphic src={IMAGES.TOKEN_ALLOCATION_GRAPH_DESKTOP} />
+          <MobileGraphic src={IMAGES.TOKEN_ALLOCATION_GRAPH_MOBILE} />
         </ImageContainer>
       </Wrapper>
     </PaddedContainer>

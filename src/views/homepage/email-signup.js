@@ -28,14 +28,13 @@ const HiddenWrapper = styled.div`
 const SubmitButton = styled.input.attrs({
   type: "submit",
   name: "subscribe",
-  value: "PRE-REGISTER >>>",
+  value: "PRE-REGISTER",
   id: "mc-embedded-subscribe"
 })`
   margin: 0px 5px;
   cursor: pointer;
   font-size: 12px;
   height: 38px;
-  width: 144px;
   border-width: 2px;
   border-style: solid;
   border-color: #6a48fd;
@@ -46,6 +45,10 @@ const SubmitButton = styled.input.attrs({
       : "#270668"};
   color: white;
   box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.2);
+  padding: 0 20px;
+  @media only screen and (max-width: 768px) {
+    padding: 0 8px;
+  }
 `;
 
 const EmailSignup = () => (

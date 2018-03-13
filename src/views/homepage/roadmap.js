@@ -7,7 +7,13 @@ import * as Scroll from "react-scroll";
 import { SECTIONS } from "config";
 
 const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   height: 100%;
+  @media only screen and (max-width: 768px) {
+    padding: 125px 0;
+  }
 `;
 
 const Title = styled.h3`
@@ -18,10 +24,22 @@ const Title = styled.h3`
   text-align: center;
 `;
 
-const Icon = styled.img.attrs({
+const DesktopGraphic = styled.img.attrs({
   src: props => props.src
 })`
   width: 100%;
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
+`;
+
+const MobileGraphic = styled.img.attrs({
+  src: props => props.src
+})`
+  width: 265px;
+  @media only screen and (min-width: 768px) {
+    display: none;
+  }
 `;
 
 const Roadmap = () => (
@@ -30,7 +48,8 @@ const Roadmap = () => (
       <PaddedContainer>
         <Wrapper>
           <Title>Roadmap</Title>
-          <Icon src={IMAGES.ROADMAP_SCHEDULE} />
+          <DesktopGraphic src={IMAGES.ROADMAP_SCHEDULE_DESKTOP} />
+          <MobileGraphic src={IMAGES.ROADMAP_SCHEDULE_MOBILE} />
         </Wrapper>
       </PaddedContainer>
     </Slanted>

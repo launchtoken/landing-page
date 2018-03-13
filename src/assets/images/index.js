@@ -21,9 +21,11 @@ import SUMMARY_EASY_TO_USE from "./summary-easy-to-use.png";
 import SUMMARY_RESPONSIVE from "./summary-responsive.png";
 import SUMMARY_SUPPORT from "./summary-support.png";
 import ROADMAP_BACKGROUND from "./roadmap-background.png";
-import ROADMAP_SCHEDULE from "./roadmap-schedule.png";
+import ROADMAP_SCHEDULE_DESKTOP from "./roadmap-schedule-desktop.png";
+import ROADMAP_SCHEDULE_MOBILE from "./roadmap-schedule-mobile.png";
 import TOKEN_ALLOCATION_BACKGROUND from "./token-allocation-background.png";
-import TOKEN_ALLOCATION_GRAPH from "./token-allocation-graph.png";
+import TOKEN_ALLOCATION_GRAPH_DESKTOP from "./token-allocation-graph-desktop.png";
+import TOKEN_ALLOCATION_GRAPH_MOBILE from "./token-allocation-graph-mobile.png";
 import TEAM_BACKGROUND from "./team-background.png";
 import TEAM_LINKEDIN from "./team-linkedin.png";
 import TEAM_EDMUND from "./team-edmund.png";
@@ -67,9 +69,11 @@ export default {
   SUMMARY_DOMAIN,
   SUMMARY_API,
   ROADMAP_BACKGROUND,
-  ROADMAP_SCHEDULE,
+  ROADMAP_SCHEDULE_DESKTOP,
+  ROADMAP_SCHEDULE_MOBILE,
   TOKEN_ALLOCATION_BACKGROUND,
-  TOKEN_ALLOCATION_GRAPH,
+  TOKEN_ALLOCATION_GRAPH_DESKTOP,
+  TOKEN_ALLOCATION_GRAPH_MOBILE,
   TEAM_BACKGROUND,
   TEAM_LINKEDIN,
   TEAM_EDMUND,

@@ -63,6 +63,8 @@ const Caption = styled.p`
 const FormWrapper = styled.div`
   margin-bottom: 10px;
   @media only screen and (max-width: 768px) {
+    display: flex;
+    justify-content: center;
     margin-bottom: 32px;
   }
 `;
@@ -91,6 +93,9 @@ const VideoButtonWrapper = styled.div`
 const Floater = styled.div`
   position: absolute;
   bottom: 20px;
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const Banner = () => (
