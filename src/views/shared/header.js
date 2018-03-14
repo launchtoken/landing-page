@@ -41,7 +41,7 @@ const Navigation = styled.div`
   justify-content: flex-end;
   align-items: center;
   @media only screen and (max-width: 768px) {
-    visibility: hidden;
+    display: none;
   }
 `;
 

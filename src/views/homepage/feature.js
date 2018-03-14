@@ -17,11 +17,13 @@ const LeftGraphic = styled.div`
   background-image: url(${props => props.src});
   background-size: contain;
   background-repeat: no-repeat;
-  min-width: 413px;
+  width: 413px;
   height: 300px;
   display: ${props => (props.imageOnLeft ? "initial" : "none")};
   @media only screen and (max-width: 768px) {
     display: initial;
+    width: 330px;
+    height: 250px;
   }
 `;
 
@@ -34,7 +36,7 @@ const RightGraphic = styled.div`
   display: ${props => (!props.imageOnLeft ? "initial" : "none")};
   @media only screen and (max-width: 768px) {
     display: none;
-    min-width: 365px;
+    width: 365px;
     height: 235px;
   }
 `;

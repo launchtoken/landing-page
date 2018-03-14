@@ -15,7 +15,8 @@ const TextInput = styled.input.attrs({
   background-color: #ffffff;
 
   @media only screen and (max-width: 768px) {
-    width: 154px;
+    font-size: 11px;
+    width: 104px;
     height: 5px;
   }
 `;

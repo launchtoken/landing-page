@@ -83,8 +83,8 @@ const Instructions = () => (
               <Icon src={IMAGES.HOW_IT_WORKS_1} />
               <Title>STEP 1: CREATE TOKEN</Title>
               <Description>
-                Create a new token by filling out a simple form, or input an
-                existing ERC-20 token.
+                Create a new token on the Launch Token platform by filling out a
+                simple form, or input an existing ERC-20 token.
               </Description>
             </Step>
             <Arrow src={IMAGES.HOW_IT_WORKS_ARROW_1} />
@@ -92,7 +92,7 @@ const Instructions = () => (
               <Icon src={IMAGES.HOW_IT_WORKS_2} />
               <Title>STEP 2: DESIGN PAGE</Title>
               <Description>
-                Select from several ICO models, and customize professionally
+                Select from several ICO models, and choose from professionally
                 designed website templates.
               </Description>
             </Step>
@@ -101,8 +101,8 @@ const Instructions = () => (
               <Icon src={IMAGES.HOW_IT_WORKS_3} />
               <Title>STEP 3: LAUNCH</Title>
               <Description>
-                Start fundraising using decentralized smart contracts to manage
-                your entire crowdsale!
+                Start fundraising using Launch Token's decentralized smart
+                contracts to manage your entire crowdsale!
               </Description>
             </Step>
           </Section>

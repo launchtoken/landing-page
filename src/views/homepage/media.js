@@ -18,6 +18,7 @@ const Row = styled.div`
     flex-direction: column;
     margin-bottom: 0;
     align-items: center;
+    margin-right: 10px;
   }
 `;
 
@@ -38,12 +39,15 @@ const Logo = styled.div`
   margin: 0 10px;
 
   @media only screen and (max-width: 768px) {
-    margin-bottom: 20px;
+    margin: 0 0 20px 0;
   }
 `;
 
 const LogoWrapper = styled.div`
   width: 200px;
+  @media only screen and (max-width: 768px) {
+    width: 150px;
+  }
 `;
 
 const TableContainer = styled.div`
