@@ -109,9 +109,6 @@ const Banner = () => (
       <FormWrapper>
         <EmailSignup />
       </FormWrapper>
-      <VideoButtonWrapper>
-        <NavigationButton href="www.google.com">WATCH VIDEO ></NavigationButton>
-      </VideoButtonWrapper>
     </BannerSection>
     <BannerSection>
       <Graphic />
