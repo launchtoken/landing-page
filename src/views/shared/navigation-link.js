@@ -12,7 +12,7 @@ const LinkText = styled.p`
 `;
 
 const NavigationLink = ({ to, children }) => (
-  <Scroll.Link to={to}>
+  <Scroll.Link to={to} smooth={true}>
     <LinkText>{children}</LinkText>
   </Scroll.Link>
 );
