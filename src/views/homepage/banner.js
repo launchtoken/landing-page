@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+
+import Header from "views/shared/header";
 import NavigationButton from "views/shared/navigation-button";
 import EmailSignup from "views/homepage/email-signup";
 import Text from "views/shared/text";
@@ -100,6 +102,7 @@ const Floater = styled.div`
 
 const Banner = () => (
   <Wrapper>
+    <Header />
     <BannerSection>
       <Tagline>Create Your First ICO Landing Page</Tagline>
       <Caption>

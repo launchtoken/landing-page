@@ -12,13 +12,13 @@ const Wrapper = styled.div`
   right: 0;
   height: 83px;
   display: flex;
-  margin: 15px 141px 0 141px;
+  margin: -20px 141px 0 141px;
   justify-content: space-between;
   align-items: center;
   z-index: 1;
 
   @media only screen and (max-width: 768px) {
-    margin: 0;
+    margin: -40px 0 0 0;
     padding: 0px 20px;
   }
 `;
