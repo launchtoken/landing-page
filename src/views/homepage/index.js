@@ -48,7 +48,7 @@ class Homepage extends Component {
           icon={IMAGES.FEATURE_ICON_3}
           title={"Decentralized & Secure"}
           description={
-            "Build on top of the secure Launch Token protocol and decentralize all parts of your ICO to ensure trust in your investors."
+            "Build on top of the secure Launch Token protocol and decentralize all parts of your ICO to ensure trust in your investors. Investors have access to refunds through a collective vote in case of scams."
           }
         />
         <Summary />

@@ -53,9 +53,6 @@ const Header = () => (
       <NavigationLink to={SECTIONS.TEAM}>TEAM</NavigationLink>
       <NavigationLink to={SECTIONS.ROADMAP}>ROADMAP</NavigationLink>
       <NavigationButton href="www.google.com">WHITEPAPER</NavigationButton>
-      <NavigationButton highlighted href="www.google.com">
-        REGISTER
-      </NavigationButton>
     </Navigation>
   </Wrapper>
 );
