@@ -6,15 +6,15 @@ import { SECTIONS } from "config";
 import IMAGES from "assets/images";
 
 const Wrapper = styled.div`
-  position: absolute;
-  top: 50px;
-  left: 0;
-  right: 0;
-  height: 83px;
-  display: flex;
-  margin: -20px 141px 0 141px;
-  justify-content: space-between;
   align-items: center;
+  display: flex;
+  height: 83px;
+  justify-content: space-between;
+  left: 0;
+  margin: -20px 141px 0 141px;
+  position: absolute;
+  right: 0;
+  top: 50px;
   z-index: 1;
 
   @media only screen and (max-width: 768px) {
