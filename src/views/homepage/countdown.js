@@ -12,8 +12,8 @@ const Container = styled.div`
   left: 0;
   right: 0;
   width: 450px;
-  height: 130px;
   margin: auto;
+  padding: 15px 0;
   z-index: 1;
   background: #140f30;
 
@@ -28,7 +28,7 @@ const Wrapper = styled.div`
 `;
 
 const Title = styled.h3`
-  margin-bottom: 0;
+  margin: 0;
   font-size: 13px;
   font-weight: bold;
   color: white;
