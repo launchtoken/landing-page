@@ -1,11 +1,11 @@
 language: node_js
 node_js:
-  - "stable"
+- stable
 cache:
   directories:
-    - node_modules
+  - node_modules
   script:
-    - npm run build
+  - npm run build
 deploy:
   provider: s3
   access_key_id: AKIAID6JDLWFEURI7Q6Q
@@ -19,4 +19,4 @@ deploy:
     repo: launchtoken/landing-page
 notifications:
   slack:
-    secure: QSR4S4+8R7jg6qRTY9cHGhQRw/tfvEep6CtIEym6L3UfWexscDVbTccLFRnmpi5yhL3zVt5jllX0AODbQxI0aWZaDFjBUCdd717JQw/nlvsYDueIIWNc+Nmb5vZ92qvZsvQbEi73zxnLnnxS0E8ClJ5DdCSYjoiQml420edMPQnHGLiud/kJNs9Y+xpXkCSW4ZLDyVjU9i9thocuWinjUExL/zEil2pn0/UND4a5lw86/RRoOxC+jJIlNKQRY3ILd2wW0WzHUQPgiuQbo2Uj5MHkQdDHf/sdiPVwxS8AgknNbhOAzfkIqo2aRQBOJnvBpyjunZhvDiJcEoKTyhx73Ykcb4HDv0NOYNblroILWCXp85qG+wSpZMIGSacncKn8925+luLv7f/Rpkgg6bK7gyvHvFpgrHjXxepfaGIv7+PDFPLLdHl1NhJwH4bUvRvF/s/PSSTeFg/8YlYZ1zDdwqHVZBrux2q/ED21tD2sOEG1q4RmqEu6XFxyfIPMkZyY7ZT78afC/uj3XdFaxdSqxhOYJkbc5+q3Ybw1IpFLa33KCKLqA/edhFwbXjY/sh32e8KfcsB6th4cnI4H5ely2tI4I1ox6itU9b4fGGvkAgl8wX1V2S2ZnNW4K9M3q9hJK0gtaMgLgwi0qzYu6BIxe7GIWw/6biErCBrN855T58Q=
+    secure: XFdTOXtdCWtJoSDa/QgveABJxJnqdDvAiqeZBLGOjEJ8I+2kebWtvvFcdJr909wWkF48Ptlc+Hse1MqiBCSMYI1/UWg4S5l7B8nl1i0KNDQqxGM3yvUAfOubU7wZVfn6urWLvOqkBa3rWV+PO98Lb3xPtV8uIdIbujvRni62wESIx8jqlGHyduWZnWVqjckLT9dahSboeYv+PPmMGHQwyklpkivS8j7a7bG8qm3eZS4Vyd2kPn4giR5By72g6/F6A3lWkaiB+UyWKECHfk5OBuvxISef+NvCGE/zSzaJLraNbTbR68O5d81hgxNlEGxFKdhXk5QRQcHUzBqE9pz1gwzH6ONMcZseCdvPqKpkhZXZg57i00LB/SWVFaftnpy4g9ooXGDiaYxNpM50GvJhZxeYk6gbEF9iDPOEqPjtnZckp6wjo0On2+O27y7JI30oeRnyRu0lKcCBqkzqnLisD8Z9S0iprS+QoKYSp3zzmoh0V0K1oJZk0tPk/UamuGDqtInE5vo3I6tWHkkm2dDtIaFLtxwWyqF066d6Degkw5rkVRFMPYuEbksK2XlSEmUOxXewm3QtSo8lDly20FMKyEkxCxeV0inrlUx08eOEWfF26iQ0WdhLVEyQ767VOXx0Gr0OzN2r9mzBVnhiW7QfYdimEl+a9IsY2BO6FK3luqo=
