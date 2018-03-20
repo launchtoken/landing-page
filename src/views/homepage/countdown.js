@@ -72,7 +72,7 @@ const Colon = styled.p`
 const Timer = () => (
   <Wrapper>
     <Container>
-      <Title>LAUNCHING IN:</Title>
+      <Title>PRE-SALE IN:</Title>
       <TimeWrapper>
         <TimeSection>
           <Countdown

@@ -123,10 +123,26 @@ const Team = () => (
               linkedIn={"https://www.linkedin.com/in/aaronvasquezadilla"}
             />
             <MemberCard
+              picture={IMAGES.TEAM_WEN}
+              name={"WEN GIWA-OSAGIE"}
+              position={"VICE PRESIDENT, PRODUCT"}
+              linkedIn={
+                "https://www.linkedin.com/in/wengiwaosagieproductmanager/"
+              }
+            />
+          </Row>
+          <Row>
+            <MemberCard
               picture={IMAGES.TEAM_JONATHAN}
               name={"JONATHAN TOW"}
               position={"SENIOR DEVELOPER"}
               linkedIn={"https://www.linkedin.com/in/jonathan-tow-6399691a/"}
+            />
+            <MemberCard
+              picture={IMAGES.TEAM_ESCO}
+              name={"ESCO OBONG"}
+              position={"ADVISOR"}
+              linkedIn={"https://www.linkedin.com/in/escoo/"}
             />
           </Row>
         </Wrapper>

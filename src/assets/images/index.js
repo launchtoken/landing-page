@@ -31,6 +31,8 @@ import TEAM_LINKEDIN from "./team-linkedin.png";
 import TEAM_EDMUND from "./team-edmund.png";
 import TEAM_AARON from "./team-aaron.jpeg";
 import TEAM_JONATHAN from "./team-jonathan.jpeg";
+import TEAM_ESCO from "./team-esco.jpeg";
+import TEAM_WEN from "./team-wen.jpeg";
 import MEDIA_NBC from "./media-nbc.png";
 import MEDIA_SINGULARITY from "./media-singularity.png";
 import MEDIA_TECHVIBES from "./media-techvibes.png";
@@ -79,6 +81,8 @@ export default {
   TEAM_EDMUND,
   TEAM_AARON,
   TEAM_JONATHAN,
+  TEAM_ESCO,
+  TEAM_WEN,
   MEDIA_NBC,
   MEDIA_SINGULARITY,
   MEDIA_TECHVIBES,
