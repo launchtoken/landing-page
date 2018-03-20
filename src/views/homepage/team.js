@@ -105,7 +105,7 @@ const MemberCard = ({ picture, name, position, linkedIn }) => (
 
 const Team = () => (
   <Scroll.Element name={SECTIONS.TEAM}>
-    <Slanted medium colored background={IMAGES.TEAM_BACKGROUND}>
+    <Slanted long colored background={IMAGES.TEAM_BACKGROUND}>
       <PaddedContainer>
         <Wrapper>
           <Title>Meet Our Team</Title>
@@ -113,13 +113,13 @@ const Team = () => (
             <MemberCard
               picture={IMAGES.TEAM_EDMUND}
               name={"EDMUND MAI"}
-              position={"CO-FOUNDER"}
+              position={"CHIEF EXECUTIVE OFFICER"}
               linkedIn={"https://www.linkedin.com/in/edmundmai"}
             />
             <MemberCard
               picture={IMAGES.TEAM_AARON}
               name={"AARON VASQUEZ"}
-              position={"CO-FOUNDER"}
+              position={"CHIEF TECHNOLOGY OFFICER"}
               linkedIn={"https://www.linkedin.com/in/aaronvasquezadilla"}
             />
             <MemberCard
