@@ -113,13 +113,13 @@ const Team = () => (
             <MemberCard
               picture={IMAGES.TEAM_EDMUND}
               name={"EDMUND MAI"}
-              position={"CHIEF EXECUTIVE OFFICER"}
+              position={"CEO"}
               linkedIn={"https://www.linkedin.com/in/edmundmai"}
             />
             <MemberCard
               picture={IMAGES.TEAM_AARON}
               name={"AARON VASQUEZ"}
-              position={"CHIEF TECHNOLOGY OFFICER"}
+              position={"CTO"}
               linkedIn={"https://www.linkedin.com/in/aaronvasquezadilla"}
             />
             <MemberCard
@@ -137,6 +137,12 @@ const Team = () => (
               name={"JONATHAN TOW"}
               position={"SENIOR DEVELOPER"}
               linkedIn={"https://www.linkedin.com/in/jonathan-tow-6399691a/"}
+            />
+            <MemberCard
+              picture={IMAGES.TEAM_SYDNEY}
+              name={"SYDNEY JEONG"}
+              position={"MARKETING ASSOCIATE"}
+              linkedIn={"https://www.linkedin.com/in/hryoungjeong/"}
             />
             <MemberCard
               picture={IMAGES.TEAM_ESCO}
