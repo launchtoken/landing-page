@@ -104,10 +104,10 @@ const Banner = () => (
   <Wrapper>
     <Header />
     <BannerSection>
-      <Tagline>Launch Your Own Crowdsale ICO</Tagline>
+      <Tagline>Launch Your Own ICO Crowdsale</Tagline>
       <Caption>
-        Launch Token allows you to create your own token and ICO crowdsale in
-        minutes - without a single line of code.
+        Run your entire ICO crowdsale securely on the blockchain - without a
+        single line of code.
       </Caption>
       <FormWrapper>
         <EmailSignup />
