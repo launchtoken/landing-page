@@ -28,7 +28,7 @@ const DesktopGraphic = styled.div`
   background-image: url(${props => props.src});
   background-size: contain;
   background-repeat: no-repeat;
-  width: 600px;
+  width: 800px;
   height: 380px;
 
   @media only screen and (max-width: 768px) {
@@ -54,8 +54,7 @@ const Roadmap = () => (
       <Wrapper>
         <Title>Token Allocation</Title>
         <Text centered size="13px">
-          Below is a breakdown of the sources of investment as well as the
-          planned usage of the funds.
+          Below is a breakdown of the token allocation and usage of the funds.
         </Text>
         <ImageContainer>
           <DesktopGraphic src={IMAGES.TOKEN_ALLOCATION_GRAPH_DESKTOP} />
