@@ -1,8 +1,8 @@
 {
   "main.css": "static/css/main.39c60979.css",
   "main.css.map": "static/css/main.39c60979.css.map",
-  "main.js": "static/js/main.9c1b72cd.js",
-  "main.js.map": "static/js/main.9c1b72cd.js.map",
+  "main.js": "static/js/main.856bb9d5.js",
+  "main.js.map": "static/js/main.856bb9d5.js.map",
   "static/media/banner-background.png": "static/media/banner-background.8a27c38f.png",
   "static/media/banner-graphic.png": "static/media/banner-graphic.a017a8da.png",
   "static/media/digital-7.ttf": "static/media/digital-7.1e670d88.ttf",
@@ -21,6 +21,6 @@
   "static/media/team-jonathan.jpeg": "static/media/team-jonathan.37a76413.jpeg",
   "static/media/team-sydney.jpeg": "static/media/team-sydney.2f5c53ea.jpeg",
   "static/media/token-allocation-background.png": "static/media/token-allocation-background.29ff131d.png",
-  "static/media/token-allocation-graph-desktop.png": "static/media/token-allocation-graph-desktop.30e61a4b.png",
-  "static/media/token-allocation-graph-mobile.png": "static/media/token-allocation-graph-mobile.6f3b02f5.png"
+  "static/media/token-allocation-graph-desktop.png": "static/media/token-allocation-graph-desktop.ba9f1034.png",
+  "static/media/token-allocation-graph-mobile.png": "static/media/token-allocation-graph-mobile.37b44dfd.png"
 }
