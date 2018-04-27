@@ -52,7 +52,11 @@ const Header = () => (
       <NavigationLink to={SECTIONS.ABOUT}>ABOUT</NavigationLink>
       <NavigationLink to={SECTIONS.TEAM}>TEAM</NavigationLink>
       <NavigationLink to={SECTIONS.ROADMAP}>ROADMAP</NavigationLink>
-      <NavigationButton href="www.google.com">WHITEPAPER</NavigationButton>
+      <NavigationButton
+        onClick={() => window.open("Launch-Token-Whitepaper.pdf")}
+      >
+        WHITEPAPER
+      </NavigationButton>
     </Navigation>
   </Wrapper>
 );
