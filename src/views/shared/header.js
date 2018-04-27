@@ -3,6 +3,7 @@ import styled from "styled-components";
 import NavigationLink from "views/shared/navigation-link";
 import NavigationButton from "views/shared/navigation-button";
 import { SECTIONS } from "config";
+
 import IMAGES from "assets/images";
 
 const Wrapper = styled.div`
