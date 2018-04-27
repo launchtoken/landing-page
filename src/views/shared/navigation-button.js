@@ -16,6 +16,9 @@ const NavigationButton = styled.button`
       : "#270668"};
   color: white;
   box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.2);
+  &:focus {
+    outline: 0;
+  }
 `;
 
 export default NavigationButton;
