@@ -5,6 +5,7 @@ import NavigationButton from "views/shared/navigation-button";
 import { SECTIONS } from "config";
 
 import IMAGES from "assets/images";
+import WHITEPAPER from "assets/files/Launch-Token-Whitepaper.pdf";
 
 const Wrapper = styled.div`
   align-items: center;
@@ -53,9 +54,7 @@ const Header = () => (
       <NavigationLink to={SECTIONS.ABOUT}>ABOUT</NavigationLink>
       <NavigationLink to={SECTIONS.TEAM}>TEAM</NavigationLink>
       <NavigationLink to={SECTIONS.ROADMAP}>ROADMAP</NavigationLink>
-      <NavigationButton
-        onClick={() => window.open("Launch-Token-Whitepaper.pdf")}
-      >
+      <NavigationButton onClick={() => window.open(WHITEPAPER)}>
         WHITEPAPER
       </NavigationButton>
     </Navigation>
