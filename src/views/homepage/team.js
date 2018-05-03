@@ -123,12 +123,10 @@ const Team = () => (
               linkedIn={"https://www.linkedin.com/in/aaronvasquezadilla"}
             />
             <MemberCard
-              picture={IMAGES.TEAM_WEN}
-              name={"WEN GIWA-OSAGIE"}
-              position={"VICE PRESIDENT, PRODUCT"}
-              linkedIn={
-                "https://www.linkedin.com/in/wengiwaosagieproductmanager/"
-              }
+              picture={IMAGES.TEAM_STEPHANIE}
+              name={"STEPHANIE VERIN"}
+              position={"CMO"}
+              linkedIn={"https://www.linkedin.com/in/stephanie-verin-8718889b/"}
             />
           </Row>
           <Row>
@@ -139,15 +137,15 @@ const Team = () => (
               linkedIn={"https://www.linkedin.com/in/jonathan-tow-6399691a/"}
             />
             <MemberCard
-              picture={IMAGES.TEAM_SYDNEY}
-              name={"SYDNEY JEONG"}
-              position={"MARKETING ASSOCIATE"}
-              linkedIn={"https://www.linkedin.com/in/hryoungjeong/"}
+              picture={IMAGES.TEAM_JOHN}
+              name={"JOHN HARTMAN"}
+              position={"ADVISOR"}
+              linkedIn={"https://www.linkedin.com/in/johnhartmansd/"}
             />
             <MemberCard
               picture={IMAGES.TEAM_ESCO}
               name={"ESCO OBONG"}
-              position={"ADVISOR"}
+              position={"TECHNICAL ADVISOR"}
               linkedIn={"https://www.linkedin.com/in/escoo/"}
             />
           </Row>
