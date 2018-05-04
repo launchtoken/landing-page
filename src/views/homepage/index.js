@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Notification from "views/shared/notification";
 import Banner from "views/homepage/banner";
-import Countdown from "views/homepage/countdown";
 import Instructions from "views/homepage/instructions";
 import Feature from "views/homepage/feature";
 import Summary from "views/homepage/summary";
@@ -19,7 +18,6 @@ class Homepage extends Component {
       <div>
         <Notification />
         <Banner />
-        <Countdown />
         <Instructions />
         <Feature
           coloredBg={true}

@@ -54,9 +54,6 @@ const Header = () => (
       <NavigationLink to={SECTIONS.ABOUT}>ABOUT</NavigationLink>
       <NavigationLink to={SECTIONS.TEAM}>TEAM</NavigationLink>
       <NavigationLink to={SECTIONS.ROADMAP}>ROADMAP</NavigationLink>
-      <NavigationButton onClick={() => window.open(WHITEPAPER)}>
-        WHITEPAPER
-      </NavigationButton>
     </Navigation>
   </Wrapper>
 );
