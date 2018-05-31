@@ -128,14 +128,42 @@ const Team = () => (
               position={"CMO"}
               linkedIn={"https://www.linkedin.com/in/stephanie-verin-8718889b/"}
             />
+            <MemberCard
+              picture={IMAGES.TEAM_ROSS}
+              name={"ROSS CAMPBELL"}
+              position={"COO"}
+              linkedIn={"https://www.linkedin.com/in/ross-campbell-058153aa/"}
+            />
           </Row>
           <Row>
+            <MemberCard
+              picture={IMAGES.TEAM_KUDA}
+              name={"KUDA SAMKANGE"}
+              position={"CHIEF COPYWRITER"}
+              linkedIn={
+                "https://www.linkedin.com/in/kudakwashe-samkange-40650926/"
+              }
+            />
+            <MemberCard
+              picture={IMAGES.TEAM_CHRISTIAN}
+              name={"CHRISTIAN TANAKA"}
+              position={"CREATIVE DIRECTOR"}
+              linkedIn={"https://www.linkedin.com/in/christatix/"}
+            />
+            <MemberCard
+              picture={IMAGES.TEAM_ALEXEY}
+              name={"ALEXEY MELNICHENKO"}
+              position={"VP OF ENGINEERING"}
+              linkedIn={"https://www.linkedin.com/in/alexey-melnichenko/"}
+            />
             <MemberCard
               picture={IMAGES.TEAM_JONATHAN}
               name={"JONATHAN TOW"}
               position={"SENIOR DEVELOPER"}
               linkedIn={"https://www.linkedin.com/in/jonathan-tow-6399691a/"}
             />
+          </Row>
+          <Row>
             <MemberCard
               picture={IMAGES.TEAM_JOHN}
               name={"JOHN HARTMAN"}

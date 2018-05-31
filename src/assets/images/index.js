@@ -28,12 +28,16 @@ import TOKEN_ALLOCATION_GRAPH_DESKTOP from "./token-allocation-graph-desktop.png
 import TOKEN_ALLOCATION_GRAPH_MOBILE from "./token-allocation-graph-mobile.png";
 import TEAM_BACKGROUND from "./team-background.png";
 import TEAM_LINKEDIN from "./team-linkedin.png";
+import TEAM_ALEXEY from "./team-alexey.jpeg";
 import TEAM_EDMUND from "./team-edmund.png";
 import TEAM_AARON from "./team-aaron.jpeg";
 import TEAM_JONATHAN from "./team-jonathan.jpeg";
 import TEAM_ESCO from "./team-esco.jpeg";
 import TEAM_STEPHANIE from "./team-stephanie.jpeg";
 import TEAM_JOHN from "./team-john.jpeg";
+import TEAM_CHRISTIAN from "./team-christian.jpeg";
+import TEAM_KUDA from "./team-kuda.jpeg";
+import TEAM_ROSS from "./team-ross.jpeg";
 import MEDIA_NBC from "./media-nbc.png";
 import MEDIA_SINGULARITY from "./media-singularity.png";
 import MEDIA_TECHVIBES from "./media-techvibes.png";
@@ -85,6 +89,10 @@ export default {
   TEAM_ESCO,
   TEAM_STEPHANIE,
   TEAM_JOHN,
+  TEAM_ROSS,
+  TEAM_KUDA,
+  TEAM_CHRISTIAN,
+  TEAM_ALEXEY,
   MEDIA_NBC,
   MEDIA_SINGULARITY,
   MEDIA_TECHVIBES,
