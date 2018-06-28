@@ -25,6 +25,7 @@ import TOKEN_ALLOCATION_GRAPHIC_2 from "./token-allocation-graphic-2.png";
 import TEAM_BACKGROUND from "./team-background.png";
 import TEAM_LINKEDIN from "./team-linkedin.png";
 import TEAM_ALEXEY from "./team-alexey.jpeg";
+import TEAM_CONNOR from "./team-connor.jpeg";
 import TEAM_EDMUND from "./team-edmund.png";
 import TEAM_AARON from "./team-aaron.jpeg";
 import TEAM_JONATHAN from "./team-jonathan.jpeg";
@@ -75,6 +76,7 @@ export default {
   TOKEN_ALLOCATION_GRAPHIC_2,
   TEAM_BACKGROUND,
   TEAM_LINKEDIN,
+  TEAM_CONNOR,
   TEAM_EDMUND,
   TEAM_AARON,
   TEAM_JONATHAN,

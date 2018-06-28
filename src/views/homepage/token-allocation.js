@@ -6,7 +6,7 @@ import Slanted from "views/homepage/slanted";
 import PaddedContainer from "views/homepage/padded-container";
 
 const Wrapper = styled.div`
-  height: 100%;
+  padding-bottom: 150px;
   @media only screen and (max-width: 768px) {
     padding: 125px 0;
   }

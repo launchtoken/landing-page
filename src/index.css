@@ -1,3 +1,6 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
 body {
   margin: 0;
   padding: 0;
@@ -20,4 +23,8 @@ input:focus {
 @font-face {
   font-family: "Digital";
   src: local("Digital"), url(./assets/fonts/digital-7.ttf) format("truetype");
+}
+
+.slider-control-bottomcenter {
+  bottom: -58px !important;
 }
