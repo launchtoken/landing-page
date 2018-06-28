@@ -47,7 +47,6 @@ class Homepage extends Component {
         <Roadmap />
         <TokenAllocation />
         <Team />
-        <Media />
         <Footer />
       </div>
     );

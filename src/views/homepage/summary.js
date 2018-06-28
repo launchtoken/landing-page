@@ -3,148 +3,127 @@ import styled from "styled-components";
 import IMAGES from "assets/images";
 import Slanted from "views/homepage/slanted";
 import PaddedContainer from "views/homepage/padded-container";
+import * as Scroll from "react-scroll";
+import { SECTIONS } from "config";
 
 const Wrapper = styled.div`
-  height: 100%;
-
+  display: flex;
+  padding: 0 100px 100px;
+  flex: 1;
+  flex-direction: column;
   @media only screen and (max-width: 768px) {
-    padding: 100px 0;
+    padding-top: 140px;
   }
 `;
 
-const Title = styled.h3`
-  font-size: 25px;
-  font-weight: bold;
-  color: white;
-  text-align: center;
-
+const Section = styled.div`
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 35px;
   @media only screen and (max-width: 768px) {
-    padding: 0 75px;
+    flex-direction: column;
+    min-height: 350px;
   }
+`;
+
+const Feature = styled.div`
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.05);
+  display: flex;
+  width: 300px;
+  height: 400px;
+  flex-direction: column;
+  align-items: center;
 `;
 
 const Icon = styled.div`
   background-image: url(${props => props.src});
   background-size: contain;
   background-repeat: no-repeat;
-  width: 50px;
-  height: 50px;
+  margin-top 41.5px;
+  margin-bottom: 34px;
+  min-width: 97px;
+  min-height: 75px;
 `;
 
-const Caption = styled.p`
-  color: ${props => (props.white ? "white" : "black")};
-  font-size: 13px;
-  font-weight: bold;
+const Title = styled.p`
+  margin: 0;
+  margin-bottom: 20px;
+  color: #1f3052;
+  font-size: 18px;
+  font-weight: 500;
   text-align: center;
 `;
 
 const Description = styled.p`
-  color: ${props => (props.white ? "white" : "black")};
-  font-size: 12px;
+  font-size: 14px;
   text-align: center;
+  padding: 0 20px;
 `;
 
-const Column = styled.div`
-  display: flex;
-  flex-direction: column;
-  margin: 0 10px;
-  margin-top: ${props => (props.higher ? "-50px" : 0)};
-  @media only screen and (max-width: 768px) {
-    margin-top: 0;
-  }
+const Heading = styled.h3`
+  color: #1f3052;
+  font-size: 36px;
+  font-weight: 500;
+  text-align: ${props => (props.centered ? "center" : "")};
 `;
 
-const CardContainer = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 50px;
-
-  @media only screen and (max-width: 768px) {
-    flex-direction: column;
-  }
+const Caption = styled.h4`
+  font-size: 18px;
+  font-weight: normal;
+  text-align: center;
+  padding: 0 370px;
 `;
 
-const Card = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: ${props =>
-    props.highlighted
-      ? "linear-gradient(270deg, #3314BA 0%, #6A48FD 100%)"
-      : "white"};
-  border-radius: 10px;
-  width: 178px;
-  height: 218px;
-  margin-bottom: 20px;
-  padding: 15px;
-`;
-
-const Summary = () => (
-  <Slanted long background={IMAGES.FEATURE_SUMMARY_BACKGROUND}>
-    <PaddedContainer>
+const Instructions = () => (
+  <Scroll.Element name={SECTIONS.ABOUT}>
+    <Slanted colored>
       <Wrapper>
-        <Title>All The Features You'll Love</Title>
-        <CardContainer>
-          <Column higher>
-            <Card>
-              <Icon src={IMAGES.SUMMARY_EASY_TO_USE} />
-              <Caption>EASY TO USE</Caption>
-              <Description>
-                Focus on marketing and building your product and allow us to
-                manage your token crowdsale in a trustless manner.
-              </Description>
-            </Card>
-            <Card>
-              <Icon src={IMAGES.SUMMARY_RESPONSIVE} />
-              <Caption>MOBILE RESPONSIVE</Caption>
-              <Description>
-                Browse cross browser and cross platform responsive templates and
-                add / remove sections as you please.
-              </Description>
-            </Card>
-          </Column>
-          <Column>
-            <Card>
-              <Icon src={IMAGES.SUMMARY_DOMAIN} />
-              <Caption>CUSTOM DOMAINS</Caption>
-              <Description>
-                Point your DNS to our IP and that's it! We host your websites on
-                battled-tested infrastructure to ensure reliability.
-              </Description>
-            </Card>
-            <Card highlighted>
-              <Icon src={IMAGES.SUMMARY_API} />
-              <Caption white>HOOK INTO YOUR OWN API</Caption>
-              <Description white>
-                Add webhooks that fire on important events for analytics or
-                connect to services like Mailchimp.
-              </Description>
-            </Card>
-          </Column>
-          <Column higher>
-            <Card>
-              <Icon src={IMAGES.SUMMARY_TEMPLATE} />
-              <Caption>ALL ON BLOCKCHAIN</Caption>
-              <Description>
-                Allow your investors to trust in the crowdsale process by using
-                Launch Token's secure protocol.
-              </Description>
-            </Card>
-            <Card>
-              <Icon src={IMAGES.SUMMARY_SUPPORT} />
-              <Caption>GREAT CUSTOMER SUPPORT</Caption>
-              <Description>
-                We are committed to creating the most complete ICO platform, and
-                love feedback from users in how we can improve our protocol!
-              </Description>
-            </Card>
-          </Column>
-        </CardContainer>
+        <Heading centered>Launch Token Features</Heading>
+        <Caption>
+          Focus on marketing and building your product while our cross browser,
+          responsive platform does the heavy lifting managing your token
+          crowdsale in a trustless manner.
+        </Caption>
+        <Section>
+          <Feature>
+            <Icon src={IMAGES.SUMMARY_ICON_1} />
+            <Title>Custom Domains</Title>
+            <Description>
+              Point your DNS to our IP and that's it! We host your websites on
+              battled-tested infrastructure to ensure reliability.
+            </Description>
+          </Feature>
+          <Feature>
+            <Icon src={IMAGES.SUMMARY_ICON_2} />
+            <Title>Built on Blockchain</Title>
+            <Description>
+              Allow your investors to trust in the crowdsale process by using
+              Launch Token's secure protocol.
+            </Description>
+          </Feature>
+          <Feature>
+            <Icon src={IMAGES.SUMMARY_ICON_3} />
+            <Title>Hook Into Your Own API</Title>
+            <Description>
+              Add webhooks that fire on important events for analytics or
+              connect to services like Mailchimp.
+            </Description>
+          </Feature>
+          <Feature>
+            <Icon src={IMAGES.SUMMARY_ICON_4} />
+            <Title>Customer Support</Title>
+            <Description>
+              We are committed to creating the most complete ICO platform, and
+              love feedback from users in how we can improve our protocol!
+            </Description>
+          </Feature>
+        </Section>
       </Wrapper>
-    </PaddedContainer>
-  </Slanted>
+    </Slanted>
+  </Scroll.Element>
 );
 
-export default Summary;
+export default Instructions;

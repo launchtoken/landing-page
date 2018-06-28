@@ -14,13 +14,10 @@ import FEATURE_ICON_1 from "./feature-icon-1.png";
 import FEATURE_ICON_2 from "./feature-icon-2.png";
 import FEATURE_ICON_3 from "./feature-icon-3.png";
 import FEATURE_SUMMARY_BACKGROUND from "./feature-summary-background.png";
-import SUMMARY_TEMPLATE from "./summary-template.png";
-import SUMMARY_API from "./summary-api.png";
-import SUMMARY_DOMAIN from "./summary-domain.png";
-import SUMMARY_EASY_TO_USE from "./summary-easy-to-use.png";
-import SUMMARY_RESPONSIVE from "./summary-responsive.png";
-import SUMMARY_SUPPORT from "./summary-support.png";
-import ROADMAP_BACKGROUND from "./roadmap-background.png";
+import SUMMARY_ICON_1 from "./summary-icon-1.png";
+import SUMMARY_ICON_2 from "./summary-icon-2.png";
+import SUMMARY_ICON_3 from "./summary-icon-3.png";
+import SUMMARY_ICON_4 from "./summary-icon-4.png";
 import ROADMAP_SCHEDULE_DESKTOP from "./roadmap-schedule-desktop.png";
 import ROADMAP_SCHEDULE_MOBILE from "./roadmap-schedule-mobile.png";
 import TOKEN_ALLOCATION_BACKGROUND from "./token-allocation-background.png";
@@ -69,13 +66,10 @@ export default {
   FEATURE_ICON_2,
   FEATURE_ICON_3,
   FEATURE_SUMMARY_BACKGROUND,
-  SUMMARY_TEMPLATE,
-  SUMMARY_SUPPORT,
-  SUMMARY_RESPONSIVE,
-  SUMMARY_EASY_TO_USE,
-  SUMMARY_DOMAIN,
-  SUMMARY_API,
-  ROADMAP_BACKGROUND,
+  SUMMARY_ICON_1,
+  SUMMARY_ICON_2,
+  SUMMARY_ICON_3,
+  SUMMARY_ICON_4,
   ROADMAP_SCHEDULE_DESKTOP,
   ROADMAP_SCHEDULE_MOBILE,
   TOKEN_ALLOCATION_BACKGROUND,
