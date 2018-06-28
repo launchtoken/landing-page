@@ -58,9 +58,6 @@ const Header = () => (
       >
         Telegram
       </NavigationLink>
-      <NavigationButton onClick={() => window.open(WHITEPAPER)}>
-        Whitepaper
-      </NavigationButton>
     </Navigation>
   </Wrapper>
 );
