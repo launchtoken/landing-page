@@ -10,13 +10,9 @@ import WHITEPAPER from "assets/files/Launch-Token-Whitepaper.pdf";
 const Wrapper = styled.div`
   align-items: center;
   display: flex;
-  height: 83px;
+  height: 103px;
   justify-content: space-between;
-  left: 0;
-  margin: -20px 141px 0 141px;
-  position: absolute;
-  right: 0;
-  top: 50px;
+  margin: 0 100px;
   z-index: 1;
 
   @media only screen and (max-width: 768px) {
@@ -29,8 +25,9 @@ const Logo = styled.div`
   background-image: url(${IMAGES.LOGO});
   background-size: contain;
   background-repeat: no-repeat;
-  height: 63px;
-  width: 200px;
+  background-position: center;
+  height: 50px;
+  width: 208px;
 
   @media only screen and (max-width: 768px) {
     height: 46px;
@@ -51,9 +48,18 @@ const Header = () => (
   <Wrapper>
     <Logo />
     <Navigation>
-      <NavigationLink to={SECTIONS.ABOUT}>ABOUT</NavigationLink>
-      <NavigationLink to={SECTIONS.TEAM}>TEAM</NavigationLink>
-      <NavigationLink to={SECTIONS.ROADMAP}>ROADMAP</NavigationLink>
+      <NavigationLink to={SECTIONS.ABOUT}>About</NavigationLink>
+      <NavigationLink to={SECTIONS.ROADMAP}>Roadmap</NavigationLink>
+      <NavigationLink to={SECTIONS.TEAM}>Team</NavigationLink>
+      <NavigationLink
+        isExternal
+        to={"https://t.me/joinchat/GyRIcxLhxjsQxw5e-wYVzw"}
+      >
+        Telegram
+      </NavigationLink>
+      <NavigationButton onClick={() => window.open(WHITEPAPER)}>
+        Whitepaper
+      </NavigationButton>
     </Navigation>
   </Wrapper>
 );

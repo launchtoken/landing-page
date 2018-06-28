@@ -102,7 +102,6 @@ const Floater = styled.div`
 
 const Banner = () => (
   <Wrapper>
-    <Header />
     <BannerSection>
       <Tagline>Launch Your Own ICO Crowdsale</Tagline>
       <Caption>

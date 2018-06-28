@@ -8,6 +8,7 @@ import Roadmap from "views/homepage/roadmap";
 import TokenAllocation from "views/homepage/token-allocation";
 import Team from "views/homepage/team";
 import Media from "views/homepage/media";
+import Header from "views/shared/header";
 import Footer from "views/shared/footer";
 
 import IMAGES from "assets/images";
@@ -16,7 +17,7 @@ class Homepage extends Component {
   render() {
     return (
       <div>
-        <Notification />
+        <Header />
         <Banner />
         <Instructions />
         <Feature

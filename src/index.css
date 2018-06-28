@@ -1,14 +1,14 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   max-width: 1600px;
   margin: auto;
 }
 
 input::placeholder {
   color: #9e9fa7;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 textarea:focus,
