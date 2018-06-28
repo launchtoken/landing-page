@@ -20,9 +20,8 @@ import SUMMARY_ICON_3 from "./summary-icon-3.png";
 import SUMMARY_ICON_4 from "./summary-icon-4.png";
 import ROADMAP_SCHEDULE_DESKTOP from "./roadmap-schedule-desktop.png";
 import ROADMAP_SCHEDULE_MOBILE from "./roadmap-schedule-mobile.png";
-import TOKEN_ALLOCATION_BACKGROUND from "./token-allocation-background.png";
-import TOKEN_ALLOCATION_GRAPH_DESKTOP from "./token-allocation-graph-desktop.png";
-import TOKEN_ALLOCATION_GRAPH_MOBILE from "./token-allocation-graph-mobile.png";
+import TOKEN_ALLOCATION_GRAPHIC_1 from "./token-allocation-graphic-1.png";
+import TOKEN_ALLOCATION_GRAPHIC_2 from "./token-allocation-graphic-2.png";
 import TEAM_BACKGROUND from "./team-background.png";
 import TEAM_LINKEDIN from "./team-linkedin.png";
 import TEAM_ALEXEY from "./team-alexey.jpeg";
@@ -72,9 +71,8 @@ export default {
   SUMMARY_ICON_4,
   ROADMAP_SCHEDULE_DESKTOP,
   ROADMAP_SCHEDULE_MOBILE,
-  TOKEN_ALLOCATION_BACKGROUND,
-  TOKEN_ALLOCATION_GRAPH_DESKTOP,
-  TOKEN_ALLOCATION_GRAPH_MOBILE,
+  TOKEN_ALLOCATION_GRAPHIC_1,
+  TOKEN_ALLOCATION_GRAPHIC_2,
   TEAM_BACKGROUND,
   TEAM_LINKEDIN,
   TEAM_EDMUND,

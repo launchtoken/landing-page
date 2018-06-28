@@ -18,18 +18,26 @@ const ImageContainer = styled.div`
 `;
 
 const Title = styled.h3`
-  font-size: 25px;
-  font-weight: bold;
-  color: black;
+  font-size: 36px;
+  font-weight: 500;
   text-align: center;
+`;
+
+const Caption = styled.h4`
+  font-size: 18px;
+  font-weight: normal;
+  text-align: center;
+  padding: 0 370px;
+  margin-bottom: 60px;
 `;
 
 const DesktopGraphic = styled.div`
   background-image: url(${props => props.src});
   background-size: contain;
   background-repeat: no-repeat;
-  width: 800px;
-  height: 380px;
+  background-position: center;
+  width: 570px;
+  height: 523px;
 
   @media only screen and (max-width: 768px) {
     display: none;
@@ -49,19 +57,17 @@ const MobileGraphic = styled.div`
 `;
 
 const Roadmap = () => (
-  <Slanted medium background={IMAGES.TOKEN_ALLOCATION_BACKGROUND}>
-    <PaddedContainer>
-      <Wrapper>
-        <Title>Token Allocation</Title>
-        <Text centered size="13px">
-          Below is a breakdown of the token allocation and usage of the funds.
-        </Text>
-        <ImageContainer>
-          <DesktopGraphic src={IMAGES.TOKEN_ALLOCATION_GRAPH_DESKTOP} />
-          <MobileGraphic src={IMAGES.TOKEN_ALLOCATION_GRAPH_MOBILE} />
-        </ImageContainer>
-      </Wrapper>
-    </PaddedContainer>
+  <Slanted colored>
+    <Wrapper>
+      <Title>Token Allocation</Title>
+      <Caption>
+        Below is a breakdown of the token allocation and usage of the funds.
+      </Caption>
+      <ImageContainer>
+        <DesktopGraphic src={IMAGES.TOKEN_ALLOCATION_GRAPHIC_1} />
+        <DesktopGraphic src={IMAGES.TOKEN_ALLOCATION_GRAPHIC_2} />
+      </ImageContainer>
+    </Wrapper>
   </Slanted>
 );
 
