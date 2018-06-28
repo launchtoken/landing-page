@@ -37,7 +37,8 @@ const DesktopGraphic = styled.div`
 
 const MobileGraphic = styled.div`
   background-image: url(${props => props.src});
-  width: 265px;
+  width: 482px;
+  height: 300px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -52,7 +53,7 @@ const Roadmap = () => (
       <Wrapper>
         <Title>Roadmap</Title>
         <DesktopGraphic src={IMAGES.ROADMAP_SCHEDULE_DESKTOP} />
-        <MobileGraphic src={IMAGES.ROADMAP_SCHEDULE_MOBILE} />
+        <MobileGraphic src={IMAGES.ROADMAP_SCHEDULE_DESKTOP} />
       </Wrapper>
     </Slanted>
   </Scroll.Element>

@@ -9,12 +9,19 @@ const Wrapper = styled.div`
   padding-bottom: 150px;
   @media only screen and (max-width: 768px) {
     padding: 125px 0;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
   }
 `;
 
 const ImageContainer = styled.div`
   display: flex;
   justify-content: center;
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const Title = styled.h3`
@@ -29,6 +36,10 @@ const Caption = styled.h4`
   text-align: center;
   padding: 0 370px;
   margin-bottom: 60px;
+  @media only screen and (max-width: 768px) {
+    display: none;
+    padding: 0 50px;
+  }
 `;
 
 const DesktopGraphic = styled.div`
@@ -49,7 +60,7 @@ const MobileGraphic = styled.div`
   background-size: contain;
   background-repeat: no-repeat;
   width: 335px;
-  height: 800px;
+  height: 365px;
 
   @media only screen and (min-width: 768px) {
     display: none;
@@ -66,6 +77,8 @@ const Roadmap = () => (
       <ImageContainer>
         <DesktopGraphic src={IMAGES.TOKEN_ALLOCATION_GRAPHIC_1} />
         <DesktopGraphic src={IMAGES.TOKEN_ALLOCATION_GRAPHIC_2} />
+        <MobileGraphic src={IMAGES.TOKEN_ALLOCATION_GRAPHIC_1} />
+        <MobileGraphic src={IMAGES.TOKEN_ALLOCATION_GRAPHIC_2} />
       </ImageContainer>
     </Wrapper>
   </Slanted>

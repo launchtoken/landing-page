@@ -36,6 +36,9 @@ const Feature = styled.div`
   height: 400px;
   flex-direction: column;
   align-items: center;
+  @media only screen and (max-width: 768px) {
+    margin-bottom: 20px;
+  }
 `;
 
 const Icon = styled.div`
@@ -76,6 +79,9 @@ const Caption = styled.h4`
   font-weight: normal;
   text-align: center;
   padding: 0 370px;
+  @media only screen and (max-width: 768px) {
+    padding: 0;
+  }
 `;
 
 const Instructions = () => (

@@ -15,12 +15,6 @@ const TextInput = styled.input.attrs({
   width: 300px;
   padding: 13px 10px;
   background-color: #ffffff;
-
-  @media only screen and (max-width: 768px) {
-    font-size: 11px;
-    width: 104px;
-    height: 5px;
-  }
 `;
 
 const HiddenWrapper = styled.div`
@@ -40,9 +34,6 @@ const SubmitButton = styled.input.attrs({
   background-image: linear-gradient(112deg, #3023ae, #c86dd7);
   color: white;
   padding: 15px 17px;
-  @media only screen and (max-width: 768px) {
-    padding: 0 8px;
-  }
 `;
 
 const EmailSignup = () => (

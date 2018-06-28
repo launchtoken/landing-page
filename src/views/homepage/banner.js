@@ -77,8 +77,7 @@ const Graphic = styled.div`
   background-repeat: no-repeat;
 
   @media only screen and (max-width: 768px) {
-    height: 300px;
-    width: 300px;
+    margin-top: 30px;
   }
 `;
 

@@ -19,9 +19,6 @@ const Info = styled.div`
   padding-top: 5px;
   justify-content: space-between;
   flex-direction: column;
-  @media only screen and (max-width: 768px) {
-    width: 180px;
-  }
 `;
 
 const Member = styled.div`
@@ -34,6 +31,8 @@ const Member = styled.div`
     align-items: center;
     justify-content: space-between;
     margin-bottom: 50px;
+    width: 300px;
+    height: 750px;
   }
 `;
 
@@ -76,17 +75,31 @@ const ProfilePicture = styled.div`
   background-image: url(${props => props.src});
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   min-width: 400px;
   min-height: 400px;
+  @media only screen and (max-width: 768px) {
+    width: 300px;
+    height: 300px;
+  }
 `;
 
 const Headline = styled.div`
   display: flex;
   padding: 20px 0;
+  @media only screen and (max-width: 768px) {
+    min-height: 50px;
+  }
 `;
 
 const Summary = styled.p`
   font-size: 14px;
+`;
+
+const DotContainer = styled.div`
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const Dot = styled.button`
@@ -143,7 +156,7 @@ const Team = () => (
           }
 
           return (
-            <div className="paging-dots">
+            <DotContainer>
               {indexes.map(index => (
                 <Dot
                   key={index}
@@ -151,7 +164,7 @@ const Team = () => (
                   active={props.currentSlide === index}
                 />
               ))}
-            </div>
+            </DotContainer>
           );
         }}
       >
