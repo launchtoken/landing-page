@@ -10,7 +10,6 @@ import IMAGES from "assets/images";
 const Wrapper = styled.div`
   position: relative;
   height: 425px;
-  background-image: url(${IMAGES.BANNER_BACKGROUND});
   background-repeat: no-repeat;
   padding: 140px;
   display: flex;
@@ -26,7 +25,6 @@ const Wrapper = styled.div`
 const BannerSection = styled.div`
   display: flex;
   flex-direction: column;
-  width: 565px;
 
   @media only screen and (max-width: 768px) {
     width: auto;
@@ -34,9 +32,9 @@ const BannerSection = styled.div`
 `;
 
 const Tagline = styled.h1`
-  color: white;
-  font-size: 40px;
-  font-weight: bold;
+  color: #1f3052;
+  font-size: 36px;
+  font-weight: 500;
   margin-bottom: 0px;
   padding-right: 20px;
 
@@ -48,9 +46,8 @@ const Tagline = styled.h1`
 `;
 
 const Caption = styled.p`
-  color: white;
-  font-size: 16px;
-  font-weight: 500;
+  color: #1f3052;
+  font-size: 18px;
   line-height: 25px;
   padding-right: 92px;
   margin-bottom: 35px;
@@ -73,8 +70,8 @@ const FormWrapper = styled.div`
 
 const Graphic = styled.div`
   background-image: url(${IMAGES.BANNER_GRAPHIC});
-  height: 500px;
-  width: 432px;
+  height: 470px;
+  width: 698px;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;

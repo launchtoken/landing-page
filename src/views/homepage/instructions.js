@@ -74,7 +74,7 @@ const Heading = styled.h3`
 
 const Instructions = () => (
   <Scroll.Element name={SECTIONS.ABOUT}>
-    <Slanted>
+    <Slanted colored>
       <PaddedContainer>
         <Wrapper>
           <Heading centered>How It Works</Heading>

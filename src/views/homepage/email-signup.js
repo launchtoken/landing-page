@@ -6,12 +6,14 @@ const TextInput = styled.input.attrs({
   name: "EMAIL",
   placeholder: "Email address"
 })`
-  font-size: 13px;
-  border-radius: 25px;
-  margin-right: 5px;
-  border: none;
-  width: 232px;
-  padding: 18px 32px;
+  font-size: 14px;
+  border-style: solid;
+  border-width: 2px;
+  border-image-source: linear-gradient(97deg, #3023ae, #c86dd7);
+  border-image-slice: 1;
+  border-right-width: 0;
+  width: 300px;
+  padding: 13px 10px;
   background-color: #ffffff;
 
   @media only screen and (max-width: 768px) {
@@ -29,24 +31,15 @@ const HiddenWrapper = styled.div`
 const SubmitButton = styled.input.attrs({
   type: "submit",
   name: "subscribe",
-  value: "PRE-REGISTER",
+  value: "Pre-register",
   id: "mc-embedded-subscribe"
 })`
-  margin: 0px 5px;
   cursor: pointer;
-  font-size: 12px;
-  height: 38px;
-  border-width: 2px;
-  border-style: solid;
-  border-color: #6a48fd;
-  border-radius: 25px;
-  background: ${props =>
-    props.highlighted
-      ? "linear-gradient(270deg, #3314BA 0%, #6A48FD 100%)"
-      : "#270668"};
+  font-size: 14px;
+  border: none;
+  background-image: linear-gradient(112deg, #3023ae, #c86dd7);
   color: white;
-  box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.2);
-  padding: 0 20px;
+  padding: 15px 17px;
   @media only screen and (max-width: 768px) {
     padding: 0 8px;
   }
@@ -71,7 +64,7 @@ const EmailSignup = () => (
         value=""
       />
     </HiddenWrapper>
-    <SubmitButton highlighted />
+    <SubmitButton />
   </form>
 );
 
