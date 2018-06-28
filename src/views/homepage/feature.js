@@ -6,6 +6,7 @@ import PaddedContainer from "views/homepage/padded-container";
 
 const Wrapper = styled.div`
   display: flex;
+  padding: 50px;
   justify-content: center;
   @media only screen and (max-width: 768px) {
     flex-direction: column;
@@ -17,8 +18,8 @@ const LeftGraphic = styled.div`
   background-image: url(${props => props.src});
   background-size: contain;
   background-repeat: no-repeat;
-  min-width: 413px;
-  height: 300px;
+  min-width: 700px;
+  height: 588px;
   display: ${props => (props.imageOnLeft ? "initial" : "none")};
   @media only screen and (max-width: 768px) {
     display: initial;
@@ -32,8 +33,8 @@ const RightGraphic = styled.div`
   background-image: url(${props => props.src});
   background-size: contain;
   background-repeat: no-repeat;
-  min-width: 413px;
-  height: 300px;
+  min-width: 700px;
+  height: 588px;
   display: ${props => (!props.imageOnLeft ? "initial" : "none")};
   @media only screen and (max-width: 768px) {
     display: none;
@@ -42,19 +43,10 @@ const RightGraphic = styled.div`
   }
 `;
 
-const Icon = styled.img.attrs({
-  src: props => props.src
-})`
-  width: 34px;
-  @media only screen and (max-width: 768px) {
-    display: none;
-  }
-`;
-
 const Description = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 0 25px;
+  padding: 0 121px;
 
   @media only screen and (max-width: 768px) {
     text-align: center;
@@ -62,9 +54,8 @@ const Description = styled.div`
 `;
 
 const SectionTitle = styled.h3`
-  font-size: 25px;
-  font-weight: bold;
-  color: ${props => (props.white ? "white" : "black")};
+  font-size: 36px;
+  font-weight: 500;
   text-align: ${props => (props.centered ? "center" : "")};
 
   @media only screen and (max-width: 768px) {
@@ -73,26 +64,16 @@ const SectionTitle = styled.h3`
   }
 `;
 
-const Feature = ({
-  coloredBg,
-  imageOnLeft,
-  graphic,
-  icon,
-  title,
-  description
-}) => (
+const Feature = ({ coloredBg, imageOnLeft, graphic, title, description }) => (
   <Slanted colored={!!coloredBg}>
-    <PaddedContainer>
-      <Wrapper>
-        <LeftGraphic src={graphic} imageOnLeft={imageOnLeft} />
-        <Description>
-          <Icon src={icon} />
-          <SectionTitle>{title}</SectionTitle>
-          <Text>{description}</Text>
-        </Description>
-        <RightGraphic src={graphic} imageOnLeft={imageOnLeft} />
-      </Wrapper>
-    </PaddedContainer>
+    <Wrapper>
+      <LeftGraphic src={graphic} imageOnLeft={imageOnLeft} />
+      <Description>
+        <SectionTitle>{title}</SectionTitle>
+        <Text>{description}</Text>
+      </Description>
+      <RightGraphic src={graphic} imageOnLeft={imageOnLeft} />
+    </Wrapper>
   </Slanted>
 );
 

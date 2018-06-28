@@ -12,8 +12,9 @@ const Wrapper = styled.div`
   display: flex;
   height: 103px;
   justify-content: space-between;
-  margin: 0 100px;
+  padding: 0 100px;
   z-index: 1;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.05);
 
   @media only screen and (max-width: 768px) {
     margin: -40px 0 0 0;
