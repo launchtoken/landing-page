@@ -61,6 +61,7 @@ const Heading = styled.h3`
   color: #1f3052;
   font-size: 36px;
   font-weight: 500;
+  padding-top: 50px;
   text-align: ${props => (props.centered ? "center" : "")};
 `;
 

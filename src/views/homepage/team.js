@@ -8,7 +8,7 @@ import Carousel from "nuka-carousel";
 
 const Wrapper = styled.div`
   width: 100%;
-  padding-bottom: 140px;
+  padding-bottom: 198px;
   @media only screen and (max-width: 768px) {
     padding: 125px 0;
   }
@@ -44,7 +44,7 @@ const Description = styled.div`
 `;
 
 const Title = styled.h3`
-  padding: 0 100px;
+  padding: 50px 100px 0 100px;
   font-size: 36px;
   font-weight: 500;
 `;
@@ -233,7 +233,7 @@ const Team = () => (
           position={"SENIOR DEVELOPER"}
           linkedIn={"https://www.linkedin.com/in/jonathan-tow-6399691a/"}
           summary={
-            "Edmund is an experienced entrepreneur and software developer. He has spent most of his career developing software for renowned startups in NYC. He has solid experience developing blockchain-based solutions.In 2016, he co-founded a profitable incubator / software agency, where he built software using blockchain technologies like Ethereum and IOTA for ICOs firsthand. He is an expert in software products and strongly believes in lean methodologies."
+            "Jonathan is proficient at building high-level tools. He has worked at Conde Nast to build and maintain their best-in-class content management system as well as API status and response-time dashboards. He enjoys high energy scrum teams and has a passion in building the next best feature and tools for end-users."
           }
         />
         <MemberCard
