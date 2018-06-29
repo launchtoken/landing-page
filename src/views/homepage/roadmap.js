@@ -37,7 +37,7 @@ const DesktopGraphic = styled.div`
 
 const MobileGraphic = styled.div`
   background-image: url(${props => props.src});
-  width: 482px;
+  width: 384px;
   height: 300px;
   background-size: contain;
   background-repeat: no-repeat;

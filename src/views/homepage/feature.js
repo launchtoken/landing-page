@@ -51,6 +51,7 @@ const Description = styled.div`
 
   @media only screen and (max-width: 768px) {
     text-align: center;
+    padding: 0 30px;
   }
 `;
 

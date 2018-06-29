@@ -10,11 +10,14 @@ const TextInput = styled.input.attrs({
   border-style: solid;
   border-width: 2px;
   border-image-source: linear-gradient(97deg, #3023ae, #c86dd7);
+  border-right-width: 1;
   border-image-slice: 1;
-  border-right-width: 0;
   width: 300px;
   padding: 13px 10px;
   background-color: #ffffff;
+  @media only screen and (max-width: 768px) {
+    width: 170px;
+  }
 `;
 
 const HiddenWrapper = styled.div`
@@ -34,6 +37,9 @@ const SubmitButton = styled.input.attrs({
   background-image: linear-gradient(112deg, #3023ae, #c86dd7);
   color: white;
   padding: 15px 17px;
+  margin-top: 10px;
+  @media only screen and (max-width: 1300px) {
+  }
 `;
 
 const EmailSignup = () => (

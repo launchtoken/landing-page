@@ -17,8 +17,8 @@ const Wrapper = styled.div`
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.05);
 
   @media only screen and (max-width: 768px) {
-    margin: -40px 0 0 0;
     padding: 0px 20px;
+    height: 58px;
   }
 `;
 

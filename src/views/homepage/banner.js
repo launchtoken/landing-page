@@ -78,6 +78,8 @@ const Graphic = styled.div`
 
   @media only screen and (max-width: 768px) {
     margin-top: 30px;
+    height: 339px;
+    width: 339px;
   }
 `;
 

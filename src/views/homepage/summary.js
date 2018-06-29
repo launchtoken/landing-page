@@ -12,7 +12,7 @@ const Wrapper = styled.div`
   flex: 1;
   flex-direction: column;
   @media only screen and (max-width: 768px) {
-    padding-top: 140px;
+    padding: 0 30px 100px;
   }
 `;
 
@@ -45,6 +45,7 @@ const Icon = styled.div`
   background-image: url(${props => props.src});
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
   margin-top 41.5px;
   margin-bottom: 34px;
   min-width: 97px;

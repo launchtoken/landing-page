@@ -38,7 +38,7 @@ const Caption = styled.h4`
   margin-bottom: 60px;
   @media only screen and (max-width: 768px) {
     display: none;
-    padding: 0 50px;
+    padding: 0 30px;
   }
 `;
 

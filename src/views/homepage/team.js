@@ -10,7 +10,7 @@ const Wrapper = styled.div`
   width: 100%;
   padding-bottom: 198px;
   @media only screen and (max-width: 768px) {
-    padding: 125px 0;
+    padding-bottom: 125px;
   }
 `;
 
@@ -29,9 +29,9 @@ const Member = styled.div`
   border-radius: 2px;
   @media only screen and (max-width: 768px) {
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin-bottom: 50px;
-    width: 300px;
+    width: 250px;
     height: 750px;
   }
 `;
@@ -46,6 +46,10 @@ const Title = styled.h3`
   padding: 50px 100px 0 100px;
   font-size: 36px;
   font-weight: 500;
+  @media only screen and (max-width: 768px) {
+    padding-left: 50px;
+    padding-right: 0;
+  }
 `;
 
 const Name = styled.span`
@@ -76,11 +80,11 @@ const ProfilePicture = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  min-width: 400px;
-  min-height: 400px;
+  width: 400px;
+  height: 400px;
   @media only screen and (max-width: 768px) {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
   }
 `;
 
@@ -147,7 +151,7 @@ const Team = () => (
       <Title>Team</Title>
       <Carousel
         slideWidth="420px"
-        framePadding="0 100px"
+        framePadding={window.innerWidth < 768 ? "0 50px" : "0 100px"}
         renderBottomCenterControls={props => {
           let indexes = [];
 

@@ -41,6 +41,9 @@ const Link = styled.a.attrs({
   target: "_blank"
 })`
   margin: 0 15px;
+  @media only screen and (max-width: 768px) {
+    margin: 0 6px;
+  }
 `;
 
 const SocialMedia = ({ href, src }) => (
