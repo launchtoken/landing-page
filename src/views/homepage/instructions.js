@@ -75,24 +75,21 @@ const Instructions = () => (
             <Icon src={IMAGES.HOW_IT_WORKS_1} />
             <Title>Step 1 - Create Token</Title>
             <Description>
-              Create a new token on the Launch Token platform by filling out a
-              simple form, or input an existing ERC-20 token.
+              Create a customized token on the Launch Token platform or input an existing ERC-20 token.
             </Description>
           </Step>
           <Step>
             <Icon src={IMAGES.HOW_IT_WORKS_2} />
-            <Title>Step 2 - Design Page</Title>
+            <Title>Step 2 - Choose ICO Model</Title>
             <Description>
-              Select from several ICO models, and choose from professionally
-              designed website templates.
+              Select from several ICO models and choose a model that meets your project team’s specific requirements.
             </Description>
           </Step>
           <Step>
             <Icon src={IMAGES.HOW_IT_WORKS_3} />
-            <Title>Step 3 - Launch</Title>
+            <Title>Step 3 - Create ICO Website</Title>
             <Description>
-              Start fundraising using Launch Token's decentralized smart
-              contracts to manage your entire crowdsale!
+              Choose from a selection of  professionally designed templates and instantly create a dedicated ICO campaign website.
             </Description>
           </Step>
         </Section>

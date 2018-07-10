@@ -24,7 +24,7 @@ class Homepage extends Component {
           graphic={IMAGES.FEATURE_GRAPHIC_1}
           title={"Crowdsales Built on Smart Contracts"}
           description={
-            "Decentralizing the road to decentralization. Seamlessly whitelist, KYC, and fundraise all on top of Ethereum's decentralized protocol."
+            "Decentralizing the road to crowdfunding. Seamlessly whitelist, KYC, and fundraise on top of Ethereum's decentralized protocol. All done with minimal gatekeeping."
           }
         />
         <Feature
@@ -33,14 +33,14 @@ class Homepage extends Component {
           graphic={IMAGES.FEATURE_GRAPHIC_2}
           title={"Easy, Powerful, Drag & Drop Website Builder"}
           description={
-            "Choose from an array of professionally designed templates and customize the look and feel to match your business. Host on your own domain and build a brand."
+            "Quickly deploy a campaign website without a single line of code required.Choose from a selection of customizable, professionally designed templates that can be hosted on your own domain."
           }
         />
         <Feature
           graphic={IMAGES.FEATURE_GRAPHIC_3}
           title={"Decentralized & Secure"}
           description={
-            "Benefit from the checks and balances of the Launch Token protocol. Allow your investors to enjoy the comfort of transparency and built-in scam protection."
+            "Enjoy the benefits of running your entire crowdsale on a decentralised, robust and secure protocol. This ensures that investor  funds are safe and that the integrity of the process remains intact."
           }
         />
         <Summary />

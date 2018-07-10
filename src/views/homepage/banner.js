@@ -103,8 +103,7 @@ const Banner = () => (
     <BannerSection>
       <Tagline>Launch Your Own ICO Crowdsale</Tagline>
       <Caption>
-        Run your entire ICO crowdsale securely on the blockchain - without a
-        single line of code.
+        Safe, secure and investor-friendly crowdsales run on a platform built with the future of ICOs in mind.
       </Caption>
       <FormWrapper>
         <EmailSignup />

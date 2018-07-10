@@ -91,25 +91,21 @@ const Instructions = () => (
       <Wrapper>
         <Heading centered>Launch Token Features</Heading>
         <Caption>
-          Focus on marketing and building your product while our cross browser,
-          responsive platform does the heavy lifting managing your token
-          crowdsale in a trustless manner.
+          The platform is packed with a number of features designed to enable you to focus on product milestones while our cross browser, responsive platform and intuitive dashboard does the heavy lifting.
         </Caption>
         <Section>
           <Feature>
             <Icon src={IMAGES.SUMMARY_ICON_1} />
             <Title>Custom Domains</Title>
             <Description>
-              Point your DNS to our IP and that's it! We host your websites on
-              battled-tested infrastructure to ensure reliability.
+              Let us host your website on battled-tested infrastructure that ensures high performance and reliability. Point your DNS to our IP and that's it! 
             </Description>
           </Feature>
           <Feature>
             <Icon src={IMAGES.SUMMARY_ICON_2} />
             <Title>Built on Blockchain</Title>
             <Description>
-              Allow your investors to trust in the crowdsale process by using
-              Launch Token's secure protocol.
+              Launch Token leverages blockchain technology to create a trustless platform for transactions. This allows your investors to trust in the crowdsale process.
             </Description>
           </Feature>
           <Feature>
@@ -124,8 +120,7 @@ const Instructions = () => (
             <Icon src={IMAGES.SUMMARY_ICON_4} />
             <Title>Customer Support</Title>
             <Description>
-              We are committed to creating the most complete ICO platform, and
-              love feedback from users in how we can improve our protocol!
+              We are committed to creating an ICO platform that guarantees a smooth experience for all users. We value  community feedback as  it enables us to continuously improve.
             </Description>
           </Feature>
         </Section>
