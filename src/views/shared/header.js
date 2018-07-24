@@ -5,7 +5,9 @@ import NavigationButton from "views/shared/navigation-button";
 import { SECTIONS } from "config";
 
 import IMAGES from "assets/images";
-import WHITEPAPER from "assets/files/Launch-Token-Whitepaper.pdf";
+// import WHITEPAPER from "assets/files/Launch-Token-Whitepaper.pdf";
+const WHITEPAPER =
+  "https://s3.amazonaws.com/launch-token/docs/static/media/Launch-Token-Whitepaper.850773f2.pdf";
 
 const Wrapper = styled.div`
   align-items: center;
