@@ -1,0 +1,884 @@
+﻿Contents
+
+
+Executive Summary
+
+
+1. The ​Significant​ ​Challenges​ Teams ​Face When Launching an ICO 
+                   
+1. Launch Token’s Solution: An Open Platform for Running an Entire ICO Securely on the Blockchain — Without a Single Line of Code
+
+
+1. Launch Token Platform Architecture and Token (LTK)
+
+
+1. LTK Distribution and Crowdsale Details
+
+
+1. Market Opportunity and Competition Landscape
+
+
+1. Project Roadmap
+
+
+1. Launch Token Team (Core + Advisors)
+
+
+1. Contact Us
+
+
+1. References
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+This document (this “Whitepaper”) is not an offer of securities or a collective investment scheme, nor does it require registration with or approval from any related institution or authority. This Whitepaper is not a prospectus of any kind and is not a solicitation for investment. Contributors are advised to read this document carefully in full, and perform due diligence. The information provided in this Whitepaper is subject to change over time and does not constitute any financial advice.
+
+
+Executive Summary
+
+
+2017 was a phenomenal year for Initial Coin Offerings (“ICOs”), which demonstrated worldwide that crowdfunding can be accomplished by simply a deploying a smart contract on the Ethereum blockchain in as few as 20 minutes.¹ The market did not miss a beat. According to Icodata,² 871 ICOs raised approximately $6 billion (USD) in funding, and as recently reported by Bloomberg,³ 2018 has already seen new records for ICOs, with more than $9 billion (USD) collected thus far. This exponential increase in the number of ICOs, however, has reinforced the need for service providers who can reliably assist teams with their token crowdsales. There is still ample room for success with ICOs, but substantially greater room for failure than prior years.
+
+
+Among other emerging issues, ICOs are frequent targets for hackers and their sheer number and variety have complicated attempts at standardization.⁴ More than 10%⁵ of funds are regularly lost. Teams face great pressure against the prospect of smart contracts making their errors irreversible, and in the case of ICOs, immense sums can be held captive or diverted by faulty code. Further, many are also calling for ICO designs that can make projects more transparent and accountable to their contributors, including the DAICO model⁶ recently proposed by Ethereum creator, Vitalik Buterin. There is now no shortage of calls to make “Better ICOs”⁷ and regulations loom large. Situational awareness in running an ICO campaign is therefore key to maintaining best practices, and many startup teams do not have the time or resources to keep updated.
+
+
+Despite these hurdles, if 2018 is any indication, ICOs are not only here to stay — they are steadily on the rise, with some even calling them a “killer app”⁸ of blockchain technology, accelerating dApps and removing intermediaries in the capital markets. If “Tokens are Eating the World,”⁹ ICOs could be forks and knives. Thus, the table has been set for disruptive innovation — the rewards are clear, the risks less so. The need for reliable ICO services is pressing, and an automated platform would offer a nimble alternative. An automated ICO solution would also make token crowdsales more predictable and support standardization in the near term. 
+
+
+Making ICOs more standardized and secure should not mean they are far less available, however. Acknowledging that token crowdsales do not present a sufficiently mature and fair market, ICO services should still preserve the basic features that make crowdsales such a compelling alternative: simple, open networks that allow anyone, anywhere, to create and transfer value in a marketplace of ideas. This radical potential has inspired “Launch Token” and countless other teams working with blockchain technology, while technical approaches for ICO services have not been adequately explored.
+
+
+Responding to recent uncertainties in the ICO market, Launch Token is designing an automated solution that balances decentralization and compliance considerations: the open “Launch Token Platform” built on Ethereum. At its base, this platform involves templatizing the technical and UX aspects of ICOs to make them far more efficient and accessible. For example, in this format, the common components for an ICO — such as campaign models, design elements, and smart contract features — are simply dragged and dropped by users for rapid deployment. Such a solution will yield immediate security benefits, as projects will be less prone to make errors working within this more intuitive format. 
+
+
+Positioned for long-term value against shifting ICO needs and meaningful decentralization, the essential components of the Launch Token Platform will be regularly audited and improved by community contributors and partners. Among other features of this ecosystem, contributors and auditors will receive multiple platform benefits, including token rewards and priority presale access, in exchange for helping develop and secure platform services (see infra, 3.2, for additional details regarding platform incentives). In this regard, Launch Token offers a blockchain-based decentralized platform that relies on smart contracts for key functions and participant protection, managing the entire crowdsale process without a dedicated ICO team or gatekeepers. Throughout this experience, users of the Launch Token Platform should not have to trust any single ICO service provider or set of competencies to launch their own crowdsale and begin building great products.
+
+
+As a primary differentiator, there will be no centralized application process to access the Launch Token Platform and get started with global crowdfunding — restrictions to running a full ICO campaign through the platform, if any, will be transparent and community-driven. Therefore, more teams will be able to start their ICO campaigns with confidence and receive market feedback with Launch Token’s holistic approach and ‘DIY’ smart contracts for token crowdsales. 
+
+
+While understandable in light of recent bans on token crowdsales in certain jurisdictions, it is unfortunate that similar ICO platforms are opting to restrict themselves to select projects or otherwise adding friction to this process. Launch Token hopes to buck against this trend with a more open format, integrating, among other features, community vetting over trusted experts to guide ICO listings and standards, such as the due diligence resources made available on ConcourseQ¹⁰ and ICO Bench¹¹ as well as through dedicated bounty programs and similar efforts. Launch Token therefore offers a unique opportunity to decentralize both access to, and the entire management of, ICO campaigns through smart contracts and cryptoeconomics. 
+
+
+Protecting contributors and the legitimacy of ICO fundraising will remain paramount. Ultimately, in the event that a Launch Token crowdsale fails to meet community thresholds, it will be automatically suspended until such issues are resolved. In essence, this framework should allow even vetting and certain compliance considerations to be automated and crowdsourced. More details regarding the Launch Token ecosystem and internal checks are provided in Section 3.2 and will be further defined and declared in forthcoming announcements. 
+
+
+In sum and effect, Launch Token will provide a more simple, thorough, and decentralized solution for ICO campaigns, iteratively improved through community feedback and platform incentives (see infra, 3.2). Among other competitive features, the Launch Token Platform and ecosystem should provide a novel framework to crowdsource ICO tools and standards. 
+
+
+Notably, and speaking to the ‘wisdom of crowds’ for judging the quality of ICO projects, there is growing evidence of crowdsale participants already becoming more discerning¹² and making more efficient allocations of capital: for example, in June 2017, only one project failed to reach their objectives — on the other hand, from July 1 through September 25, 2017, 51 ICOs fell short of their goals. In the words of industry observer Eric Risley, “a stark two-tier market has quickly developed via ‘crowd behaviour’” for token crowdsales, and Launch Token aims to leverage these insights. 
+
+
+Ultimately, while ICOs have been plagued by regulatory and fiduciary concerns, the end result of this experiment should trend progressive. Among other interests, there should be due consideration for the promise of ICOs to democratize venture finance¹³ and drive the ‘Internet of Value’ — where assets, like information, can be instantly created and exchanged. Therefore, there are real stakes for the availability and security of ICO services and a risk of overcorrection through industry self-regulation, should these norms provide a blueprint for future legislation. Already, some have noted¹⁴ the “gatekeeper of valid projects” role of certain ICO platforms, welcoming a competitive alternative as this space grows and token crowdsales become more common and understood. 
+
+
+Proposing to foster the killer app of ICO financing for startups and find new balance, the Launch Token team will deliver a highly accessible platform for automating token crowdsales, inviting broad collaboration and dialogue with social scalability built into its base architecture and token design. Ultimately, the Launch Token team envisions projects kickstarting and managing an entire ICO campaign with a few clicks from a single pane, limited more by imagination than means. Above all, Launch Token’s combined services will be delivered as an evolving resource for ICOs, agnostic to what is valid but always seeking the better for token crowdsales. 
+
+
+Introducing “Launch Token” and the ICO Process:
+
+
+Launching an ICO involves multiple critical components, which include:
+
+
+* Secure ERC20 token
+* Multi-currency support
+* Whitelisting and AML/KYC [a]
+* ICO landing page(s)
+* Token presale preparation
+* Crowdsale preparation
+* Stable and secure systems for safe contributor transactions
+* Secure smart contract(s) to enforce fundraising goals, hard and/or soft caps
+* Accounting systems for contributor deposits and transaction confirmations
+* Bounty programs and airdrops
+* Advanced governance mechanisms (emerging trend), such as refunds controlled by contributor vote
+
+
+On brief review, it is apparent that this is a process that requires a significant amount of capital, time, and a team with a diverse set of skills geared for evolving ICO requirements. This poses an underappreciated problem for most blockchain startup projects and other teams exploring an ICO:
+
+
+1. The ICO process diverts the product development team’s focus from the core project/prototype.
+
+
+1. The ICO process requires additional team members for tasks that will only need to be executed once.
+
+
+1. The ICO process requires the deployment of financial capital toward infrastructure such as the crowdsale website [b]and smart contracts, which will be of little or no use post-crowdsale.[c]
+
+
+Taking these considerations into account, blockchain startups and others eager for ICO fundraising are more than ready to explore alternatives to managing the ICO process, such as using service providers that can provide automated solutions. Notably, while a number of projects coming out of their ICOs have successfully delivered on initial product goals, including Golem and Digix, many have seen significant delays in reaching their milestones. While the complexity of developing blockchain applications certainly plays a large role in these kinds of setbacks, one can assume that the pressures of running an ICO and related follow-up tasks were no great help in building momentum and reaching targets. This caution of ‘ICO creep’ should apply even more so today, given that many early projects had far more breathing room to improvise their crowdsale process with less regulatory overhang to contend with (and yet still faced substantial delays). Among other signals of a more challenging market and the desirability of an automated solution, crowdsale participants are coming to expect an efficient and orderly ICO process for legitimate projects — certain otherwise successful teams may face lingering reputation risks¹⁵ from a problematic crowdsale, distracting from product development.
+
+
+Having identified the common challenges associated with token crowdsales and due to the fact that there are only a handful of services that provide a comprehensive solution with minimal gatekeeping, the team at Launch Token was motivated to build a platform for running an entire ICO campaign securely on the blockchain — without a single line of code: (i) create a token, (ii) choose a website template design, (iii) select a crowdsale model, and (iv) kickstart an ICO  (see infra, 2.2).
+
+
+The Launch Token team is working on the prototype of this platform and truly believes it is poised to disrupt the ICO space which has been plagued by a lack of standards, transparency, and secure options for both startups and crowdsale participants. The team is diverse and global. It consists of highly-experienced software development, marketing, legal, and financial services professionals. The team has worked in different organizations ranging from US-based startups to tech giants such as Google and Uber to other well-known entities such as Kraken Exchange and the World Economic Forum.
+
+
+Approaching the design of the Launch Token Platform, the team is motivated by the promise of Bitcoin and Ethereum to make sending value across national borders as simple and liberated as sending email. The team is further encouraged by projects building on this vision, such as Kyber Network (DEX),¹⁶ that have made the exchange of value as natural as visiting a website while also maintaining a great degree of decentralization and security. 
+
+
+Launch Token hopes to continue this mission and make crowdsales a seamless experience. By delivering an open platform with an ecosystem supported by a native token, ‘LTK’ (see infra, 3.2) the team intends to offer an alternative to more restrictive ICO services and demonstrate how crowdfunding on the blockchain can accelerate ideas and distribute their fruits better than legacy models. 
+
+
+On the whole, the team believes this is a needed solution that can help other teams bring their blockchain projects to market in an efficient and effective manner. We invite others to join us on this exciting journey.
+
+
+1. The Significant Challenges Teams Face When Launching an ICO
+
+
+ICO stands for “Initial Coin Offering,” which is an innovative form of crowdfunding commonly used to raise funds for blockchain startup projects. They principally involve the sale of digital assets or “tokens” that represent the potential value of an early-stage project, resembling venture capital investments. For most blockchain startups, ICOs are undoubtedly the best method for raising capital. In his Harvard Business Review article¹⁷ on the subject, Richard Kastelein writes that ICOs are the ultimate win-win “as they allow startups to raise funds without having equity stakeholders breathing down their necks on spending, prioritizing financial returns over the general good of the product or service itself.” 
+
+
+  
+
+Source: Coindesk ICO Tracker
+
+
+This increasingly popular funding option also has much fewer regulatory requirements than traditional venture capital funding and, in most cases, allows blockchain startups to avoid giving up equity in exchange for capital. These benefits, among others, have led the surge and exponential increase in the number of new ICOs launched each month over the last couple of years, with 2017 being the undeniable ‘breakout’ year.  
+
+
+Until mid-2017, it was fairly easy for startup teams to convince crowdsale participants to invest capital into their projects. Without even writing a single piece of code, teams could simply advertise a general concept, develop an online community to help evangelize their project and readily collect large sums via ICOs. In a number of instances, all the project team had was a well-written whitepaper to back up their concept, largely borrowing from the recent wave of speculative excitement around blockchain technology and ICOs themselves. However, a number of these ICO projects failed to create any working prototypes, meet any project milestones, some were eventually exposed to be scams, and a variety of projects failed owing to poor cryptoeconomics (see infra, 1.3). Indeed, a moment of collective pause may be due when the U.S. Securities and Exchange Commission (“SEC”) takes it upon itself to make a mock ICO website¹⁸ for “Howey Coins” to address the rampant number of ICO scams.  
+
+
+The end result has been the evolution of the ICO space which is now characterised by: (a) more discerning contributors who are aware of ICO scams and therefore demand more transparency in an ICO's operation before agreeing to invest, and (b) in some parts of the world, closer scrutiny from regulatory bodies. Specifically, financial regulatory bodies in countries like the U.S., Canada, Hong Kong and Singapore are weighing the desirability of applying traditional securities regulations to ICOs. Meanwhile, countries like China and South Korea have already rolled out regulations that have impacted the ICO space, including outright bans on participating in token crowdsales. Therefore, projects looking to raise capital are now forced to expend far more effort and resources when preparing their ICO campaigns to ensure that they meet these increasing constraints and demands.
+
+
+In sum, these recent developments in the ICO space leave little room for error, and teams that hope to utilize ICOs for funding should familiarize themselves with their critical components. This growing set of necessary ICO competencies, however, presents blockchain startup projects with multiple choke points that divert focus from their core project and product development: 1) Discovering the Right ICO Team, 2) Developing a Secure System for the ICO Campaign, 3) Designing Sustainable Project Growth, and 4) Drawing Sufficient Interest to the ICO Campaign.
+
+
+1.1 Discovering the Right ICO team
+For startup teams that attempt to manage their own token crowdsale, there are frequent challenges in building an internal team that can credibly design, manage, and deliver a successful ICO campaign. Hiring is a costly exercise, and with ICOs, it may require the deployment of significant financial capital toward assembling teams that may not be needed post-crowdsale. Specifically, successful ICO campaigns often require diverse teams consisting of a mix of professionals with technology, marketing, legal, financial, and sales expertise. The entire token crowdsale process may require hiring, at the very least, the following:
+
+
+* White paper writer(s)
+* Graphic Designer for whitepaper and website
+* Developers/coders for the initial product/prototype
+* Blockchain engineer(s) to build/manage the blockchain network and smart contracts
+* ICO managers who have a successful track record with token crowdsales
+* Community Managers to build communities on Reddit/Telegram/Twitter/Medium  
+* Marketing experts that can navigate a very loud and crowded ICO market
+* Legal advisers (in certain jurisdictions)
+
+
+In addition to the cost and time demands associated with building an ICO team, hiring the right people who have expertise in blockchain technology can be particularly challenging because this space is relatively new and talent is in short supply. As such, a number of startups either opt for freelancing platforms to hire a mix of people for different tasks (with expected coordination problems) or stretch their core project team too thin.
+
+
+While many know that ‘hiring the right people for the right tasks’ is key to growing a business — at least with regard to ICOs, it is still not entirely obvious what the ‘right tasks’ are to guide the selection of the ‘right people.’ It therefore makes sense for startups considering an ICO to study their alternatives, such as using service providers that can provide customizable and automated solutions. 
+
+
+1.2 Developing a Secure System for an ICO Campaign 
+ICO project teams need to carefully review their security posture as they are particularly vulnerable to attacks. Needless to say, the future of any successful project should not be saddled with untold ‘zero day’ vulnerabilities from a hasty ICO launch and token design. As they fundamentally involve securing large amounts of cryptocurrency, ICOs have become very conspicuous targets for hackers and other bad actors. According to research by Chainanalysis, there has been a direct relationship between ICOs and crypto-related attacks: 
+
+
+   
+Source: Chainanalysis
+
+
+Specifically, during the capital-raising period and soon after successfully raising funds, ICOs attract the attention of cyber-criminals. The bulk of these crimes occur due to:
+
+
+1. Poor or Faulty Code - as was the case with the DAO attack¹⁹ (June 12, 2016), resulting in a loss of $55M.
+
+
+1. Phishing Schemes - as was the case with the BeeToken attack²⁰ (January 31, 2018), resulting in a loss of $1M.
+
+
+1. Digital Wallet Vulnerabilities - as was the case with the Parity Multisig wallet²¹ (July 19, 2017), resulting in a loss $30M.
+
+
+1. Website Vulnerabilities - as was the case with CoinDash’s ICO website²² (July 17, 2017), resulting in a loss of $7M.
+
+
+1. Token Vulnerabilities - as was the case with the batchOverflow exploit,²³ which would allow attackers to generate an extremely large amount of tokens and deposit them into a normal address (April 22, 2018), and which caused an affected project’s token price to drop from $0.11 to $0.08 in less than an hour.
+
+
+Protecting the ICO process from these threats should be top of mind, otherwise, it is likely only a matter of when (not if) invested funds will be compromised. A popular project recently learned this unfortunate lesson, where a recently-discovered smart contract bug²⁴ allowed transfers of its native token to be disabled, a startling lapse for a venture roughly valued at $800 million. Perhaps more concerning, researchers reportedly found at least five security vulnerabilities on average²⁵ for ICOs conducted in 2017, with most issues residing in smart contracts supporting the ICO itself. Therefore, if a team cannot confidently manage their own security, it would be prudent to explore alternative methods such as conducting their ICO on a battle-tested platform. 
+
+
+1.3 Designing Sustainable Project Growth (Crypto/tokenomics)
+On the run up to an ICO, teams often tend to overlook the “cryptoeconomic”²⁶ aspects of their token and project ecosystem. Ethereum developer and researcher Vlad Zamfir, known for his research on proof-of-stake and blockchain sharding for the Ethereum project, defines cryptoeconomics as “a formal discipline that studies protocols that govern the production, distribution, and consumption of goods and services in a decentralized digital economy. Cryptoeconomics is a practical science that focuses on the design and characterization of these protocols.” 
+
+
+There are two chief aspects to cryptoeconomics:
+
+
+1. Cryptography - Hashes, signatures, ZKPs, encryption, etc., and the substance of what makes communication and transactions in a decentralized system secure.
+
+
+1. Economics - Tokens, rewards, penalties, privileges, etc., and other structured incentives to encourage users to contribute to a network, ensuring its success in the long run.
+
+
+While most ICO project teams seem to pay sufficient attention to the various cryptographical aspects of their ICO, there is growing evidence suggesting that project teams fail to give adequate consideration to the basic economic aspects of their crowdsales and how native tokens can properly relate to an underlying business model.²⁷ As noted in a recent EY research report on ICOs,²⁸ “Most ICO white papers lack a clear explanation of the business reasons for blockchain and token currency (utility token).” Although the effects of poor token economics will probably only be felt post-ICO and some questionable designs may ultimately be validated in practice, it is imperative that a project adequately prepare this aspect of their future ecosystem before issues become apparent in the market. At the very least, a sound approach to tokenomics will encourage momentum at the ICO stage and lay the foundation for future network engagement and sustainability. Teams that lack sufficient expertise or resources to develop this aspect of their token crowdsale should therefore seek out alternatives that can offer ready templates and guidance on this developing topic of study.
+
+
+1.4 Drawing Sufficient Interest to the ICO Campaign 
+The growth of the ICO space shows no signs of slowing down anytime soon, with roughly $726 million collected in April 2018, according to figures from Coindesk.²⁹ However, with greater regulatory scrutiny and contributor caution, more established teams may start to take the lion’s share of these investments, as seen with Telegram’s raise of $1.7 billion by selling tokens to 200 private contributors (which incidentally scrapped its crowdsale) and Block.one’s recent conclusion of its $4 billion ICO for the EOS token following a year-long campaign. Despite these headline-grabbing numbers, startup teams considering an ICO should not assume that an original idea and compelling whitepaper will be enough for success. Indeed, industry observers have already noted that the ICO space is maturing, with a “stark two-tier market”³⁰ where most projects fail to meet their fundraising objectives. Teams opting for an ICO will therefore need to stand out from a crowded pack with increasingly larger players, requiring marketing tools and unique insights for an edge. 
+
+
+A classic example of how poor marketing can be a major setback for an ICO project team can be found in the NXT ICO (completed in 2013). According to Cyberius,³¹ the NXT ICO ran over a two-month period and only managed to raise 21 Bitcoin (equivalent to roughly $14,000 (USD) at the time). It was later revealed that less than seventy-five (75) individual contributors actually participated in the NXT ICO. On review, a major contributing factor to this lackluster result could be the fact that this ICO was held unofficially through an anonymous “Bitcoin Talk” forum account and funds were being routed to an individual’s personal Bitcoin address, suggesting a narrow approach to engagement. If the NXT project even just had access to simple marketing tools (short of hiring a dedicated team), one can imagine a different result. Therefore, while this may be an extreme example, it still drives the point that marketing as a mere afterthought can result in a disastrous campaign. Quality ideas should not be so limited. 
+
+
+With so many ICO options, and many more launching weekly, a project team that knows how and when to market an ICO will greatly increase their odds of recognition. However, like all other key components of a successful ICO, this can divert the team’s focus from the core project, and if possible, it may be better to look for solutions elsewhere, particularly a platform that can automate basic marketing functions, e.g., by providing design templates and chatbots, among other customizable solutions.
+
+
+Wrap up
+Having identified the challenges commonly associated with ICO campaigns, and seeing few providers able to automate this entire process with minimal gatekeeping, the team at Launch Token was inspired to build a platform for running an entire ICO crowdsale securely on the blockchain — without a single line of code. The team is working on the prototype of the Launch Token Platform, with details regarding its proposed solutions outlined in the following section.
+
+
+2. Launch Token’s Solution: An Open Platform for Running an Entire ICO Securely on the Blockchain — Without a Single Line of Code.
+
+
+Launch Token is a blockchain-based decentralized platform designed to allow startups to instantly create their own ICO campaign and begin fundraising with the click of a button. This platform aims to deliver a turnkey solution: straight from minting a token and choosing an ICO model to creating a website and raising funds, every aspect of token crowdsales should be easily managed on the Launch Token Platform. With an intuitive dashboard, users will be able to easily manage their own token crowdsale, allowing them to focus on communications and delivering on product milestones. In essence, the Launch Token Platform embodies the team’s mission to make ICOs more standardized, accessible, and secure. 
+
+
+Launch Token is on a mission to:
+
+
+* Develop a blockchain-based decentralized platform tailored for the future of ICO and crowdsourced fundraising.
+* To standardize, templatize and automate the ICO crowdsale process with the aim of constantly improving it.
+* Offer an alternative to more restrictive ICO platforms and gatekeepers without compromising ‘best practice’ standards.
+* Make ICO crowdsales a true ‘drag-and-drop’ experience without the need to write a single piece of code.
+* Make the ICO process safe, secure and contributor-centric.
+* Drastically reduce the burdens and costs for startup teams that are considering this fundraising route.
+
+
+2.1 Why the Launch Token Platform?
+Before diving into the platform’s features, it is important to clearly outline why teams exploring an ICO or similar fundraising should consider using Launch Token as their preferred solution:
+
+
+2.1.1 It Makes Economic Sense
+Resources are scarce for companies looking to build their own ICOs. They scramble to build a functional prototype and are then forced to deploy ICO landing pages and similar limited-purpose tools. Instead of concentrating on product features, many projects are sidetracked by building out temporary infrastructure for crowdsales, often falling short on security and user experience. These teams should find clear benefit in using standardized protocols and ICO campaign tools. Indeed, it has been estimated that an ICO can cost upward of $60,000³² from start to finish, which is no small sum for developers looking to finance their ideas without the benefit of VC backing. 
+
+
+By delivering a simple platform that can reliably host ICOs and similar crowdsales, Launch Token aims to drastically reduce the burdens and costs for startup teams that are considering this route. 
+
+
+2.1.2 Launch Token is ‘On Trend’ with ICO Developments
+In 2017, ICOs demonstrated the global demand for crowdsourced financing and dApps. However, while ICOs have so far delivered great value for development teams, they have left much to desire for contributors that have little control over their funds. For example, there are regular reports of teams abandoning their projects after a successful ICO or failing to timely deliver on promised milestones, leaving many frustrated and confused over the goals of ICOs and their future relevance.
+
+
+The team behind Launch Token believes that ICOs will remain in high demand despite these acknowledged governance risks. Among other benefits, ICOs remain a nimble and tried alternative to traditional early-stage venture capital fundraising. The team further expects greater regulatory clarity in 2018 on the legal status of ICOs and crowdsale tokens, as seen in recent proposals³³ to lift the ICO ban in South Korea (a major market for cryptocurrencies), and more recently, statements from SEC officials³⁴ suggesting that Bitcoin and Ether should not be regulated as securities. On review, these trends suggest a promising future for token crowdsales, as these uncertainties gradually recede. That being said, there is ample room for improvement for the ICO model that could give confidence to new contributors. As a recent EY research report on ICOs³⁵ has observed, “the future of ICOs will be determined by the transparency of blockchain technology and the ability to set new standards that are accepted by all participants.” The Launch Token Platform and ecosystem (see infra, 3.2) is uniquely positioned to develop such broad ICO standards, by simplifying the ICO process and bringing together a diverse set of contributions and insights.
+
+
+In 2018, the team has observed growing demand for ICOs that use smart contracts to not only control initial funding, but to also allow contributors to better engage with teams and direct how their funds are used to develop a project. These models may eventually surpass regular ICOs as contributors opt for crowdsales with built-in governance features that offer rights characteristic of stock or other forms of equity, such as the the “Security Token Offering” or STO model³⁶ being developed by the Polymath team. Therefore, the Launch Token team has great interest in these trends and is actively researching³⁷ how to safely deliver more advanced governance features for ICOs on the Launch Token Platform in order to meet this growing demand. In addition to STOs, Vitalik Buterin’s recent DAICO proposal and other versions of “Interactive ICOs” offer to rebalance the risks in ICOs by incorporating elements of DAOs.³⁸ 
+
+
+As the team continues to review the progress of various teams experimenting with the DAICO model, including the Abyss Platform and Daox, the immediate intention is to deliver a secure and performant DAICO feature as the first advanced governance add-on to the Launch Token Platform. The Launch Token team is further committed to being proactive in helping design better ICOs and will engage with partners in the industry to help drive standards. Perhaps as a brief statement, this Whitepaper itself provides an introduction to the Launch Token team’s observations on the state of the industry and initial recommendations.
+
+
+2.1.3 Reliable Infrastructure
+In the programming world, there is a concept called Don’t Repeat Yourself.³⁹ The basic principle of “DRY” is that code should be written once — or ‘templatized’ — in order to prevent mishaps. In actual practice, when things are repeatedly re-written bugs often arise. In this way, programming can be a very manual process that requires engineers to be present at each milestone.
+
+
+Given the sheer volume of financial value being transferred during ICOs, a reliable protocol that developers can subclass and hook into like an API is essential, and the Launch Token Protocol (“STRATOS”) is designed to provide this ease. 
+
+
+Further, the Launch Token Platform is being built on a battled-tested infrastructure for high performance and reliability. To this end, Launch Token will primarily utilize the Ethereum blockchain to host its entire platform in a decentralized and trustless manner, reducing among other risks, the prospect of frozen or reversed transactions.
+
+
+2.1.4 Security is Top Priority
+During the capital-raising period and soon thereafter, ICO teams attract the attention of cyber-criminals. Given the extent and frequency of such attacks, best practices in cybersecurity are a top priority on the Launch Token Platform. To this end, Launch Token leverages blockchain technology to create a trustless platform for transactions: the entire crowdsale is run on a secure protocol which ensures that contributor funds are safe and the integrity of the process remains intact. Further, by motivating diverse contributions to platform resources (see infra, 3.2), including organizing regular bug bounties and audits, the Launch Token Platform should be more robust and responsive than centralized solutions, which have already seen security lapses (see infra, 5). 
+
+
+Aiming for a diverse and thorough approach, the platform will further integrate with leading cybersecurity tools to monitor anomalous activity in smart contracts and digital wallets, such as ChainWatch.io⁴⁰ for early warning. In addition, the Launch Token team is actively studying and incorporating industry lessons to improve the overall security posture of the Launch Token Platform, including reviewing ongoing attacks on ICO websites and wallets, as seen in the recent attack on CoinDash’s ICO campaign where a flaw in CoinDash’s ICO website led to a $7 million loss only 13 minutes into the token sale. All notifications related to cybersecurity events and the status of any ICO campaign will be obvious to users and readily monitored through the platform’s intuitive interface, allowing for greater control and peace of mind. Additional details regarding the Launch Token security infrastructure will be further defined and declared in forthcoming announcements. 
+
+
+2.1.5 Comprehensive, Yet Easy to Use
+At its core, the Launch Token Platform aims to become a complete solution for even the most advanced ICO campaign needs. This comprehensive platform will be built to offer end-to-end tools, from creating an ERC20 token and crowdsale website to kickstarting the ICO itself. Tasks such as whitelisting, AML/KYC, caps, presales, crowdsales, phases, and mechanisms for scam prevention shall begin and end with the Launch Token Platform, allowing users to concentrate on improving their product and communications during the actual token crowdsale.
+
+More to the ease of this solution, the Launch Token Platform will be designed to give users full control over their ICO campaign from a single pane. Any user of the Launch Token Platform should not need any technical expertise to navigate tasks and monitor the progress of their fundraising. 
+
+
+2.1.6 Device-Agnostic[d]
+The Launch Token Platform will be device-agnostic. As such, users will be able to run it on a range of browsers, smart phones and other devices. In addition, the Launch Token Platform will offer a range of cross-browser/cross-platform templates that can be simply added or removed as desired.
+
+
+2.1.7 Seamless Integration
+Launch Token will enable seamless integration between existing infrastructures and the Launch Token Platform using APIs, allowing users to more easily monitor and manage their ICO campaigns.
+
+
+2.1.8 Knowledge Resources and Community Feedback
+The Launch Token team is committed to ensuring that startup teams and participants have a smooth experience during the actual crowdsale process and beyond. As described in Section 3.2, the Launch Token Platform and native token, ‘LTK,’ are designed to encourage a framework for community support and feedback over more centralized ICO support services. Should users have more advanced ICO needs or general queries beyond the ‘drag-and-drop’ feature of the basic Launch Token Platform and services, a dedicated bot (“HALfi”) will provide ICO tips, guide the selection of tools and presets, field questions, and link to resources and community members in the Launch Token PYLON (see infra), among other responses. Therefore, in the event that users feel unsure of their selections, desire more options, or require more information and/or consulting, they should not need to go outside the Launch Token Platform and ecosystem to prepare their choices and ramp up their crowdsale from a single panel.  
+
+
+As an example of initial resources that will be prepared as part of the Launch Token Platform and prototype and included in the Launch Token PYLON (see infra, 3.1), the following topics are active areas of research for potential templatized solutions and/or knowledge resources to supplement the Launch Token technical solution for automating ICO campaigns:
+
+
+Crypto/tokenomics:
+
+
+The Launch Token Platform will offer straightforward templates and guidance to provide a foundation for improved crypto/tokenomics, incorporating leading research⁴¹ and the content created by Launch Token’s own community. These knowledge resources will therefore be drawn from a broad pool of ICO experience, designed to offer updated clarity on (1) regulation of issued tokens as “utility” or “security” tokens, which can inform how a project approaches cryptoeconomic designs, and (2) structuring token and network incentives for sustainable growth. At the end of the day, the Launch Token team recognizes that aspects of ICOs and token economies are still being understood and fleshed out, and that similarly, the “perfect token sale structure” does not exist.⁴² Nevertheless, crypto/tokenomics considerations should be an active area of interest for all involved in the ICO space, and Launch Token intends to make this aspect less arcane as projects demonstrate workable designs in the wild.
+
+
+Marketing:
+
+
+To aid a variety of teams of different resources, Launch Token will develop clean design templates, chatbots, and proven tools to help make contributor engagement simpler. Among other things, this solution will free up a team’s energy to engage in more advanced marketing efforts, such as attending conferences and media interviews, and help level the playing field against larger and more established projects that can afford to hire dedicated marketing professionals.
+
+
+As the Launch Token Platform grows, it will leverage data and other insights from ICO campaigns to refine its tools for better marketing and engagement results (e.g., in the global market for ICOs, considerations over time zones, seasons, holidays, etc., may play an underappreciated role in engagement and could give an edge in reaching caps). Ultimately, it is the Launch Token team’s hope that best practices for marketing and delivering ICOs will emerge from the groundswell exploring this fundraising alternative.
+
+
+2.2 How it Works?
+With the Launch Token Platform, creating an ICO campaign is straightforward. The following illustrates four simple steps to a complete token crowdsale via Launch Token:
+  
+
+
+
+1. Create a Token: This initial process is plain: simply fill out a short form and the platform instantly generates a customized token and ticker. Alternately, users can input an existing token and adapt it for their campaign.
+
+
+1. Choose an ICO Model: Just as businesses vary in terms of size, nature and processes, so do the ICO models available on the platform. The Launch Token Platform will service a number of different ICO models, with options on cap, duration, and participant access that should cover a variety of needs and objectives. Regardless of the size, nature and model of a business/product/service, Launch Token should have an appropriate ICO model for selection. 
+
+
+1. Create an ICO Website: As the face of any ICO campaign, a professionally designed website is key to drawing interest and explaining the key concepts of the crowdsale and underlying project. Aiming for ready lift-off, the Launch Token Platform will offer hundreds of website templates to customize from. Users can browse through various options and choose whatever best suits their company brand or vision by selecting a template, entering a few key details and then instantly creating a dedicated ICO campaign website.
+
+
+1. Launch Your ICO Campaign: Once the token has been created, ICO model selected, and website deployed, users can then fully launch their ICO campaign and begin raising funds, managing this entire process from a single pane. 
+
+
+In sum, Launch Token’s solution is a blockchain-based decentralized platform that runs smart contracts, facilitating the management of the entire token crowdsale process without intermediaries or a dedicated ICO team. 
+
+
+2.3 Launch Token Features
+The Launch Token team is driven to create lasting value for ICO project teams and contributors. Therefore, the Launch Token team has set their sights on creating a platform that is feature-rich and thoroughly covers the ICO process. As covered extensively in this Whitepaper, launching an ICO involves multiple critical components that leave little room for error and the Launch Token Platform is geared for total coverage:
+
+
+Features
+	Available
+	Notes
+	DAICO standards
+	✓
+	Platform built with DAICO standards for ICO governance in mind
+	AML/KYC Services
+	✓
+	AML/KYC functionality provided via integration with leading industry tools
+	Token Builder 
+	✓
+	ICO teams can create ERC20 tokens with easily configurable variables
+	Easy-to-Use Admin Dashboard
+	✓
+	Simple and intuitive campaign management dashboard
+	Website Builder
+	✓
+	Quickly set up an ICO landing page (no code required)
+	Crowdsale Builder
+	✓
+	Allows enforcement of all crowdsale parameters
+	Programmatic Token Distribution
+	✓
+	Provides a more transparent distribution of tokens
+	Contribution Refund Mechanism
+	✓
+	Contributors can vote for a refund if a startup team fails to implement their project or if there is evidence of an ICO scam
+	Multi-Signature Wallet for ICO Project Teams
+	✓
+	Added security feature to reduce the likelihood of rogue ICO project team members tampering with funds
+	Token Vesting Mechanism
+	✓
+	Allows periodic release of tokens to ICO founding team members
+	Cross-Chain Interoperability
+	***
+	The more blockchain protocols that the platform can eventually integrate with the greater value it can provide
+	Pre-Sale Pooling Mechanism
+	***
+	Will allow  selected users to pool funds and participate in private sales with high minimum contributions
+	***Planned features under active research and development
+
+
+Admin Dashboard
+The admin dashboard will allow users to quickly see the state of their ICO through Launch Token’s intuitive UI. Token issuers will be able to easily view details related to their campaign such as: 
+        
+* AML/KYC and whitelisting
+* Amount raised and related statistics
+* Token and ICO configuration 
+
+
+Token Builder 
+A simple tool to create ERC20 tokens and related features with a number of configurable variables such as:
+
+
+* Token name and ticker
+* Token supply, inflation/mint rate
+* Token exchange rate
+* Hard/Soft cap (optional) 
+* Phases, and individual caps for each
+* Receiving address
+* Cap enforcement with start and end dates
+* Validation from email/ETH address whitelist
+
+
+Website Builder 
+This feature will allow users to quickly set up a landing page with Launch Token already fully integrated as a service. This will make it easy for token issuers to:
+
+
+* Deploy website(s) with no code or preparation required
+* Use their own custom domains
+* Integrate all Launch Token ICO tools
+
+
+The Launch Token team is also studying options to provide extensions for popular website builders such as Squarespace, Wix, Wordpress, etc.
+
+
+AML/KYC (“Anti-Money Laundering”/“Know Your Customer”)
+This is can be significant ‘pain point’ for most token issuers, as KYC requirements are often mandatory and can involve civil and/or criminal penalties from both local and international bodies. To simplify this common aspect of token crowdsales, AML/KYC functionality will be provided by the Launch Token Platform via integration with leading industry tools. Through a single pane, token issuers will be able to:
+
+* Choose which countries/jurisdictions can participate
+* Integrate with third parties to follow leading industry standards
+* Stipulate KYC requirements
+* Utilize “reusable” KYC to allow repeat access for participants
+
+
+Additional details regarding Launch Token AML/KYC solution(s) will be further defined and declared in forthcoming announcements.
+
+
+Private Presale 
+Private presales allow a team to raise capital before an ICO. Typically, tokens are sold at a discount and promised to be delivered once the crowdsale formally takes place. On the Launch Token Platform, this feature will be integrated to allow the enforcement of presale parameters as defined in the Token Builder. This process typically includes:
+
+
+* Creation of a unique referral link on the blockchain
+* Smart contract(s) enforcing thresholds
+* Acceptance from whitelist of addresses
+* Managing exchange of ETH for tokens
+
+
+Crowdsale - ICO
+This feature demonstrates Launch Token’s combined services and value to startups seeking crowdfunding. Among other tasks related to a token crowdsale, the platform’s API layer will handle the enforcement of the parameters selected in the Token Builder. This will allow:
+
+* Identical smart contract enforcement as presale
+* Enforcement of caps with start and end dates
+* Token issuers to utilize different ICO Models
+* Phases, different caps during each phase
+* Templatizing configurable variables
+
+
+Token Vesting Mechanism 
+This feature allows users to schedule the release of native tokens in an ICO to founding team members, better aligning incentives and addressing concerns that such tokens will be rapidly sold off following an ICO campaign. This will allow:
+
+
+* Periodic release of tokens to founding team members (e.g., every 6 months)
+
+
+Contribution Refund Mechanism 
+This feature reflects an emerging standard for ICO governance and will allow contributors to vote for a refund of remaining finances if a startup team fails to implement their project or if there is evidence of fraud. However, a super-majority of voters should typically agree on this (67% - 90%) — only then will the refund mechanism activate. This refunding decision is based on a vote and relies on the ‘wisdom of the crowds’ for contributor protection. This will:
+
+* Provide added security to crowdsale participants considering contributing to an ICO
+* Allow contributors to vote for a refund following an ICO
+* Grant contributors increased engagement with and control over the progress of projects
+
+
+Any platform fees incurred will NOT be refunded, however.
+
+
+Cross-Chain Bridging/Interoperability 
+The Launch Token Platform is designed to be compatible with the Ethereum blockchain network, as it is currently the most popular platform⁴³ for token crowdsale and dApps. However, looking onward and upward at the promising and colorful future for blockchain development, the Launch Token team strongly believes that the more blockchain protocols that the platform can eventually integrate with (e.g., NEO, Cardano, EOS, Stellar), the greater value it may present to end-users. As the number of different smart contract systems grow, often with different and compelling compromises on the so-called ‘scalability trilemma’⁴⁴ among choosing decentralization, security, and high scalability for transactions (but not all), cross-chain bridging that allows the transfer of information directly between blockchains will become a necessity. The team will be keeping a close eye on developments in the cross-chain protocol segment in order to quickly implement a robust cross-chain protocol for lasting utility to the Launch Token Platform.
+
+
+3. Launch Token Platform Architecture and Token (LTK)
+
+
+The Launch Token Platform is designed to cover most ICO needs with less friction in the process. The development of the platform is inspired by the team’s mission to: (i) improve and better the standards of the ICO process, (ii) make crowdsales truly a ‘drag-and-drop’ experience, and (iii) offer an alternative to more restrictive ICO platforms without compromising security and contributor confidence. 
+
+
+3.1 Launch Token Platform Architecture
+ 
+  
+
+
+
+1. Launch Token Protocol (“STRATOS”): At the heart of the Launch Token Platform is the dedicated Launch Token Protocol (or “STRATOS”) that facilitates the creation of standardized and secure programming interfaces for token crowdsales.
+2. Launch Token Application Layer (“MESOS”): The Launch Token Application Layer (or “MESOS”) enables users to seamlessly drag and drop solutions on top of the STRATOS Protocol. 
+3. Launch Token Backend Layer (“QUASR”): The Launch Token Platform leverages blockchain technology to store and manage data across the ecosystem. Specifically, the platform is based on Ethereum blockchain with plans to implement cross-chain compatibility as these features progress toward a more complete backend layer, “QUASR.” 
+4. Launch Token API Layer (“RELAY”): The Launch Token API Layer (or “RELAY”) allows users to integrate the ecosystem with internal and external applications and/or services.
+5. Launch Token ICO Services (“PYLON”): The Launch Token “PYLON” offers various ICO services and solutions such as website builders, token creation, email management, AML/KYC, ICO models, etc., as well as community knowledge resources and feedback. For simple access and usability, the Launch Token admin dashboard will be integrated with a dedicated bot (“HALfi”) that will provide tips, guide the selection of tools and presets, field queries, and seamlessly link to resources and community members in the Launch Token PYLON. 
+
+
+As a show of confidence in this architecture, Launch Token will be conducting its own ICO on the Launch Token Platform prototype. Another important component of the Launch Token Platform will reside in Launch Token’s own native token (“LTK”), summarized in greater detail directly below, Section 3.2, and infra, Section 4 of this Whitepaper.
+
+
+3.2 Launch Token “Keros” 
+Launch Token Keros (LTK) is ERC20 compatible and will serve as the fuel that powers transactions within the Launch Token Platform and ecosystem. Using Nick Tomaino’s taxonomy⁴⁵ of different token classes (categorizing tokens into four broad classes: (i) traditional ‘asset’ tokens, (ii) ‘usage’ tokens, (iii) ‘work’ tokens, (iv) and ‘hybrid’ tokens), LTK can be classified as a hybrid token, a combination of a usage and work token. Essentially, LTK functions as a ‘usage’ token with certain additional privileges for its holders: 
+
+
+Token type
+	Function
+	Examples
+	Traditional asset token
+	To represent a traditional asset cryptographically 
+	USDT, DGD
+	Usage token
+	To provide access to a digital service
+	BTC, ETH, BAT
+	Work token
+	To provide the right to contribute work to a decentralised organization
+	REP, MKR
+	Hybrid (usage + work)
+	To provide access to a digital service and the right to contribute work
+	FIL,ETH (with Casper)
+	                                                                                                                          
+Source: Nick Tomaino, “On Token Value” (Aug. 6, 2017)
+
+
+“A usage token is a token where a digital service is offered and the token is required to access that digital service that no centralized party controls”: 
+
+
+All transactions performed on the Launch Token Platform will incur a small fee in the form of LTK, and ICO project teams will have to make use of LTK in order to access any available services throughout the platform. In this regard, LTK will be functioning as a ‘usage’ or network access token, and LTK can be regarded as store of value, unit of account, record of investment, and the primary means of transacting within this network and paying for smart contract execution. Further, LTK holders will receive additional privileges within the platform, including priority access to presales and airdrops of LTK and other tokens created on the platform (see directly below for additional details).
+
+
+“A work token is a token that gives token holders the right to contribute work to a decentralized organization to help enable that decentralized organization to function”: 
+
+
+For maximum flexibility and responsiveness to rapid changes in the ICO market, the Launch Token Platform will support an ecosystem for ICO tools, task creation and fulfilment. From a simple interface, users will be able to select tools, submit tasks to supplement their ICO campaign, and access a variety of community resources tailored to crowdsale needs. To incentivize this crowdsourcing effort and build a market, all platform contributors will be able to earn (i) LTK rewards, as well as, (ii) rank within the Launch Token Platform and network (denoted by type and amount of “Badges”), based on a community review of their contributions and the extent of value provided to the platform over time. 
+
+
+For example, in exchange for designing an advanced token sale smart contract, a Launch Token contributor can immediately receive LTK and network rank, with such rank offering additional rewards tied to the growth of the Launch Token Platform (see infra), helping maintain quality contributions and align long-term incentives. By staking LTK, platform contributors will also be able to prioritize the review of their submissions by Launch Token community members, further driving demand and use of LTK within this network. Similarly, the Launch Token team is actively researching optimal uses of long-term staking by Launch Token contributors and automatic “slashing” of their stakes should critical errors be discovered in their contributions, among other incentives designed to secure the Launch Token Platform for end-users.
+
+
+In addition to signalling ICO expertise and building reputation, Launch Token Badges and network rank provide tangible benefits, such as securing priority access to presales and token airdrops throughout the platform, including LTK rewards/platform fees. Gradually, this feedback design should improve the quality of the Launch Token Platform and tools, aiding network effects as standards for ICOs take shape in this more decentralized format. Hosted on the blockchain, the credentials of Launch Token contributors and their ‘resume’ of work will also be logged through smart contracts, protecting against false records and reducing the need to trust the competency of task fulfilment and platform tools.
+
+
+Further, and to encourage active feedback on platform services and community contributions, holding LTK will introduce opportunities to earn additional LTK and platform rank. Specifically, LTK holders will have the right to work for the platform and obtain Badges through ongoing supportive tasks, including judging contributions, services and proposed ICO standards as “Launch Token Improvement Proposals” or Launch TIPs. Periodically, Launch Token Platform fees will be airdropped, with network rank and Badges serving to increase the likelihood of sharing in these lotteries and similar benefits. In order to properly align community incentives, as well as prevent spam and similar network attacks, participating in Launch TIPs will require staking a portion of LTK, further increasing its usage and demand. The Launch Token team is further exploring the optimal use of staking and “slashing” of LTK and/or network Badges for malicious behavior by platform contributors and auditors (as reported in regular bounty programs), in order to better protect the integrity of the Launch Token Platform and supportive ecosystem. 
+
+
+Altogether, the above token attributes suggest that LTK may have a ‘hybrid’ status as a ‘usage’ and ‘work’ token, allowing its holders to access Launch Token Platform services and become providers/auditors of the same.
+
+
+With these incentives and possibility for additional tokenomic features, LTK is ultimately designed to accelerate the Launch Token Platform by (i) attracting qualified contributors to earn status and rewards, (ii) encouraging contributors to collaborate to increase their status and opportunity for rewards, and (iii) this motivated community itself encouraging more quality projects to use the platform’s services, drawing further contributions and greater value to these features that require LTK to function. In order to jumpstart this feedback process for hard lift-off, LTK will also be awarded to sponsor early involvement with the Launch Token Platform and its core competencies (e.g., bounties, fellowships, etc.) — for example, many would greatly benefit from dedicated researchers on ICO models, as well as ongoing reviews of ICO campaigns to protect participants from scams and security risks. Further, prior to full rollout, proactive community members will receive special Badges and enhanced benefits for their support, laying a foundation for the platform ecosystem and membership. 
+
+
+LTK will serve the following primary functions:
+1) Pay transaction fees and allow access to services within the Launch Token Platform and ecosystem.
+2) Provide incentives/rewards for community contributions.
+3) Provide holders with special privileges such as judging contributions to the Launch Token Platform.
+4) Trade as a digital asset available on the open market.
+
+
+3.3 Sustainability of the Platform
+The Launch Token Platform and ecosystem will be sustained through a number of means:
+
+
+a) Platform Fees: Users will be required to pay a small fee in LTK to access the Launch Token Platform. As the platform involves multiple components, this fee shall be based on the specific services used by each member, e.g.:
+
+
+* Token Builder
+* Smart Contracts
+* Website Builder
+* ICO Insights 
+
+
+For crowdsales held using the Launch Token Platform, 0.25% of all proceeds will be converted to LTK. As the platform gains recognition and supports more advanced features, this rate shall rise reasonably to reflect such growth. For users simply looking to create ERC20 tokens through the platform (as opposed to having an existing token contract), there will be a flat fee paid in LTK. For the application layer, there will be a monthly hosting fee wherein users will pay in LTK to continue such services.
+
+
+b) Contributions to the Platform Ecosystem: Initially, Launch Token will partner with experienced ICO teams that comprise whitepaper writers, graphic designers, website designers, ICO managers, marketing managers, social media managers, investment advisors, among others, to further build out core competencies for the Launch Token Platform. Among other inducements, LTK will be provided to these partners to reward contributions and drive future use of the platform. Further, and toward long-term sustainability, LTK will be regularly awarded for community contributions via the token mechanics described supra, Section 3.2.  
+
+
+c) Community Participation:
+Launch Token intends to build a vibrant community that will play a vital role in the growth and development of the platform’s resources. The Launch Token community will share ideas, assist with bringing new users to the network and help identify and resolve issues on the platform in a decentralized manner. In order to motivate this participation, LTK will permit its holders to judge contributions to the platform and perform other tasks in exchange for network rank and a chance to share in regular platform airdrops, among other benefits. 
+
+
+d) Fostering Security and ICO Innovation
+With a high premium on security and responsive platform driven by community involvement and vetting processes, Launch Token is geared to minimize potential ICO defaults and bring real confidence to crowdsale transactions. The hope is that these improved dynamics will result in a significantly higher success rate for ICOs run on the platform and elsewhere, improving the perception of this market and its many proponents.
+
+
+4. LTK Distribution and Crowdsale Details
+150,000,000 LTK shall be released in total. All LTK not distributed during the LTK token generation event (the “TGE”) will be burnt. The TGE and fundraising for the development of the Launch Token Platform and ecosystem shall involve the following phases:
+
+
+1. Private Presale
+2. Presale
+3. Public Sale 
+
+4.1 Private Presale (August 1 - 30)
+LTK will be made available for sale exclusively to angel investors and VC firms. LTK will be exchanged for fiat currency and related transfers to Launch Token’s dedicated Ethereum address. 
+
+
+4.2 Presale  (October 1 - 31)
+LTK will be exchanged for fiat currency and related transfers to Launch Token’s dedicated Ethereum address. This presale will not have a minimum threshold for contributors. A limited number of LTK will be made available for sale at this stage of the fundraising process. A system of bonuses for early participants will also be available, which will be distributed as follows:
+
+
+Week 1
+	25%
+	Week 2
+	20%
+	Week 3
+	15%
+	Week 4
+	10%[e]
+	
+
+4.3 Public Sale (December 1 - 31)
+LTK will be exchanged for fiat currency and Ether (ETH) during the Launch Token public sale. This public sale will not be limited by a minimum threshold and is accessible for anyone in accordance with the laws of country of residence. The ICO price for 1 LTK will be $0.20 and will run until the Launch Token fundraising campaign reaches its hard cap of $25,000,000 (USD)[f]. At this stage of the crowdsale, a system of bonuses for early participants will also be available, which will be distributed as follows:
+
+
+Week 1 - 4
+	20%
+	Week 2
+	15%
+	Week 3
+	10%
+	Week 4
+	5%[g]
+	
+
+4.4 LTK Distribution 
+LTK distribution shall principally involve:
+Public & Private Sale
+	50%
+	Founding Team & Advisers*
+	15%
+	Future Staff
+	25%
+	Partners  
+	5%
+	Bounty & Bonuses
+	5%
+	
+
+Proceeds shall be organized and used as follows:
+Research & Development of the Platform
+	55%
+	Marketing
+	25%
+	Operations
+	10%
+	Network
+	5%
+	Compliance
+	5%
+	
+
+*Details regarding the formal vesting schedule shall be published prior to the TGE.
+________________
+5. Market Opportunity and Competition Landscape
+
+
+There are a number of projects aiming to bring an ICO management platform to market, speaking to the immense value of a comprehensive solution. Many projects, including CoinList and Republic, target institutional investors and strictly vet teams that want to run an ICO on their platforms, and others, such as BlockEx, offer consulting services and active management of the crowdsale process. Further, a number of platforms are targeting the needs of projects post-ICO, such as Cointopia, which is exploring options to allow issued tokens to be exchanged more immediately on the secondary market. 
+
+
+Needless to say, the recent surge of ICOs has invited many attempts to address their various issues, unresolved or unknown. Joining this trend and hoping to contribute to the variety of solutions, Launch Token will aggressively pursue a platform that is simple and comprehensive to the needs of running a successful ICO campaign, learning from and collaborating with our partners in this mission. As described throughout this Whitepaper, Launch Token will also prioritize decentralization throughout the entire ICO process, from token creation to managing crowdsale proceeds. Our thesis: the “picks and shovels” for the ICO surge should match — to the fullest extent possible — its particular ethos and efficiencies. 
+
+
+Strikingly, a Launch Token competitor with a celebrated roster of advisors (per the press, “cryptocurrency industry titans”) had its first advertised ICO campaign, Bee Token, suffer a major phishing attack ($1 million loss to contributors). This begs the question: if more centralized solutions cannot readily ensure the quality of crowdsales facing the public, then the ICO space needs an alternative that has decentralization baked it into its very design and mission — the Launch Token Platform and ecosystem. 
+
+
+
+
+
+
+
+
+
+
+
+
+6. Project Roadmap
+  
+
+
+
+
+
+
+
+
+
+7. Launch Token Team (Core + Advisors)
+
+
+Launch Token is currently in the process of forming a non-profit foundation to manage the TGE and public sale of LTK, which shall be located in Mauritius (the “Launch Token Foundation”). The following diagram reflects this organization structure in substantial part:
+  
+
+Source: flagtheory.com
+
+
+The purpose of the Launch Token Foundation will be to conduct a fundraiser designed to collect donations (see supra, 4), to contract with entities and their agents for the development of the Launch Token Platform and to help foster a community and ecosystem around the same. Contributions made in connection with such fundraising and the TGE will go the Launch Token Foundation to develop the Launch Token Platform. Following the TGE and Launch Token fundraising, the Launch Token Foundation shall contract with separate entities to begin initial development of the Launch Token Platform in accordance with the vision and goals outlined in this Whitepaper, which shall be enshrined in the Launch Token Foundation charter and governance. The foregoing organization structure will help ensure that no single entity or group controls or governs the Launch Token Platform and ecosystem, bolstering the security and depth of this ICO solution. It is further anticipated that the Launch Token Foundation will be sustained long-term through platform fees and assist with air drops, bug bounties, and related community incentives (see supra, 3.2). More information regarding the Launch Token Foundation and the above structure shall be published prior to the TGE. The following section introduces the founding team members behind the Launch Token project: 
+
+
+Launch Token Team
+
+
+Edmund Mai
+Edmund is an experienced entrepreneur and software developer. He has spent most of his career developing software for renowned startups in NYC. He has solid experience developing blockchain-based solutions.In 2016, he co-founded a profitable incubator / software agency, where he built software using blockchain technologies like Ethereum and IOTA for ICOs firsthand. He is an expert in software products and strongly believes in lean methodologies.
+
+
+Aaron Vasquez
+Aaron is a seasoned engineer with vast experience in building software for large companies like Google and Uber. In addition, he also has significant experience consulting for many early stage startups. As a libertarian, he was an early adopter of bitcoin and is extremely excited to see innovative applications of blockchain technology, which he believes would reduce the need for centralized authorities.
+
+
+Stephanie Verin
+Stephanie is a global marketing executive with robust experience in leading disruptive marketing programs and solutions at a number of blue chip companies like Kelloggs, Procter & Gamble, Mondelez and Nissan Corporation. She also has experience as an independent Marketing and Digital Consultant. She is also currently leading the Marketing & Strategy development at Block Collective. She is passionate about innovation and entrepreneurship and loves attending tech meet-ups all over the world.
+
+
+Kuda Samkange
+Kuda has a diverse background that includes experience gained from working for firms in investment management, financial markets education, oil trading and a top global cryptocurrency exchange. His experience ranges from multinational global firms to early stage startups. He truly believes in blockchain and that it will play a significant role in democratizing future financial markets.
+
+
+
+
+Christian Tanaka
+Christian is a design generalist who comes with extensive experience in the startup space working for companies accelerated through notable incubators such as Y-Combinator and Techstars. Those experiences span numerous different verticals consisting of healthcare, social development, AR/VR, finance, education and more.
+
+
+Ross Campbell
+Ross is an agile professional with extensive experience helping large and early-stage companies with their corporate and legal needs. He has a diverse background, having practiced corporate and securities law with an international law firm with additional experience working in federal and state court. Among other critical responsibilities, Ross has helped companies manage risk over and optimize their most valued assets and transactions (>$100 million). Ross is driven to help build on the promise of ICOs and develop better models for crowdsourced funding. 
+
+
+Alexey Melnichenko
+Alexey has been co-founding startups since the start of his career.  As an early adopter of cryptocurrencies he started out holding & trading Bitcoin and later, Ethereum.  After realizing the great potential of distributed computing in centralized environments he started developing smart contracts on technologies like Ethereum and EOS. Recently he has been helping blockchain startups architect and implement their systems.
+
+
+John Hartman
+John has significant experience in providing leadership to clients in technology, change management and revenue growth. A former Accenture manager, John has grown startups from founder to exit. Most recently John was the President of Piston, an award winning digital marketing agency where he was named the iMedia Agency Marketer of the Year. He currently advises startups across cryptocurrency, SaaS and healthcare.
+
+
+Esco Obong
+Esco is a senior software engineer that has experience leading teams and effectively translating product vision into code. He has worked on many products at the early stage that have since gained mainstream success including UberEats, Under30 Social Network, and NYT Times Video.
+
+
+Connor Larkin
+Connor is an experienced growth hacker and community manager that has helped several crypto projects come to fruition. He has helped grow communities and is responsible for acquiring  over 75000+ members across Telegram, Discord, and Slack. Simultaneously, he was a quick and effective community manager that handled all project support, questions, and content creation. He is highly effective in young startups with a proven growth hacking track record.
+8. Contact Us
+Get in touch with us
+
+
+Launch Token Website: https://www.launchtoken.me/
+Email: business@launchtoken.me
+Facebook Page:  https://www.facebook.com/launchtoken/
+Telegram: https://t.me/joinchat/GyRIcxLhxjsQxw5e-wYVzw
+Twitter Handle:  https://twitter.com/launchtoken_ico
+LinkedIn Page: https://www.linkedin.com/company/launch-token/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+9. References
+1. https://medium.com/bitfwd/how-to-do-an-ico-on-ethereum-in-less-than-20-minutes-a0062219374
+2. https://www.icodata.io/stats/2017
+3. https://www.bloomberg.com/news/articles/2018-06-01/initial-coin-offerings-have-already-topped-2017-s-record-pace
+4. https://www.coindesk.com/icos-tech-standards/
+5. http://www.ey.com/Publication/vwLUAssets/ey-research-initial-coin-offerings-icos/$File/ey-research-initial-coin-offerings-icos.pdf
+6. https://ethresear.ch/t/explanation-of-daicos/465
+7. https://ethresear.ch/c/better-icos
+8. https://medium.com/@etherscan/ethereums-killer-app-e2f3468642eb
+9. https://vinnylingham.com/why-tokens-are-eating-the-world-b4174235c87b
+10. https://concourseq.io
+11. https://icobench.com/ico-analyzer
+12. https://hackernoon.com/most-icos-fail-tale-of-two-worlds-d1ab7625ff66
+13. https://www.coindesk.com/japanese-billionaire-icos-democratize-venture-financing/
+14. https://www.forbes.com/sites/laurashin/2017/05/18/want-to-hold-an-ico-coinlist-makes-it-easy-and-legal/#588bf5417ce5
+15. https://nulltx.com/neo-based-thekey-ico-could-have-handled-things-a-lot-better/
+16. https://kyber.network/
+17. https://hbr.org/2017/03/what-initial-coin-offerings-are-and-why-vc-firms-care
+18. https://www.howeycoins.com/index.html
+19. https://www.bloomberg.com/features/2017-the-ether-thief/
+20. https://thenextweb.com/hardfork/2018/02/01/beetoken-ico-hacked-airbnb/
+21. https://blog.zeppelin.solutions/on-the-parity-wallet-multisig-hack-405a8c12e8f7
+22. http://fortune.com/2017/07/18/ethereum-coindash-ico-hack/
+23. https://cryptoslate.com/batchoverflow-exploit-creates-trillions-of-ethereum-tokens/
+24. http://bitcoinist.com/smart-contract-bug-disable-icon-icx-transfers/
+25. https://www.bleepingcomputer.com/news/security/researchers-last-year-s-icos-had-five-security-vulnerabilities-on-average/
+26. https://blockgeeks.com/guides/what-is-cryptoeconomics/
+27. https://medium.com/@wmougayar/tokenomics-a-business-guide-to-token-usage-utility-and-value-b19242053416
+28. http://www.ey.com/Publication/vwLUAssets/ey-research-initial-coin-offerings-icos/$File/ey-research-initial-coin-offerings-icos.pdf
+29. https://www.coindesk.com/ico-tracker/
+30. https://hackernoon.com/most-icos-fail-tale-of-two-worlds-d1ab7625ff66
+31. https://www.cyberius.com/the-good-the-bad-of-icos/
+32. https://medium.com/@merunasgrincalaitis/what-it-takes-to-create-a-successful-ico-how-expensive-it-is-your-complete-guide-35912722351e
+33. https://www.coindesk.com/korean-national-assembly-makes-official-proposal-to-lift-ico-ban/
+34. https://www.cnbc.com/2018/06/14/bitcoin-and-ethereum-are-not-securities-but-some-cryptocurrencies-may-be-sec-official-says.html
+35. http://www.ey.com/Publication/vwLUAssets/ey-research-initial-coin-offerings-icos/$File/ey-research-initial-coin-offerings-icos.pdf
+36. https://www.cnbc.com/2018/04/27/theres-a-new-way-to-fundraise-with-cryptocurrency-overstock-ceo-says.html
+37. https://ethresear.ch/c/better-icos
+38. https://www.ethereum.org/dao 
+39. https://en.wikipedia.org/wiki/Don%27t_repeat_yourself 
+40. https://chainwatch.io/
+41. https://ethresear.ch/c/economics
+42. https://blog.gdax.com/the-perfect-token-sale-structure-63c169789491
+43. https://coinmarketcap.com/tokens/
+44. https://github.com/ethereum/wiki/wiki/Sharding-FAQ#this-sounds-like-theres-some-kind-of-scalability-trilemma-at-play-what-is-this-trilemma-and-can-we-break-through-it
+45. https://thecontrol.co/on-token-value-e61b10b6175e
+
+
+
+
+
+
+
+
+________________
+
+
+Legal Disclaimer [h]
+
+
+This document is for informational purposes only and does not constitute an offer or solicitation to sell shares or securities in any jurisdiction. User acknowledges, understands, and agrees that LTK are not securities and are not registered with any government entity as a security, and shall not be considered as such. Specifically, LTK are neither currency, valuable security nor currency swap, security swap or any other financial instrument. LTK do not grant any rights to manage the Launch Token Platform or any related organizations. LTK do not entitle crowdsale participants or holders to derive profits or receive dividends and/or similar distributions from the operations of the Launch Token Platform or any related organizations. LTK is used solely for interaction with elements of the Launch Token Platform and ecosystem and as a means of access to related services; consequently, it is primarily a “utility” or “usage” token. Therefore, LTK are not and cannot be deemed as securities, and they are not registered in any government enterprise as securities and should not be regarded as such. None of the information or analyses presented are intended to form the basis for any investment decision, and no specific recommendations are intended. No person is entitled to rely on the contents of this document or any inferences drawn from it, including in relation to any interactions with Launch Token, the TGE or the technologies mentioned in this Whitepaper. Contributors and potential LTK holders should seek appropriate independent professional advice prior to relying on, or entering into any commitment or transaction based on material published in this Whitepaper, which material is solely published for information purposes alone. Launch Token and related parties expressly disclaim any and all responsibility for any direct or consequential loss or damage of any kind whatsoever arising directly or indirectly from: (i) reliance on any information contained in this document, (ii) any error, omission or inaccuracy in any such information or (iii) any action resulting therefrom. Launch Token also reserves the right to change, modify, deviate from, add to, or scale down any plans, projections, or forecasts which have been expressed in this Whitepaper at any time whether during or after the TGE at its sole and absolute discretion. Further, we may be required to amend the intended functionality of LTK in order to ensure compliance with any legal or regulatory obligations that apply to us now or in future. The English language Launch Token Whitepaper is the primary official source of information about the Launch Token project and platform. The information contained in the English language Launch Token Whitepaper may from time to time be translated into other languages. In the course of such translation some of the information contained in the English language Launch Token Whitepaper may be lost, corrupted or misrepresented. The accuracy of such alternative communications cannot be guaranteed. In the event of any conflicts or inconsistencies between such translations and the official English ​language ​Launch Token Whitepaper, ​the ​provisions ​of ​the ​English ​language ​original ​document ​shall ​prevail​. 
+COPYRIGHT © 2018 LAUNCH TOKEN  | ALL RIGHTS RESERVED  
+[a]+christatix@gmail.com Updated
+_Assigned to Christian Tanaka_
+[b]nitpick: remove extra comma here in PDF (between website / and)
+[c]+christatix@gmail.com Updated
+_Assigned to Christian Tanaka_
+[d]Nitpick: Header in PDF should match here (reads duplicate "Security is Top Priority" in latest PDF) +christatix@gmail.com
+[e]+christatix@gmail.com Updated
+_Assigned to Christian Tanaka_
+[f]+christatix@gmail.com Updated
+[g]+christatix@gmail.com We are removing these lines + this table.
+_Assigned to Christian Tanaka_
+[h]revised LTK references per John's comment
